@@ -4,9 +4,2271 @@
   "name": "Android Studio",
   "color": "#3DDC84",
   "icon": "",
-  "inherit": "idea",
+  "inherit": null,
   "os": "win",
-  "keymap": "Windows 默认键位（继承 IDEA，个别键位略有差异）",
+  "keymap": "Windows 默认键位（官方 keyboard shortcuts 页）",
   "source": "https://developer.android.com/studio/intro/keyboard-shortcuts",
-  "shortcuts": []
+  "shortcuts": [
+    {
+      "id": "as.key.project",
+      "action": "Project",
+      "aliases": [],
+      "keys": [
+        "Alt+1"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.version-control",
+      "action": "Version Control",
+      "aliases": [],
+      "keys": [
+        "Alt+9"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.run",
+      "action": "Run",
+      "aliases": [],
+      "keys": [
+        "Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.debug",
+      "action": "Debug",
+      "aliases": [],
+      "keys": [
+        "Shift+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.logcat",
+      "action": "Logcat",
+      "aliases": [],
+      "keys": [
+        "Alt+6"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.return-to-editor",
+      "action": "Return to Editor",
+      "aliases": [],
+      "keys": [
+        "Esc"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.hide-all-tool-windows",
+      "action": "Hide All Tool Windows",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+F12"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.save-all",
+      "action": "Save all",
+      "aliases": [],
+      "keys": [
+        "Control+S"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.synchronize",
+      "action": "Synchronize",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+Y"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.maximize-minimize-editor",
+      "action": "Maximize/minimize editor",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+F12"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.add-to-favorites",
+      "action": "Add to favorites",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+F"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.inspect-current-file-with-current-",
+      "action": "Inspect current file with current profile",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+I"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.quick-switch-scheme",
+      "action": "Quick switch scheme",
+      "aliases": [],
+      "keys": [
+        "Control+`"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-settings-dialog",
+      "action": "Open settings dialog",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+S"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-project-structure-dialog",
+      "action": "Open project structure dialog",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+Shift+S"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.switch-between-tabs-and-tool-windo",
+      "action": "Switch between tabs and tool window",
+      "aliases": [],
+      "keys": [
+        "Control+Tab"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find",
+      "action": "Find",
+      "aliases": [],
+      "keys": [
+        "Control+F"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-next",
+      "action": "Find next",
+      "aliases": [],
+      "keys": [
+        "F3"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-previous",
+      "action": "Find previous",
+      "aliases": [],
+      "keys": [
+        "Shift+F3"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.replace",
+      "action": "Replace",
+      "aliases": [],
+      "keys": [
+        "Control+R"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-action",
+      "action": "Find action",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+A"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.search-by-symbol-name",
+      "action": "Search by symbol name",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+Shift+N"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-class",
+      "action": "Find class",
+      "aliases": [],
+      "keys": [
+        "Control+N"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-file-instead-of-class",
+      "action": "Find file (instead of class)",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+N"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.find-in-path",
+      "action": "Find in path",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+F"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-file-structure-dialog",
+      "action": "Open file structure dialog",
+      "aliases": [],
+      "keys": [
+        "Control+F12"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.navigate-between-open-editor-tabs",
+      "action": "Navigate between open editor tabs",
+      "aliases": [],
+      "keys": [
+        "Alt+Right",
+        "Alt+Left"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.jump-to-source",
+      "action": "Jump to source",
+      "aliases": [],
+      "keys": [
+        "F4",
+        "Control+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-current-editor-tab-in-new-win",
+      "action": "Open current editor tab in new window",
+      "aliases": [],
+      "keys": [
+        "Shift+F4"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.recently-opened-files-dialog",
+      "action": "Recently opened files dialog",
+      "aliases": [],
+      "keys": [
+        "Control+E"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.recently-edited-files-dialog",
+      "action": "Recently edited files dialog",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+E"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-last-edit-location",
+      "action": "Go to last edit location",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+Backspace"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.close-active-editor-tab",
+      "action": "Close active editor tab",
+      "aliases": [],
+      "keys": [
+        "Control+F4"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.return-to-editor-window-from-a-too",
+      "action": "Return to editor window from a tool window",
+      "aliases": [],
+      "keys": [
+        "Esc"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.hide-active-or-last-active-tool-wi",
+      "action": "Hide active or last active tool window",
+      "aliases": [],
+      "keys": [
+        "Shift+Esc"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-line",
+      "action": "Go to line",
+      "aliases": [],
+      "keys": [
+        "Control+G"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-type-hierarchy",
+      "action": "Open type hierarchy",
+      "aliases": [],
+      "keys": [
+        "Control+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-method-hierarchy",
+      "action": "Open method hierarchy",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-call-hierarchy",
+      "action": "Open call hierarchy",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.zoom-in-out",
+      "action": "Zoom in/out",
+      "aliases": [],
+      "keys": [
+        "Control+plus",
+        "Control+minus"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.fit-to-screen",
+      "action": "Fit to screen",
+      "aliases": [],
+      "keys": [
+        "Control+0"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.actual-size",
+      "action": "Actual size",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+1"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.delete-constraints",
+      "action": "Delete constraints",
+      "aliases": [],
+      "keys": [
+        "Delete",
+        "Control+click"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.zoom-in",
+      "action": "Zoom in",
+      "aliases": [],
+      "keys": [
+        "Control+plus"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.zoom-out",
+      "action": "Zoom out",
+      "aliases": [],
+      "keys": [
+        "Control+minus"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.zoom-to-fit",
+      "action": "Zoom to fit",
+      "aliases": [],
+      "keys": [
+        "Control+0"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.pan",
+      "action": "Pan",
+      "aliases": [],
+      "keys": [
+        "Hold Space+click and drag"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-xml",
+      "action": "Go to XML",
+      "aliases": [],
+      "keys": [
+        "Control+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-all-components",
+      "action": "Select all components",
+      "aliases": [],
+      "keys": [
+        "Control+A"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-multiple-components",
+      "action": "Select multiple components",
+      "aliases": [],
+      "keys": [
+        "Shift+click",
+        "Control+click"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.group-into-nested-graph",
+      "action": "Group into nested graph",
+      "aliases": [],
+      "keys": [
+        "Control+G"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.cycle-through-destinations",
+      "action": "Cycle through destinations",
+      "aliases": [],
+      "keys": [
+        "Tab",
+        "Shift+Tab"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-all-destinations",
+      "action": "Select all destinations",
+      "aliases": [],
+      "keys": [
+        "Control+A"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-multiple-destinations",
+      "action": "Select multiple destinations",
+      "aliases": [],
+      "keys": [
+        "Shift+click",
+        "Control+click"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.generate-code-getters-setters-cons",
+      "action": "Generate code (getters, setters, constructors, hashCode/equals, toString, new file, new class)",
+      "aliases": [],
+      "keys": [
+        "Alt+Insert"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.override-methods",
+      "action": "Override methods",
+      "aliases": [],
+      "keys": [
+        "Control+O"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.implement-methods",
+      "action": "Implement methods",
+      "aliases": [],
+      "keys": [
+        "Control+I"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.surround-with-if-else-try-catch-et",
+      "action": "Surround with (if...else, try...catch, etc.)",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+T"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.delete-line-at-caret",
+      "action": "Delete line at caret",
+      "aliases": [],
+      "keys": [
+        "Control+Y"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.collapse-expand-current-code-block",
+      "action": "Collapse/expand current code block",
+      "aliases": [],
+      "keys": [
+        "Control+minus",
+        "Control+plus"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.duplicate-current-line-or-selectio",
+      "action": "Duplicate current line or selection",
+      "aliases": [],
+      "keys": [
+        "Control+D"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.basic-code-completion",
+      "action": "Basic code completion",
+      "aliases": [],
+      "keys": [
+        "Control+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.smart-code-completion-filters-the-",
+      "action": "Smart code completion (filters the list of methods and variables by expected type)",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.complete-statement",
+      "action": "Complete statement",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+Enter"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.quick-documentation-lookup",
+      "action": "Quick documentation lookup",
+      "aliases": [],
+      "keys": [
+        "Control+Q"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.show-parameters-for-selected-metho",
+      "action": "Show parameters for selected method",
+      "aliases": [],
+      "keys": [
+        "Control+P"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-declaration-directly",
+      "action": "Go to declaration (directly)",
+      "aliases": [],
+      "keys": [
+        "Control+B",
+        "Control+click"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-implementations",
+      "action": "Go to implementations",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.go-to-supermethod-superclass",
+      "action": "Go to supermethod/superclass",
+      "aliases": [],
+      "keys": [
+        "Control+U"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-quick-definition-lookup",
+      "action": "Open quick definition lookup",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+I"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.toggle-project-tool-window-visibil",
+      "action": "Toggle project tool window visibility",
+      "aliases": [],
+      "keys": [
+        "Alt+1"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.toggle-bookmark",
+      "action": "Toggle bookmark",
+      "aliases": [],
+      "keys": [
+        "F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.toggle-bookmark-with-mnemonic",
+      "action": "Toggle bookmark with mnemonic",
+      "aliases": [],
+      "keys": [
+        "Control+F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.comment-uncomment-with-line-commen",
+      "action": "Comment/uncomment with line comment",
+      "aliases": [],
+      "keys": [
+        "Ctrl+/"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.comment-uncomment-with-block-comme",
+      "action": "Comment/uncomment with block comment",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+/"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-successively-increasing-cod",
+      "action": "Select successively increasing code blocks",
+      "aliases": [],
+      "keys": [
+        "Control+W"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.decrease-current-selection-to-prev",
+      "action": "Decrease current selection to previous state",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+W"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.move-to-code-block-start",
+      "action": "Move to code block start",
+      "aliases": [],
+      "keys": [
+        "Control+["
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.move-to-code-block-end",
+      "action": "Move to code block end",
+      "aliases": [],
+      "keys": [
+        "Control+]"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-to-the-code-block-start",
+      "action": "Select to the code block start",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+["
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.select-to-the-code-block-end",
+      "action": "Select to the code block end",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+]"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.delete-to-end-of-word",
+      "action": "Delete to end of word",
+      "aliases": [],
+      "keys": [
+        "Control+Delete"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.delete-to-start-of-word",
+      "action": "Delete to start of word",
+      "aliases": [],
+      "keys": [
+        "Control+Backspace"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.optimize-imports",
+      "action": "Optimize imports",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+O"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.project-quick-fix-show-intention-a",
+      "action": "Project quick fix (show intention actions and quick fixes)",
+      "aliases": [],
+      "keys": [
+        "Alt+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.reformat-code",
+      "action": "Reformat code",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+L"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.auto-indent-lines",
+      "action": "Auto-indent lines",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+I"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.indent-unindent-lines",
+      "action": "Indent/unindent lines",
+      "aliases": [],
+      "keys": [
+        "Tab",
+        "Shift+Tab"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.smart-line-join",
+      "action": "Smart line join",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+J"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.smart-line-split",
+      "action": "Smart line split",
+      "aliases": [],
+      "keys": [
+        "Control+Enter"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.start-new-line",
+      "action": "Start new line",
+      "aliases": [],
+      "keys": [
+        "Shift+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.next-previous-highlighted-error",
+      "action": "Next/previous highlighted error",
+      "aliases": [],
+      "keys": [
+        "F2",
+        "Shift+F2"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.build",
+      "action": "Build",
+      "aliases": [],
+      "keys": [
+        "Control+F9"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.build-and-run",
+      "action": "Build and run",
+      "aliases": [],
+      "keys": [
+        "Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.apply-changes-and-restart-activity",
+      "action": "Apply changes and restart activity",
+      "aliases": [],
+      "keys": [
+        "Control+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.apply-code-changes",
+      "action": "Apply code changes",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+F10"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.step-over",
+      "action": "Step over",
+      "aliases": [],
+      "keys": [
+        "F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.step-into",
+      "action": "Step into",
+      "aliases": [],
+      "keys": [
+        "F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.smart-step-into",
+      "action": "Smart step into",
+      "aliases": [],
+      "keys": [
+        "Shift+F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.step-out",
+      "action": "Step out",
+      "aliases": [],
+      "keys": [
+        "Shift+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.run-to-cursor",
+      "action": "Run to cursor",
+      "aliases": [],
+      "keys": [
+        "Alt+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.evaluate-expression",
+      "action": "Evaluate expression",
+      "aliases": [],
+      "keys": [
+        "Alt+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.resume-program",
+      "action": "Resume program",
+      "aliases": [],
+      "keys": [
+        "F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.toggle-breakpoint",
+      "action": "Toggle breakpoint",
+      "aliases": [],
+      "keys": [
+        "Control+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.view-breakpoints",
+      "action": "View breakpoints",
+      "aliases": [],
+      "keys": [
+        "Control+Shift+F8"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.copy",
+      "action": "Copy",
+      "aliases": [],
+      "keys": [
+        "F5"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.move",
+      "action": "Move",
+      "aliases": [],
+      "keys": [
+        "F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.safe-delete",
+      "action": "Safe delete",
+      "aliases": [],
+      "keys": [
+        "Alt+Delete"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.rename",
+      "action": "Rename",
+      "aliases": [],
+      "keys": [
+        "Shift+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.change-signature",
+      "action": "Change signature",
+      "aliases": [],
+      "keys": [
+        "Control+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.inline",
+      "action": "Inline",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+N"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.extract-method",
+      "action": "Extract method",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+M"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.extract-variable",
+      "action": "Extract variable",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+V"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.extract-field",
+      "action": "Extract field",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+F"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.extract-constant",
+      "action": "Extract constant",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+C"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.extract-parameter",
+      "action": "Extract parameter",
+      "aliases": [],
+      "keys": [
+        "Control+Alt+P"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.commit-project-to-vcs",
+      "action": "Commit project to VCS",
+      "aliases": [],
+      "keys": [
+        "Control+K"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.update-project-from-vcs",
+      "action": "Update project from VCS",
+      "aliases": [],
+      "keys": [
+        "Control+T"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.view-recent-changes",
+      "action": "View recent changes",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+C"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.key.open-vcs-dialog",
+      "action": "Open VCS dialog",
+      "aliases": [],
+      "keys": [
+        "Alt+`"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.psvm",
+      "action": "主方法",
+      "aliases": [
+        "主方法",
+        "main方法",
+        "入口方法",
+        "main"
+      ],
+      "keys": [
+        "psvm"
+      ],
+      "group": "代码模板·Java",
+      "note": "在类体里输入 psvm 按 Tab，展开 public static void main(String[] args){ }；缩写 main 完全等价",
+      "code": "public static void main(String[] args){\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.sout",
+      "action": "打印输出",
+      "aliases": [
+        "打印",
+        "控制台输出",
+        "println",
+        "输出"
+      ],
+      "keys": [
+        "sout"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out.println(); 光标停在括号内",
+      "code": "System.out.println();",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.soutv",
+      "action": "打印变量值",
+      "aliases": [
+        "打印变量",
+        "变量值",
+        "带名字打印"
+      ],
+      "keys": [
+        "soutv"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out.println(\"变量名 = \" + 变量)，自动带上变量名",
+      "code": "System.out.println(\"$EXPR_COPY$ = \" + $EXPR$);",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.soutm",
+      "action": "打印当前方法",
+      "aliases": [
+        "打印方法名",
+        "当前类方法",
+        "定位输出"
+      ],
+      "keys": [
+        "soutm"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out.println(\"类名.方法名\");，用来标记代码执行到哪个方法",
+      "code": "System.out.println(\"$CLASS_NAME$.$METHOD_NAME$\");",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.soutp",
+      "action": "打印全部参数",
+      "aliases": [
+        "打印形参",
+        "打印参数列表",
+        "参数输出"
+      ],
+      "keys": [
+        "soutp"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out.println(方法所有形参);，调试时一次打印入参",
+      "code": "System.out.println($FORMAT$);",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.souf",
+      "action": "格式化打印",
+      "aliases": [
+        "printf",
+        "格式化输出",
+        "占位符打印"
+      ],
+      "keys": [
+        "souf"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out.printf(\"\"); 光标在引号内，自己填 %s / %d 占位",
+      "code": "System.out.printf(\"\");",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.soutc",
+      "action": "打印方法引用",
+      "aliases": [
+        "方法引用",
+        "System.out::println",
+        "Consumer"
+      ],
+      "keys": [
+        "soutc"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out::println（方法引用写法），用在 forEach 等需要 Consumer 的位置",
+      "code": "System.out::println",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.serr",
+      "action": "打印错误输出",
+      "aliases": [
+        "错误输出",
+        "标准错误",
+        "error打印"
+      ],
+      "keys": [
+        "serr"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.err.println(); 输出到标准错误流",
+      "code": "System.err.println();",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.serrc",
+      "action": "错误输出方法引用",
+      "aliases": [
+        "serr引用",
+        "System.err::println"
+      ],
+      "keys": [
+        "serrc"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.err::println（方法引用写法）",
+      "code": "System.err::println",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.fori",
+      "action": "正序 for 循环",
+      "aliases": [
+        "for循环",
+        "索引循环",
+        "i循环"
+      ],
+      "keys": [
+        "fori"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for(int i = 0; i < n; i++) { }，变量名按上下文自动建议",
+      "code": "for(int $INDEX$ = 0; $INDEX$ < $LIMIT$; $INDEX$++) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.itar",
+      "action": "遍历数组带下标",
+      "aliases": [
+        "数组遍历",
+        "itar",
+        "带下标遍历"
+      ],
+      "keys": [
+        "itar"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for(int i = 0; i < array.length; i++) { 类型 变量 = array[i]; }",
+      "code": "for(int $INDEX$ = 0; $INDEX$ < $ARRAY$.length; $INDEX$++) {\n  $ELEMENT_TYPE$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.ritar",
+      "action": "倒序遍历数组",
+      "aliases": [
+        "倒序数组",
+        "反向遍历",
+        "ritar"
+      ],
+      "keys": [
+        "ritar"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for(int i = array.length - 1; i >= 0; i--) { 类型 变量 = array[i]; }",
+      "code": "for(int $INDEX$ = $ARRAY$.length - 1; $INDEX$ >= 0; $INDEX$--) {\n  $ELEMENT_TYPE$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.iter",
+      "action": "增强 for 遍历",
+      "aliases": [
+        "foreach",
+        "增强for",
+        "遍历集合"
+      ],
+      "keys": [
+        "iter"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for (元素类型 变量 : 可迭代对象) { }，自动推断元素类型",
+      "code": "for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.itco",
+      "action": "迭代器遍历集合",
+      "aliases": [
+        "Iterator",
+        "迭代器",
+        "collection遍历"
+      ],
+      "keys": [
+        "itco"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 Collection 的 iterator() 循环，逐个 next() 取出元素",
+      "code": "for($ITER_TYPE$ $ITER$ = $COLLECTION$.iterator(); $ITER$.hasNext(); ) {\n  $ELEMENT_TYPE$ $VAR$ =$CAST$ $ITER$.next();\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.itit",
+      "action": "while 迭代 Iterator",
+      "aliases": [
+        "itit",
+        "hasNext",
+        "迭代器while"
+      ],
+      "keys": [
+        "itit"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 while(iterator.hasNext()){ 类型 变量 = iterator.next(); }",
+      "code": "while($ITER$.hasNext()){\n  $TYPE$ $VAR$ = $CAST$ $ITER$.next();\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.iten",
+      "action": "while 迭代 Enumeration",
+      "aliases": [
+        "iten",
+        "hasMoreElements",
+        "旧式枚举"
+      ],
+      "keys": [
+        "iten"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 while(enumeration.hasMoreElements()){ ... nextElement(); }，老 API 用",
+      "code": "while($ENUM$.hasMoreElements()){\n  $TYPE$ $VAR$ = $CAST$ $ENUM$.nextElement();\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.itli",
+      "action": "List 按下标遍历",
+      "aliases": [
+        "itli",
+        "list遍历",
+        "get循环"
+      ],
+      "keys": [
+        "itli"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for (int i = 0; i < list.size(); i++) { 类型 变量 = list.get(i); }",
+      "code": "for (int $INDEX$ = 0; $INDEX$ < $LIST$.size(); $INDEX$++) {\n  $ELEMENT_TYPE$ $VAR$ = $CAST$ $LIST$.get($INDEX$);\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.itm",
+      "action": "遍历 Map 键值",
+      "aliases": [
+        "Map遍历",
+        "entrySet",
+        "键值对"
+      ],
+      "keys": [
+        "itm"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for (Map.Entry<K,V> entry : map.entrySet()) { K key = entry.getKey(); V value = entry.getValue(); }",
+      "code": "for (java.util.Map.Entry<$KEY_TYPE$, $VALUE_TYPE$> $ENTRY$: $MAP$.entrySet()) {\n  $KEY_TYPE$ $KEY$ = $ENTRY$.getKey();\n  $VALUE_TYPE$ $VALUE$ = $ENTRY$.getValue();\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.ittok",
+      "action": "拆分字符串遍历",
+      "aliases": [
+        "StringTokenizer",
+        "分词",
+        "切分字符串"
+      ],
+      "keys": [
+        "ittok"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 StringTokenizer 循环，逐个 nextToken()",
+      "code": "for (java.util.StringTokenizer $TOKENIZER$ = new java.util.StringTokenizer($STRING$); $TOKENIZER$.hasMoreTokens(); ) {\n    String $VAR$ = $TOKENIZER_COPY$.nextToken();\n    \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.ifn",
+      "action": "判空分支",
+      "aliases": [
+        "if null",
+        "空判断",
+        "判空"
+      ],
+      "keys": [
+        "ifn"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 if (变量 == null) { }",
+      "code": "if ($VAR$ == null) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.inn",
+      "action": "判非空分支",
+      "aliases": [
+        "if not null",
+        "非空判断",
+        "不为空"
+      ],
+      "keys": [
+        "inn"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 if (变量 != null) { }",
+      "code": "if ($VAR$ != null) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.else-if",
+      "action": "else if 分支",
+      "aliases": [
+        "elseif",
+        "否则如果",
+        "追加分支"
+      ],
+      "keys": [
+        "else-if"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 else if(条件){ }，写在已有 if 之后",
+      "code": "else if($CONDITION$){\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.inst",
+      "action": "instanceof 强转",
+      "aliases": [
+        "类型判断",
+        "instanceof",
+        "模式匹配前写法"
+      ],
+      "keys": [
+        "inst"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 if (表达式 instanceof 类型) { 类型 变量 = (类型)表达式; }",
+      "code": "if ($EXPR$ instanceof $TYPE$) {\n  $TYPE$ $VAR$ = ($TYPE$)$EXPR$;\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.lazy",
+      "action": "懒加载赋值",
+      "aliases": [
+        "懒初始化",
+        "空则new",
+        "lazy"
+      ],
+      "keys": [
+        "lazy"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 if (变量 == null) { 变量 = new 类型(); }",
+      "code": "if ($VAR$ == null) {\n  $VAR$ = new $TYPE$();\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.lst",
+      "action": "取数组最后一个元素",
+      "aliases": [
+        "最后一个元素",
+        "末元素",
+        "last"
+      ],
+      "keys": [
+        "lst"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 arr[arr.length - 1]，表达式位置用",
+      "code": "$ARRAY$[$ARRAY$.length - 1]",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.mn",
+      "action": "取较小值",
+      "aliases": [
+        "Math.min",
+        "最小值",
+        "min"
+      ],
+      "keys": [
+        "mn"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 x = Math.min(x, 新值);，把变量更新为两者较小值",
+      "code": "$VAR$ = Math.min($VAR$, );",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.mx",
+      "action": "取较大值",
+      "aliases": [
+        "Math.max",
+        "最大值",
+        "max"
+      ],
+      "keys": [
+        "mx"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 x = Math.max(x, 新值);，把变量更新为两者较大值",
+      "code": "$VAR$ = Math.max($VAR$, );",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.toar",
+      "action": "集合转数组",
+      "aliases": [
+        "toArray",
+        "转数组",
+        "toar"
+      ],
+      "keys": [
+        "toar"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 collection.toArray(new 类型[0])",
+      "code": "$COLLECTION$.toArray(new $COMPONENT_TYPE$[0])",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.thr",
+      "action": "抛出异常前缀",
+      "aliases": [
+        "throw new",
+        "抛异常",
+        "thr"
+      ],
+      "keys": [
+        "thr"
+      ],
+      "group": "代码模板·Java",
+      "note": "只展开 throw new，异常类名自己接着写",
+      "code": "throw new",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.psf",
+      "action": "public static final 前缀",
+      "aliases": [
+        "公共静态常量",
+        "psf",
+        "常量修饰"
+      ],
+      "keys": [
+        "psf"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final，用于声明常量",
+      "code": "public static final",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.prsf",
+      "action": "private static final 前缀",
+      "aliases": [
+        "私有静态常量",
+        "prsf",
+        "私有常量"
+      ],
+      "keys": [
+        "prsf"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 private static final",
+      "code": "private static final",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.psfi",
+      "action": "public static final int 前缀",
+      "aliases": [
+        "psfi",
+        "静态int常量",
+        "整型常量"
+      ],
+      "keys": [
+        "psfi"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final int",
+      "code": "public static final int",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.psfs",
+      "action": "public static final String 前缀",
+      "aliases": [
+        "psfs",
+        "静态字符串常量",
+        "String常量"
+      ],
+      "keys": [
+        "psfs"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final String",
+      "code": "public static final String",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.St",
+      "action": "String 声明前缀",
+      "aliases": [
+        "String声明",
+        "St",
+        "字符串声明"
+      ],
+      "keys": [
+        "St"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 String 加一个空格，接着写变量名",
+      "code": "String",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.java.geti",
+      "action": "单例 getInstance 方法",
+      "aliases": [
+        "getInstance",
+        "单例方法",
+        "geti"
+      ],
+      "keys": [
+        "geti"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static 类名 getInstance() { return 实例; }",
+      "code": "public static $CLASS_NAME$ getInstance() {\n  return $VALUE$;\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.main",
+      "action": "Kotlin 主函数",
+      "aliases": [
+        "main函数",
+        "kt入口",
+        "psvm等价"
+      ],
+      "keys": [
+        "main"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun main() { }；Kotlin 里 psvm 是同一展开的别名",
+      "code": "fun main($ARGS$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.maina",
+      "action": "带参数主函数",
+      "aliases": [
+        "main参数",
+        "args入口",
+        "maina"
+      ],
+      "keys": [
+        "maina"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun main(args: Array<String>) { }",
+      "code": "fun main(args: Array<String>) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.maino",
+      "action": "JvmStatic 主函数",
+      "aliases": [
+        "maino",
+        "JvmStatic main",
+        "对象内入口"
+      ],
+      "keys": [
+        "maino"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 @JvmStatic fun main(args: Array<String>) { }",
+      "code": "@JvmStatic\nfun main(args: Array<String>) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.sout",
+      "action": "Kotlin 打印",
+      "aliases": [
+        "println",
+        "kt打印",
+        "输出"
+      ],
+      "keys": [
+        "sout"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(); 光标在括号内",
+      "code": "println()",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.serr",
+      "action": "Kotlin 错误输出",
+      "aliases": [
+        "System.err",
+        "kt错误输出",
+        "serr"
+      ],
+      "keys": [
+        "serr"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 System.err.println();",
+      "code": "System.err.println()",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.soutv",
+      "action": "Kotlin 打印变量值",
+      "aliases": [
+        "打印变量",
+        "变量值",
+        "字符串模板"
+      ],
+      "keys": [
+        "soutv"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(\"变量名 = $变量\")，字符串模板写法",
+      "code": "println(\"$EXPR_COPY$ = $DOLLAR${$EXPR$}\")",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.soutp",
+      "action": "Kotlin 打印全部参数",
+      "aliases": [
+        "打印形参",
+        "参数输出",
+        "soutp"
+      ],
+      "keys": [
+        "soutp"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(函数所有参数);",
+      "code": "println($FORMAT$)",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.soutf",
+      "action": "Kotlin 打印当前函数",
+      "aliases": [
+        "打印方法名",
+        "soutf",
+        "定位输出"
+      ],
+      "keys": [
+        "soutf"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(\"类名.方法名\");",
+      "code": "println(\"$CLASS$.$METHOD$\")",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.iter",
+      "action": "Kotlin 遍历",
+      "aliases": [
+        "for in",
+        "kt循环",
+        "遍历集合"
+      ],
+      "keys": [
+        "iter"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 for (变量 in 集合) { }",
+      "code": "for ($VAR$ in $ITERABLE$) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.ifn",
+      "action": "Kotlin 判空分支",
+      "aliases": [
+        "判空",
+        "if null",
+        "kt空判断"
+      ],
+      "keys": [
+        "ifn"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 if (变量 == null) { }",
+      "code": "if ($VAR$ == null) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.inn",
+      "action": "Kotlin 判非空分支",
+      "aliases": [
+        "非空判断",
+        "if not null",
+        "kt非空"
+      ],
+      "keys": [
+        "inn"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 if (变量 != null) { }",
+      "code": "if ($VAR$ != null) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.void",
+      "action": "无返回值函数",
+      "aliases": [
+        "fun",
+        "定义函数",
+        "kt函数"
+      ],
+      "keys": [
+        "void"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数) { }",
+      "code": "fun $NAME$($PARAMS$) {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.fun0",
+      "action": "无参函数",
+      "aliases": [
+        "fun0",
+        "无参方法",
+        "返回值函数"
+      ],
+      "keys": [
+        "fun0"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称() : 返回类型 { }",
+      "code": "fun $NAME$() : $RETURN$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.fun1",
+      "action": "单参函数",
+      "aliases": [
+        "fun1",
+        "一个参数",
+        "带参方法"
+      ],
+      "keys": [
+        "fun1"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数 : 类型) : 返回类型 { }",
+      "code": "fun $NAME$($PARAM1$ : $PARAM1TYPE$) : $RETURN$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.fun2",
+      "action": "双参函数",
+      "aliases": [
+        "fun2",
+        "两个参数",
+        "多参方法"
+      ],
+      "keys": [
+        "fun2"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数1 : 类型, 参数2 : 类型) : 返回类型 { }",
+      "code": "fun $NAME$($PARAM1$ : $PARAM1TYPE$, $PARAM2$ : $PARAM2TYPE$) : $RETURN$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.interface",
+      "action": "Kotlin 接口",
+      "aliases": [
+        "interface",
+        "接口声明",
+        "kt接口"
+      ],
+      "keys": [
+        "interface"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 interface 名称 { }",
+      "code": "interface $NAME$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.singleton",
+      "action": "Kotlin 单例对象",
+      "aliases": [
+        "object单例",
+        "singleton",
+        "kt单例"
+      ],
+      "keys": [
+        "singleton"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object 名称 { }，Kotlin 的天然单例写法",
+      "code": "object $NAME$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.closure",
+      "action": "Lambda 闭包",
+      "aliases": [
+        "lambda",
+        "闭包",
+        "匿名函数"
+      ],
+      "keys": [
+        "closure"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 { 参数 -> 参数 } ",
+      "code": "{$PARAM$ -> $PARAM_COPY$}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.anonymous",
+      "action": "匿名对象",
+      "aliases": [
+        "object匿名",
+        "anonymous",
+        "匿名实现"
+      ],
+      "keys": [
+        "anonymous"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object : 父类型 { }",
+      "code": "object : $SUPERTYPE$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.object",
+      "action": "匿名对象（简写）",
+      "aliases": [
+        "object",
+        "匿名子类",
+        "继承实现"
+      ],
+      "keys": [
+        "object"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object : 父类型 { }，与 anonymous 展开一致",
+      "code": "object : $SUPERTYPE$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.exfun",
+      "action": "扩展函数",
+      "aliases": [
+        "扩展函数",
+        "exfun",
+        "接收者函数"
+      ],
+      "keys": [
+        "exfun"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 接收者.名称(参数) : 返回类型 { }",
+      "code": "fun $RECEIVER$.$NAME$($PARAMS$) : $RETURN$ {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.exval",
+      "action": "扩展属性（val）",
+      "aliases": [
+        "扩展属性",
+        "exval",
+        "只读扩展"
+      ],
+      "keys": [
+        "exval"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 val 接收者.名称 : 类型 get() { }",
+      "code": "val $RECEIVER$.$NAME$ : $TYPE$\nget() {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "as.tpl.kotlin.exvar",
+      "action": "扩展属性（var）",
+      "aliases": [
+        "可变扩展属性",
+        "exvar",
+        "读写扩展"
+      ],
+      "keys": [
+        "exvar"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 var 接收者.名称 : 类型 get(){} set(value){ }",
+      "code": "var $RECEIVER$.$NAME$ : $TYPE$\nget() {\n\n}\nset(value) {\n \n}",
+      "hot": false
+    }
+  ],
+  "hidden": []
 }
