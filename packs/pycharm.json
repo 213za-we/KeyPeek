@@ -4,9 +4,1119 @@
   "name": "PyCharm",
   "color": "#21A179",
   "icon": "icons/pycharm.svg",
-  "inherit": "idea",
+  "inherit": null,
   "os": "win",
-  "keymap": "Windows 默认键位（继承 IDEA，二者默认一致）",
-  "source": "https://www.jetbrains.com/help/pycharm/reference-keymap-win-default.html",
-  "shortcuts": []
+  "keymap": "Windows 默认键位（官方键位卡 2026 版）",
+  "source": "https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf",
+  "shortcuts": [
+    {
+      "id": "pyc.key.find-action",
+      "action": "Find action…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+A"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.open-a-tool-window",
+      "action": "Open a tool window",
+      "aliases": [],
+      "keys": [
+        "Alt+[0-9]"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.synchronize",
+      "action": "Synchronize",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Y"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.quick-switch-scheme",
+      "action": "Quick switch scheme…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+`"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.settings",
+      "action": "Settings…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+S"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.jump-to-source-navigation-bar",
+      "action": "Jump to source / navigation bar",
+      "aliases": [],
+      "keys": [
+        "F4",
+        "Alt+Home"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.jump-to-last-tool-window",
+      "action": "Jump to last tool window",
+      "aliases": [],
+      "keys": [
+        "F12"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.hide-active-all-tool-windows",
+      "action": "Hide active / all tool windows",
+      "aliases": [],
+      "keys": [
+        "Shift+Esc",
+        "Ctrl+Shift+F12"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-next-previous-editor-tab",
+      "action": "Go to next / previous editor tab",
+      "aliases": [],
+      "keys": [
+        "Alt+Right",
+        "Alt+Left"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-editor-from-a-tool-window",
+      "action": "Go to editor (from a tool window)",
+      "aliases": [],
+      "keys": [
+        "Esc"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.close-active-tab-window",
+      "action": "Close active tab / window",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F4",
+        "Ctrl+F4"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.show-error-description",
+      "action": "Show error description",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F1"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.next-previous-highlighted-error",
+      "action": "Next / previous highlighted error",
+      "aliases": [],
+      "keys": [
+        "F2",
+        "Shift+F2"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.run-inspection-by-name",
+      "action": "Run inspection by name…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+I"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.type-call-hierarchy",
+      "action": "Type / call hierarchy",
+      "aliases": [],
+      "keys": [
+        "Ctrl+H",
+        "Ctrl+Alt+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.find-any-action-inside-the-ide",
+      "action": "Find any action inside the IDE",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+A"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.show-intention-actions",
+      "action": "Show intention actions",
+      "aliases": [],
+      "keys": [
+        "Alt+Enter"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.basic-code-completion",
+      "action": "Basic code completion",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.smart-code-completion",
+      "action": "Smart code completion",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.type-name-completion",
+      "action": "Type name completion",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.complete-statement",
+      "action": "Complete statement",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+Enter"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.quick-definition",
+      "action": "Quick definition",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+I"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.quick-external-documentation",
+      "action": "Quick / external documentation",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Q",
+        "Shift+F1"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.generate-code",
+      "action": "Generate code",
+      "aliases": [],
+      "keys": [
+        "Alt+Insert"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.override-implement-members",
+      "action": "Override / implement members",
+      "aliases": [],
+      "keys": [
+        "Ctrl+O",
+        "Ctrl+I"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.surround-with",
+      "action": "Surround with…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+T"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.comment-with-line-comment",
+      "action": "Comment with line comment",
+      "aliases": [],
+      "keys": [
+        "Ctrl+/"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.extend-shrink-selection",
+      "action": "Extend / shrink selection",
+      "aliases": [],
+      "keys": [
+        "Ctrl+W",
+        "Ctrl+Shift+W"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.optimize-imports",
+      "action": "Optimize imports",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+O"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.auto-indent-lines",
+      "action": "Auto-indent lines",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+I"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.cut-opy-paste",
+      "action": "Cut / Сopy / Paste",
+      "aliases": [],
+      "keys": [
+        "Ctrl+X",
+        "Ctrl+C",
+        "Ctrl+V"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.copy-document-path",
+      "action": "Copy document path",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+C"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.paste-from-clipboard-history",
+      "action": "Paste from clipboard history",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+V"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.duplicate-current-line-or-selectio",
+      "action": "Duplicate current line or selection",
+      "aliases": [],
+      "keys": [
+        "Ctrl+D"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.move-line-up-down",
+      "action": "Move line up / down",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+Up",
+        "Ctrl+Shift+Down"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.delete-line-at-caret",
+      "action": "Delete line at caret",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Y"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.join-split-line",
+      "action": "Join / split line",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+J",
+        "Ctrl+Enter"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.start-new-line",
+      "action": "Start new line",
+      "aliases": [],
+      "keys": [
+        "Shift+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.toggle-case",
+      "action": "Toggle case",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+U"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.expand-collapse-code-block",
+      "action": "Expand / collapse code block",
+      "aliases": [],
+      "keys": [
+        "Ctrl+NumPad+",
+        "Ctrl+NumPad-"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.expand-collapse-all",
+      "action": "Expand / collapse all",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+NumPad+",
+        "Ctrl+Shift+NumPad-"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.save-all",
+      "action": "Save all",
+      "aliases": [],
+      "keys": [
+        "Ctrl+S"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.select-in",
+      "action": "Select in…",
+      "aliases": [],
+      "keys": [
+        "Alt+F1"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.navigate-back-forward",
+      "action": "Navigate back / forward",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Left",
+        "Ctrl+Alt+Right"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-previous-next-method",
+      "action": "Go to previous / next method",
+      "aliases": [],
+      "keys": [
+        "Alt+Up",
+        "Alt+Down"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-line-column",
+      "action": "Go to line / column…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+G"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-code-block-end-start",
+      "action": "Go to code block end / start",
+      "aliases": [],
+      "keys": [
+        "Ctrl+]",
+        "Ctrl+["
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.add-to-favorites",
+      "action": "Add to favorites",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+F"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.toggle-bookmark",
+      "action": "Toggle bookmark",
+      "aliases": [],
+      "keys": [
+        "F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.toggle-bookmark-with-mnemonic",
+      "action": "Toggle bookmark with mnemonic",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-numbered-bookmark",
+      "action": "Go to numbered bookmark",
+      "aliases": [],
+      "keys": [
+        "Ctrl+[0-9]"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.show-bookmarks",
+      "action": "Show bookmarks",
+      "aliases": [],
+      "keys": [
+        "Shift+F11"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.search-everywhere",
+      "action": "Search everywhere",
+      "aliases": [],
+      "keys": [
+        "Double Shift"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.find-replace",
+      "action": "Find / replace",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F",
+        "Ctrl+R"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.find-in-path-replace-in-path",
+      "action": "Find in path / Replace in path",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F",
+        "Ctrl+Shift+R"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.next-previous-occurence",
+      "action": "Next / previous occurence",
+      "aliases": [],
+      "keys": [
+        "F3",
+        "Shift+F3"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.find-word-at-caret",
+      "action": "Find word at caret",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F3"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-class-file",
+      "action": "Go to class / file",
+      "aliases": [],
+      "keys": [
+        "Ctrl+N",
+        "Ctrl+Shift+N"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-file-member",
+      "action": "Go to file member",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F12"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.go-to-symbol",
+      "action": "Go to symbol",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+N"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.run-context-configuration",
+      "action": "Run context configuration",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.run-debug-current-configuration",
+      "action": "Run / debug current configuration",
+      "aliases": [],
+      "keys": [
+        "Shift+F10",
+        "Shift+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.step-over-into",
+      "action": "Step over / into",
+      "aliases": [],
+      "keys": [
+        "F8",
+        "F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.smart-step-into",
+      "action": "Smart step into",
+      "aliases": [],
+      "keys": [
+        "Shift+F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.step-out",
+      "action": "Step out",
+      "aliases": [],
+      "keys": [
+        "Shift+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.run-to-cursor-force-run-to-cursor",
+      "action": "Run to cursor / Force run to cursor",
+      "aliases": [],
+      "keys": [
+        "Alt+F9",
+        "Ctrl+Alt+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.show-execution-point",
+      "action": "Show execution point",
+      "aliases": [],
+      "keys": [
+        "Alt+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.evaluate-expression",
+      "action": "Evaluate expression…",
+      "aliases": [],
+      "keys": [
+        "Alt+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.stop",
+      "action": "Stop",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F2"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.stop-background-processes",
+      "action": "Stop background processes…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F2"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.resume-program",
+      "action": "Resume program",
+      "aliases": [],
+      "keys": [
+        "F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.toggle-line-breakpoint",
+      "action": "Toggle line breakpoint",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.toggle-temporary-line-breakpoint",
+      "action": "Toggle temporary line breakpoint",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.edit-view-breakpoint",
+      "action": "Edit / view breakpoint",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.declaration",
+      "action": "Declaration",
+      "aliases": [],
+      "keys": [
+        "Ctrl+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.type-declaration-javascript-only",
+      "action": "Type declaration (JavaScript only)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.super-method",
+      "action": "Super method",
+      "aliases": [],
+      "keys": [
+        "Ctrl+U"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.implementation-s",
+      "action": "Implementation(s)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.find-usages-find-usages-in-file",
+      "action": "Find usages / Find usages in file",
+      "aliases": [],
+      "keys": [
+        "Alt+F7",
+        "Ctrl+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.highlight-usages-in-file",
+      "action": "Highlight usages in file",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.show-usages",
+      "action": "Show usages",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.refactor-this",
+      "action": "Refactor this…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+T"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.copy-move",
+      "action": "Copy… / Move…",
+      "aliases": [],
+      "keys": [
+        "F5",
+        "F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.safe-delete",
+      "action": "Safe delete…",
+      "aliases": [],
+      "keys": [
+        "Alt+Delete"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.rename",
+      "action": "Rename…",
+      "aliases": [],
+      "keys": [
+        "Shift+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.change-signature",
+      "action": "Change signature…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.inline",
+      "action": "Inline…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+N"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.extract-method",
+      "action": "Extract method",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+M"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.introduce-variable-parameter",
+      "action": "Introduce variable/ parameter",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+V",
+        "Ctrl+Alt+P"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.introduce-field-constant",
+      "action": "Introduce field / constant",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+F",
+        "Ctrl+Alt+C"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.reformat-code",
+      "action": "Reformat code",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+L"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.vcs-operations-popup",
+      "action": "VCS operations popup…",
+      "aliases": [],
+      "keys": [
+        "Alt+`"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.commit",
+      "action": "Commit",
+      "aliases": [],
+      "keys": [
+        "Ctrl+K"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.update-project",
+      "action": "Update project",
+      "aliases": [],
+      "keys": [
+        "Ctrl+T"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.recent-changes",
+      "action": "Recent changes",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+C"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.revert",
+      "action": "Revert",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Z"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.push",
+      "action": "Push…",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+K"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "pyc.key.next-previous-change",
+      "action": "Next / previous change",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+Down",
+        "Ctrl+Alt+Shift+Up"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    }
+  ],
+  "hidden": []
 }
