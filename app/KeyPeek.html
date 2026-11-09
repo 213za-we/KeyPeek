@@ -31,6 +31,8 @@ input{font:inherit;color:inherit}
 ::-webkit-scrollbar{width:9px;height:9px}
 ::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
 ::-webkit-scrollbar-track{background:transparent}
+/* 横竖滚动条交汇的那个小方块，默认是页面底色白，会像一块补丁 */
+::-webkit-scrollbar-corner{background:transparent}
 
 .app{height:100%;display:flex;flex-direction:column}
 
@@ -128,7 +130,7 @@ input{font:inherit;color:inherit}
 .menu .opt .cnt{margin-left:auto;padding-left:8px;font-size:11px;color:var(--muted);font-weight:400}
 .totop{position:fixed;right:14px;bottom:42px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
   background:var(--card);color:var(--ink-2);border:1px solid var(--line);box-shadow:var(--shadow-2);cursor:pointer;
-  opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .16s,transform .16s,visibility .16s;z-index:60}
+  opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .16s,transform .16s,visibility .16s;z-index:30}
 .totop svg{width:16px;height:16px}
 .totop:hover{color:var(--accent);border-color:var(--accent-soft)}
 .totop.show{opacity:1;visibility:visible;transform:none}
@@ -220,22 +222,47 @@ input{font:inherit;color:inherit}
 .btn-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
 .btn svg{width:13px;height:13px}
 
+/* 内容筛选条（快捷键 / 代码模板） */
+.kbar{display:flex;gap:4px;padding:0 16px 8px}
+.kbar[hidden]{display:none}
+.kbar button{flex:1 1 0;min-width:0;height:26px;border-radius:7px;border:1px solid var(--line);background:var(--card);
+  font-size:11.5px;color:var(--muted);display:inline-flex;align-items:center;justify-content:center;gap:5px}
+.kbar button:hover{color:var(--ink-2)}
+.kbar button .n{font-size:10px;color:var(--muted)}
+.kbar button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+.kbar button.on .n{color:var(--accent)}
+
 /* 弹窗 */
-.mscrim{position:fixed;inset:0;background:rgba(0,0,0,.32);z-index:60;display:grid;place-items:center;padding:14px;overflow:auto}
-.modal{width:min(460px,100%);background:var(--card);border-radius:14px;border:1px solid var(--line);
-  box-shadow:0 30px 60px -30px rgba(0,0,0,.5);max-height:86%;display:flex;flex-direction:column;animation:pop .16s ease-out}
+.mscrim{position:fixed;inset:0;background:rgba(0,0,0,.32);z-index:60;display:grid;place-items:center;padding:12px;overflow:hidden}
+.modal{width:min(460px,calc(100vw - 24px));background:var(--card);border-radius:14px;border:1px solid var(--line);
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.5);max-height:calc(100vh - 24px);display:flex;flex-direction:column;overflow:hidden;animation:pop .16s ease-out}
 @keyframes pop{from{transform:scale(.97);opacity:.7}to{transform:none;opacity:1}}
 .mhead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:14px 16px 8px}
 .mhead h3{margin:0;font-size:14px;font-weight:650}
 .mhead p{margin:2px 0 0;font-size:11px;color:var(--muted)}
-.mbody{padding:0 16px 6px;overflow:auto;flex:1 1 auto}
+.mbody{padding:0 16px 6px;overflow-y:auto;overflow-x:hidden;flex:1 1 auto;min-height:0;overscroll-behavior:contain}
 .mfoot{display:flex;align-items:center;justify-content:flex-end;gap:7px;padding:11px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
 .hero{display:flex;justify-content:center;gap:3px;flex-wrap:wrap;padding:16px 10px;margin:4px 0 12px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
 .kv{display:grid;grid-template-columns:52px minmax(0,1fr);gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:12px}
 .kv dt{color:var(--muted);font-size:11px}
 .kv dd{margin:0;color:var(--ink-2);word-break:break-word}
-.dnote{margin:10px 0 0;font-size:12px;color:var(--ink-2);line-height:1.65}
+.dnote{margin:10px 0 0;font-size:12px;color:var(--ink-2);line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
 .dnote.dim{color:var(--muted)}
+/* 代码块：一个固定边距的圆角框，标题条 + 代码区，代码自己横竖滚动 */
+.dcodewrap{margin:10px 0 0;border:1px solid color-mix(in oklab,var(--ink) 12%,transparent);border-radius:9px;
+  background:color-mix(in oklab,var(--ink) 7%,transparent);overflow:hidden;display:flex;flex-direction:column;
+  max-height:min(40vh,240px);min-height:0}
+.dcodehead{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 10px;
+  border-bottom:1px solid color-mix(in oklab,var(--ink) 10%,transparent);font-size:10.5px;color:var(--muted);
+  flex:0 0 auto;letter-spacing:.02em}
+.dcode{margin:0;padding:9px 11px;border:0;border-radius:0;background:transparent;flex:1 1 auto;min-height:0;
+  font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11.5px;line-height:1.55;color:var(--ink-2);
+  white-space:pre;overflow:auto;overscroll-behavior:contain;tab-size:2;max-height:none;max-width:none}
+.dcode::-webkit-scrollbar{width:10px;height:10px}
+.dcode::-webkit-scrollbar-track{background:transparent}
+.dcode::-webkit-scrollbar-thumb{background:color-mix(in oklab,var(--ink) 22%,transparent);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
+.dcode::-webkit-scrollbar-thumb:hover{background:color-mix(in oklab,var(--ink) 36%,transparent);background-clip:padding-box}
+.dcode::selection{background:color-mix(in oklab,var(--brand) 26%,transparent)}
 .lnk{padding:0;font-size:12px;color:var(--muted);background:none;border:0;cursor:pointer}
 .lnk:hover{color:var(--accent);text-decoration:underline}
 .dsrc{margin:12px 0 0}
@@ -303,6 +330,7 @@ input{font:inherit;color:inherit}
   </div>
   <div class="menu hidden" id="qPlatMenu"></div>
   <div class="menu hidden" id="grpMenu"></div>
+  <div class="kbar" id="kbar" hidden></div>
 
   <div class="crumb" id="crumb"></div>
   <main class="main" id="main"></main>
@@ -382,7 +410,7 @@ var FALLBACK_FILES = ['idea.json', 'vscode.json', 'eclipse.json', 'sublime.json'
 
 var S = {
   root: '', files: [], packs: [], plats: [], index: [], usage: {},
-  platId: null, platSel: '', groupSel: '', active: -1, theme: 'light', themes: null, ready: false, hotCollapsed: false,
+  platId: null, platSel: '', groupSel: '', kindSel: '', active: -1, theme: 'light', themes: null, ready: false, hotCollapsed: false,
   statsTimer: 0, lastKeyTime: 0
 };
 
@@ -401,6 +429,31 @@ function hostSend(cmd, a1, a2) {
   if (!HOST) return;
   try { HOST.postMessage(cmd + '|' + b64(a1 || '') + '|' + b64(a2 || '')); } catch (e) { }
 }
+
+// ---------- 右下方拖拽改尺寸 ----------
+// 页面铺满整个窗口，系统的边框区被盖住，所以只在右下角放一块透明手柄，
+// 由它把按下事件转给外壳，进入系统原生缩放。只留一个角，避免四条边的误触。
+(function () {
+  var el = document.createElement('div');
+  el.className = 'edge';
+  el.style.cssText = 'position:fixed;right:0;bottom:0;width:14px;height:14px;z-index:95;cursor:nwse-resize';
+  el.addEventListener('mousedown', function (ev) {
+    if (ev.button !== 0) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    hostSend('dragedge', '17');
+  });
+  document.body.appendChild(el);
+})();
+
+// 代码块里 Ctrl+滚轮 = 横向滚动（普通滚轮即纵向），不让外层跟着一起动
+document.addEventListener('wheel', function (ev) {
+  var el = ev.target && ev.target.closest ? ev.target.closest('.dcode') : null;
+  if (!el || !ev.ctrlKey) return;
+  if (el.scrollWidth <= el.clientWidth) return;
+  ev.preventDefault();
+  el.scrollLeft += (ev.deltaY || 0) + (ev.deltaX || 0);
+}, { passive: false });
 
 // ---------- 拼音（首字母 + 全拼） ----------
 var PY_MAP = (function () {
@@ -450,7 +503,7 @@ var DEFAULT_THEMES = {
   themes: [
     { id: 'light', label: '浅色', transparent: false, dark: false, tokens: { paper: '#F2F2F4', surface: '#FFFFFF', card: '#FFFFFF', ink: '#1D1D1F', 'ink-2': '#48484A', muted: '#86868B', line: '#E4E4E7', 'line-2': '#D2D2D7', accent: '#0071E3', 'accent-ink': '#0058B0', 'accent-soft': '#E7F1FD', 'key-bg': '#FFFFFF', 'key-line': '#D9D9DE', 'key-ink': '#3A3A3C', 'shadow-1': '0 1px 2px rgba(0,0,0,.05)', 'shadow-2': '0 12px 28px -18px rgba(0,0,0,.28)' } },
     { id: 'dark', label: '深色', transparent: false, dark: true, tokens: { paper: '#161618', surface: '#26262A', card: '#222226', ink: '#ECECEE', 'ink-2': '#D1D1D6', muted: '#9A9AA0', line: '#34343A', 'line-2': '#45454B', accent: '#0A84FF', 'accent-ink': '#6CB6FF', 'accent-soft': '#15304A', 'key-bg': '#2B2B2F', 'key-line': '#3C3C42', 'key-ink': '#E5E5EA', 'shadow-1': '0 1px 2px rgba(0,0,0,.35)', 'shadow-2': '0 14px 30px -18px rgba(0,0,0,.7)' } },
-    { id: 'acrylic', label: '亚克力', transparent: true, dark: false, tokens: { paper: 'rgba(243,243,246,.58)', surface: 'rgba(255,255,255,.70)', card: 'rgba(255,255,255,.74)', ink: '#1D1D1F', 'ink-2': '#3C3C3E', muted: '#6E6E73', line: 'rgba(0,0,0,.09)', 'line-2': 'rgba(0,0,0,.16)', accent: '#0071E3', 'accent-ink': '#0058B0', 'accent-soft': 'rgba(0,113,227,.12)', 'key-bg': 'rgba(255,255,255,.62)', 'key-line': 'rgba(0,0,0,.12)', 'key-ink': '#333335', 'shadow-1': '0 1px 2px rgba(0,0,0,.05)', 'shadow-2': '0 12px 28px -18px rgba(0,0,0,.26)' } }
+    { id: 'acrylic', label: '清透', transparent: true, dark: false, tokens: { paper: 'rgba(243,243,246,.58)', surface: 'rgba(255,255,255,.70)', card: 'rgba(255,255,255,.74)', ink: '#1D1D1F', 'ink-2': '#3C3C3E', muted: '#6E6E73', line: 'rgba(0,0,0,.09)', 'line-2': 'rgba(0,0,0,.16)', accent: '#0071E3', 'accent-ink': '#0058B0', 'accent-soft': 'rgba(0,113,227,.12)', 'key-bg': 'rgba(255,255,255,.62)', 'key-line': 'rgba(0,0,0,.12)', 'key-ink': '#333335', 'shadow-1': '0 1px 2px rgba(0,0,0,.05)', 'shadow-2': '0 12px 28px -18px rgba(0,0,0,.26)' } }
   ]
 };
 function themeById(id) {
@@ -490,6 +543,18 @@ function loadThemes(cb) {
 }
 
 // ---------- 数据 ----------
+// hidden 支持精确 id 和前缀通配（"idea.tpl.*" 表示屏蔽这一整组）
+function isHiddenId(id, list) {
+  if (!list || !list.length) return false;
+  var s = String(id || '');
+  for (var i = 0; i < list.length; i++) {
+    var h = String(list[i] || '');
+    if (!h) continue;
+    if (h.slice(-1) === '*') { if (s.indexOf(h.slice(0, -1)) === 0) return true; }
+    else if (h === s) return true;
+  }
+  return false;
+}
 function resolveInherit(list) {
   var byId = {};
   for (var i = 0; i < list.length; i++) if (list[i] && list[i].platform) byId[list[i].platform] = list[i];
@@ -509,6 +574,11 @@ function resolveInherit(list) {
     if (!p || !p.platform) continue;
     var src = chain(p.platform, 0) || p;
     var from = (src.platform !== p.platform) ? (src.name || src.platform) : '';
+    var hid = p.hidden || [];
+    var sc = (src.shortcuts || []).slice();
+    if (hid.length) {
+      sc = sc.filter(function (e) { return !isHiddenId(e.id, hid); });
+    }
     out.push({
       platform: p.platform,
       name: p.name || p.platform,
@@ -517,8 +587,8 @@ function resolveInherit(list) {
       keymap: p.keymap || '',
       source: p.source || '',
       inherit: from,
-      shortcuts: (src.shortcuts || []).slice(),
-      hidden: p.hidden || [],
+      shortcuts: sc,
+      hidden: hid,
       file: p._file || ''
     });
   }
@@ -550,14 +620,17 @@ function buildIndex() {
     for (var j = 0; j < sh.length; j++) {
       var s = sh[j];
       if (!s || !s.action) continue;
-      var aliases = (s.aliases || []).slice();
+      // 数据容错：aliases / keys 必须当数组用，写成字符串就包一层，别让一条脏数据卡死整个加载
+      var aliases = Array.isArray(s.aliases) ? s.aliases.slice() : (s.aliases ? [String(s.aliases)] : []);
+      var keysArr = Array.isArray(s.keys) ? s.keys.slice() : (s.keys ? [String(s.keys)] : []);
       var e = {
         id: s.id || (p.platform + '.' + j),
         action: s.action,
         aliases: aliases,
-        keys: (s.keys || []).slice(),
+        keys: keysArr,
         group: s.group || '其他',
         note: s.note || '',
+        code: s.code || '',
         hot: !!s.hot,
         platId: p.platform,
         platName: p.name,
@@ -642,6 +715,7 @@ function searchEntries(q, platIds) {
   for (var i = 0; i < S.index.length; i++) {
     var e = S.index[i];
     if (platIds && platIds.indexOf(e.platId) < 0) continue;
+    if (!kindOK(e.group)) continue;
     var r = tokens.length ? scoreEntry(e, tokens, conj) : { score: 0, strict: true };
     if (tokens.length && r.score === 0) continue;
     out.push({ e: e, score: r.strict ? r.score : r.score - 8 });
@@ -770,22 +844,54 @@ function renderHome() {
   }
   return html;
 }
+// 类型（快捷键 / 代码模板）判定：模板组的命名约定是「代码模板·Java」这类前缀
+var KIND_KEY = 'key', KIND_TPL = 'tpl';
+function isTplGroup(g) { return /^代码模板/.test(String(g == null ? '' : g)); }
+function kindOK(g) {
+  if (!S.kindSel) return true;
+  return S.kindSel === KIND_TPL ? isTplGroup(g) : !isTplGroup(g);
+}
+function groupLabel(g) {
+  var t = String(g == null ? '' : g).replace(/^代码模板[·•\-—]\s*/, '');
+  return t || String(g == null ? '其他' : g);
+}
+function kindLabel() {
+  return S.kindSel === KIND_TPL ? '代码模板' : (S.kindSel === KIND_KEY ? '快捷键' : '全部');
+}
+// 顶部内容筛选条：默认隐藏，只有当前平台存在代码模板时才出现
+function renderKbar(p) {
+  var bar = $('#kbar');
+  if (!bar) return;
+  if (!p || !p.shortcuts || !p.shortcuts.length) { bar.hidden = true; bar.innerHTML = ''; return; }
+  var nKey = 0, nTpl = 0;
+  for (var i = 0; i < p.shortcuts.length; i++) {
+    if (isTplGroup(p.shortcuts[i].group || '其他')) nTpl++; else nKey++;
+  }
+  if (!nTpl) { bar.hidden = true; bar.innerHTML = ''; return; }
+  bar.hidden = false;
+  bar.innerHTML =
+    '<button data-kindv=""' + (S.kindSel === '' ? ' class="on"' : '') + '>全部<span class="n">' + p.shortcuts.length + '</span></button>' +
+    '<button data-kindv="' + KIND_KEY + '"' + (S.kindSel === KIND_KEY ? ' class="on"' : '') + '>快捷键<span class="n">' + nKey + '</span></button>' +
+    '<button data-kindv="' + KIND_TPL + '"' + (S.kindSel === KIND_TPL ? ' class="on"' : '') + '>代码模板<span class="n">' + nTpl + '</span></button>';
+}
 function buildGrpMenu(p) {
   var menu = $('#grpMenu');
   if (!menu) return;
-  if (!p || !p.groups || p.groups.length < 2) { menu.innerHTML = ''; return; }
-  var counts = {};
+  if (!p || !p.shortcuts || !p.shortcuts.length) { menu.innerHTML = ''; return; }
+  var counts = {}, total = 0;
   for (var i = 0; i < p.shortcuts.length; i++) {
     var g = p.shortcuts[i].group || '其他';
-    counts[g] = (counts[g] || 0) + 1;
+    if (!kindOK(g)) continue;
+    counts[g] = (counts[g] || 0) + 1; total++;
   }
   var tick = '<svg class="tick" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
-  var html = '<div class="opt' + (S.groupSel ? '' : ' on') + '" data-grpv=""><span class="nm">全部类型</span><span class="cnt">' + p.shortcuts.length + '</span>' + tick + '</div>' +
+  var html = '<div class="opt' + (S.groupSel ? '' : ' on') + '" data-grpv=""><span class="nm">全部分组</span><span class="cnt">' + total + '</span>' + tick + '</div>' +
     '<div class="sepline"></div>';
   for (var j = 0; j < p.groups.length; j++) {
     var name = p.groups[j];
+    if (!kindOK(name)) continue;
     html += '<div class="opt' + (S.groupSel === name ? ' on' : '') + '" data-grpv="' + esc(name) + '">' +
-      '<span class="nm">' + esc(name) + '</span><span class="cnt">' + (counts[name] || 0) + '</span>' + tick + '</div>';
+      '<span class="nm">' + esc(groupLabel(name)) + '</span><span class="cnt">' + (counts[name] || 0) + '</span>' + tick + '</div>';
   }
   menu.innerHTML = html;
 }
@@ -807,12 +913,14 @@ function closeGrpMenu() { var m = $('#grpMenu'); if (m) m.classList.add('hidden'
 function grpMenuOpen() { var m = $('#grpMenu'); return !!m && !m.classList.contains('hidden'); }
 function renderPlat(p) {
   var html = '';
-  var groups = p.groups.length ? p.groups : ['全部'];
+  var groups = p.groups.filter(kindOK);
+  if (!groups.length) groups = ['全部'];
   if (S.groupSel) groups = [S.groupSel];
   var byGroup = {};
   for (var i = 0; i < p.shortcuts.length; i++) {
     var s = p.shortcuts[i];
     var g = s.group || '其他';
+    if (!kindOK(g)) continue;
     if (!byGroup[g]) byGroup[g] = [];
     byGroup[g].push(s);
   }
@@ -829,16 +937,17 @@ function renderPlat(p) {
     });
     html += '<div class="group"><div class="group-head">' +
       '<span class="ic">' + iconHTML(p.icon, p.name, p.color, 9) + '</span>' +
-      '<b>' + esc(g2) + '</b><span>' + arr.length + ' 条</span></div><div class="list">';
+      '<b>' + esc(groupLabel(g2)) + '</b><span>' + arr.length + ' 条</span></div><div class="list">';
     for (var k = 0; k < arr.length; k++) {
       html += rowHTML({
         id: arr[k].id, action: arr[k].action, aliases: arr[k].aliases || [], keys: arr[k].keys || [],
-        group: g2, note: arr[k].note || '', hot: !!arr[k].hot, platId: p.platform, platName: p.name, platColor: p.color
+        group: g2, note: arr[k].note || '', code: arr[k].code || '', hot: !!arr[k].hot, platId: p.platform, platName: p.name, platColor: p.color
       }, {});
     }
     html += '</div></div>';
   }
   if (!p.shortcuts.length) return html + '<div class="empty"><p>这个平台还没有条目</p><small>可以去配置里导入或新建</small></div>';
+  if (!html) return '<div class="empty"><p>' + esc(kindLabel()) + '下没有条目</p><small>点上面「类型」切回全部看看</small></div>';
   if (S.groupSel) {
     var n = 0;
     for (var q = 0; q < p.shortcuts.length; q++) if ((p.shortcuts[q].group || '其他') === S.groupSel) n++;
@@ -854,6 +963,7 @@ function suggestEntries(q, platIds) {
   for (var i = 0; i < S.index.length; i++) {
     var e = S.index[i];
     if (platIds && platIds.indexOf(e.platId) < 0) continue;
+    if (!kindOK(e.group)) continue;
     var hit = 0;
     for (var c = 0; c < chars.length; c++) if (e.hay.indexOf(chars[c]) >= 0) hit++;
     if (hit < 2 || hit / chars.length < 0.5) continue;
@@ -909,10 +1019,10 @@ function updateCrumb(p) {
   var el = $('#crumb');
   if (!p) { el.classList.remove('show'); el.innerHTML = ''; closeGrpMenu(); return; }
   el.className = 'crumb show';
-  var label = S.groupSel || '全部';
+  var label = S.groupSel ? groupLabel(S.groupSel) : '全部分组';
   el.innerHTML = '<button data-back="1">‹ 全部平台</button><span class="who">· ' + esc(p.name) + (p.inherit ? '（继承 ' + esc(p.inherit) + '）' : '') + ' · ' + p.count + ' 条</span>' +
-    (p.groups && p.groups.length > 1
-      ? '<button class="gsel' + (S.groupSel ? ' act' : '') + '" id="grpBtn" aria-haspopup="true">类型：' + esc(label) +
+    (p.shortcuts && p.shortcuts.length
+      ? '<button class="gsel' + (S.groupSel ? ' act' : '') + '" id="grpBtn" aria-haspopup="true" title="按分组筛选">' + esc(label) +
         '<svg class="caret" viewBox="0 0 24 24" fill="none"><path d="M7.5 10l4.5 4.5L16.5 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
       : '');
   buildGrpMenu(p);
@@ -945,6 +1055,7 @@ function render() {
     updateCrumb(null);
     $('#brandSub').textContent = S.plats.length + ' 个平台 · ' + totalEntries() + ' 条';
   }
+  renderKbar(platId && platList.length === 1 ? platList[0] : null);
   updateClr();
   updateToTop();
   $('#statusText').textContent = '↑↓ 选择 · Enter 复制 · Ctrl+1 全部平台';
@@ -994,10 +1105,12 @@ function openDetail(id) {
   if (!e) return;
   var body = '<div class="hero kbd-hero">' + keycaps(e.keys, true) + '</div>' +
     '<dl class="kv"><dt>平台</dt><dd>' + esc(e.platName || '—') + '</dd>' +
-    '<dt>分组</dt><dd>' + esc(e.group || '其他') + '</dd>' +
+    '<dt>分组</dt><dd>' + esc(groupLabel(e.group)) + '</dd>' +
     (e.aliases.length ? '<dt>别名</dt><dd>' + esc(e.aliases.join(' / ')) + '</dd>' : '') +
     '</dl>' +
-    '<p class="dnote' + (e.note ? '' : ' dim') + '">' + esc(e.note || '这条没有更多说明。') + '</p>';
+    '<p class="dnote' + (e.note ? '' : ' dim') + '">' + esc(e.note || '这条没有更多说明。') + '</p>' +
+    (e.code ? '<div class="dcodewrap"><div class="dcodehead"><span>展开后的代码</span><span>Ctrl + 滚轮 横向滚动</span></div>' +
+      '<pre class="dcode">' + esc(e.code) + '</pre></div>' : '');
   openModal(modalHTML(e.action, keysText(e.keys), body,
     '<button class="btn" data-m="cancel">关闭</button>' +
     '<button class="btn primary" data-m="copy"><svg viewBox="0 0 24 24" fill="none"><rect x="8.5" y="4.5" width="11" height="13" rx="2.4" stroke="currentColor" stroke-width="1.5"/><path d="M15.5 8.5v9.6a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V9.5a2 2 0 0 1 2-2h1" stroke="currentColor" stroke-width="1.5"/></svg>复制键位</button>'), function (scrim) {
@@ -1012,7 +1125,9 @@ function openDetail(id) {
 function updateToTop() {
   var m = $('#main'), b = $('#toTop');
   if (!m || !b) return;
-  b.classList.toggle('show', m.scrollTop > 160);
+  // 抽屉（配置面板）打开时收起，避免悬在抽屉上面、还能点到底下的列表
+  var drawerOpen = $('#drawer') && $('#drawer').classList.contains('show');
+  b.classList.toggle('show', !drawerOpen && m.scrollTop > 160);
 }
 function setActive(delta) {  var rows = document.querySelectorAll('#main .row');
   if (!rows.length) return;
@@ -1026,10 +1141,12 @@ function openDrawer() {
   renderPackList();
   $('#scrim').classList.add('show');
   $('#drawer').classList.add('show');
+  updateToTop();
 }
 function closeDrawer() {
   $('#scrim').classList.remove('show');
   $('#drawer').classList.remove('show');
+  updateToTop();
 }
 function openModal(html, onMount) {
   $('#modalRoot').innerHTML = '<div class="mscrim" id="mscrim">' + html + '</div>';
@@ -1266,7 +1383,17 @@ function loadPacks(files) {
   });
   Promise.all(jobs).then(function (arr) {
     S.packs = arr.filter(function (p) { return p && p.platform; });
-    prepare();
+    try {
+      prepare();
+    } catch (err) {
+      // 不能再卡在“读取配置中”：出错就把原因显示出来，方便直接定位是哪个包的问题
+      S.ready = true;
+      var mainEl = $('#main');
+      if (mainEl) {
+        mainEl.innerHTML = '<div class="empty"><p>读取配置出错</p><small>' +
+          esc(err && err.message ? err.message : String(err)) + '</small><small>多半是 packs 里某个 json 的字段类型不对</small></div>';
+      }
+    }
   });
 }
 function prepare() {
@@ -1509,6 +1636,14 @@ function bindEvents() {
       if (grpMenuOpen()) closeGrpMenu(); else openGrpMenu();
     }
   });
+  $('#kbar').addEventListener('click', function (ev) {
+    var btn = ev.target.closest('button[data-kindv]');
+    if (!btn) return;
+    S.kindSel = btn.getAttribute('data-kindv') || '';
+    S.groupSel = '';
+    render();
+  });
+
   $('#grpMenu').addEventListener('click', function (ev) {
     var opt = ev.target.closest('.opt');
     if (!opt) return;
