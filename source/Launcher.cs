@@ -134,6 +134,13 @@ namespace KeyPeek
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int WM_HOTKEY = 0x0312;
         public const int HTCAPTION = 2;
+        public const int HTLEFT = 10;
+        public const int HTRIGHT = 11;
+        public const int HTTOP = 12;
+        public const int HTBOTTOM = 13;
+        public const int HTTOPLEFT = 14;
+        public const int HTTOPRIGHT = 15;
+        public const int HTBOTTOMLEFT = 16;
         public const int HTBOTTOMRIGHT = 17;
         public const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
         public const int DWMWA_WINDOW_CORNER_PREFERENCE = 33;
@@ -141,6 +148,7 @@ namespace KeyPeek
         public const int DWMSBT_NONE = 1;
         public const int DWMSBT_TRANSIENTWINDOW = 3;
         public const int DWMWCP_ROUND = 2;
+        public const int DWMWCP_DONOTROUND = 1;
     }
 
     static class Program
@@ -636,24 +644,14 @@ namespace KeyPeek
         }
 
         // ---------------- 窗口外观 ----------------
+        // 不再用系统亚克力：直接用 DWM 自带圆角（抗锯齿、平滑）。
+        // 亚克力那套未公开合成会在重绘瞬间把圆角还原成方形，去掉它就没这个问题。
         private void ApplyWindowChrome()
         {
             int round = Native.DWMWCP_ROUND;
-            int hr = 1;
-            try { hr = Native.DwmSetWindowAttribute(Handle, Native.DWMWA_WINDOW_CORNER_PREFERENCE, ref round, sizeof(int)); }
-            catch (Exception) { hr = 1; }
-            if (hr != 0)
-            {
-                Rectangle rect = new Rectangle(0, 0, Width, Height);
-                int r = S(13);
-                GraphicsPath p = new GraphicsPath();
-                p.AddArc(rect.Left, rect.Top, r * 2, r * 2, 180, 90);
-                p.AddArc(rect.Right - r * 2, rect.Top, r * 2, r * 2, 270, 90);
-                p.AddArc(rect.Right - r * 2, rect.Bottom - r * 2, r * 2, r * 2, 0, 90);
-                p.AddArc(rect.Left, rect.Bottom - r * 2, r * 2, r * 2, 90, 90);
-                p.CloseFigure();
-                Region = new Region(p);
-            }
+            try { Native.DwmSetWindowAttribute(Handle, Native.DWMWA_WINDOW_CORNER_PREFERENCE, ref round, sizeof(int)); }
+            catch (Exception) { }
+            try { Region = null; } catch (Exception) { }
         }
 
         private bool ApplyAccentAcrylic()
@@ -827,8 +825,16 @@ namespace KeyPeek
                 case "drag":
                     BeginWindowDrag(Native.HTCAPTION);
                     break;
+                case "dragedge":
+                    {
+                        // 页面在边缘按下鼠标时发目标边框编号，交给系统原生缩放
+                        int hit = Native.HTBOTTOMRIGHT;
+                        try { hit = int.Parse(a1); } catch (Exception) { }
+                        BeginWindowDrag(hit);
+                    }
+                    break;
                 case "resize":
-                    // 尺寸改成托盘里的固定档位，不再支持拖拽缩放
+                    // 固定档位由托盘菜单触发，这里的空转保留给旧版页面
                     break;
                 case "pin":
                     SetPin(a1 == "1");
@@ -861,9 +867,8 @@ namespace KeyPeek
                 Native.SendMessage(Handle, Native.WM_NCLBUTTONDOWN, new IntPtr(hit), IntPtr.Zero);
                 sizing = false;
                 // 拖拽结束后再重挂亚克力，中途不动它，免得闪
-                if (acrylic && hit == Native.HTBOTTOMRIGHT) ReapplyAcrylic();
-                // 松手后贴边吸附
-                SnapToEdges();
+                // 只有整体拖动才贴边吸附，缩放时贴着屏幕边不乱跳
+                if (hit == Native.HTCAPTION) SnapToEdges();
                 SaveState();
             }
             catch (Exception) { sizing = false; }
@@ -961,7 +966,8 @@ namespace KeyPeek
 
         private void ApplyTheme(string id)
         {
-            if (id == "acrylic" && TryApplyAcrylic()) return;
+            // 亚克力已停用：全部主题都走不透明实底，圆角交给 DWM 自带的那套，
+            // 边缘抗锯齿，也不会在重绘时变成方角。
             ClearAcrylic();
             ApplySurface(id == "dark");
         }
@@ -1222,7 +1228,15 @@ namespace KeyPeek
 
         private void ResizePreset(int w, int h)
         {
-            if (!Visible) ShowFront();
+            if (!Visible)
+            {
+                // 隐藏状态下先在后台改好尺寸再显示，否则会先闪一下旧尺寸
+                Native.SetWindowPos(Handle, IntPtr.Zero, 0, 0, S(w), S(h),
+                    Native.SWP_NOMOVE | Native.SWP_NOZORDER | Native.SWP_NOACTIVATE | Native.SWP_FRAMECHANGED);
+                SaveState();
+                ShowFront();
+                return;
+            }
             BeginInvoke(new Action(delegate
             {
                 // 亚克力：改尺寸必须和 SWP_FRAMECHANGED 一起发，DWM 才会按新尺寸重建那张模糊面。
@@ -1287,6 +1301,7 @@ namespace KeyPeek
             {
                 if (WindowState == FormWindowState.Minimized) WindowState = FormWindowState.Normal;
                 Show();
+                ApplyWindowChrome();
                 BringToFront();
                 TopMost = pin;
                 Activate();
@@ -1322,24 +1337,44 @@ namespace KeyPeek
             try
             {
                 if (!File.Exists(statePath)) return;
-                string[] lines = File.ReadAllLines(statePath, Encoding.UTF8);
-                if (lines.Length >= 4)
+                int x = 0, y = 0, w = 0, h = 0, pinv = -1, legacy = 0, v;
+                foreach (string raw in File.ReadAllLines(statePath, Encoding.UTF8))
                 {
-                    int x = int.Parse(lines[0]);
-                    int y = int.Parse(lines[1]);
-                    int w = int.Parse(lines[2]);
-                    int h = int.Parse(lines[3]);
+                    string line = raw.Trim();
+                    // 空行和 ; # 开头的注释跳过
+                    if (line.Length == 0 || line.StartsWith(";") || line.StartsWith("#")) continue;
+                    int eq = line.IndexOf('=');
+                    if (eq > 0)
+                    {
+                        string k = line.Substring(0, eq).Trim().ToLowerInvariant();
+                        if (!int.TryParse(line.Substring(eq + 1).Trim(), out v)) continue;
+                        if (k == "x") x = v;
+                        else if (k == "y") y = v;
+                        else if (k == "w") w = v;
+                        else if (k == "h") h = v;
+                        else if (k == "pin") pinv = v;
+                    }
+                    else
+                    {
+                        // 老格式兼容：裸数字，按 x / y / w / h / pin 的顺序
+                        if (!int.TryParse(line, out v)) continue;
+                        if (legacy == 0) x = v;
+                        else if (legacy == 1) y = v;
+                        else if (legacy == 2) w = v;
+                        else if (legacy == 3) h = v;
+                        else if (legacy == 4) pinv = v;
+                        legacy++;
+                    }
+                }
+                if (w > 0 && h > 0)
+                {
                     Rectangle r = new Rectangle(x, y, Math.Max(w, MinimumSize.Width), Math.Max(h, MinimumSize.Height));
                     bool visible = false;
                     foreach (Screen scr in Screen.AllScreens)
                         if (scr.WorkingArea.IntersectsWith(r)) { visible = true; break; }
                     if (visible) Bounds = r;
                 }
-                if (lines.Length >= 5)
-                {
-                    string flag = lines[4].Trim();
-                    if (flag == "0" || flag == "1") pin = (flag == "1");
-                }
+                if (pinv == 0 || pinv == 1) pin = (pinv == 1);
             }
             catch (Exception) { }
             TopMost = pin;
@@ -1350,7 +1385,15 @@ namespace KeyPeek
             try
             {
                 Rectangle r = (WindowState == FormWindowState.Normal) ? Bounds : RestoreBounds;
-                string content = r.X + "\r\n" + r.Y + "\r\n" + r.Width + "\r\n" + r.Height + "\r\n" + (pin ? "1" : "0") + "\r\n";
+                // 写成 key=value，人能看懂哪一行是什么；删掉整个文件就回到默认位置
+                string content =
+                    "; KeyPeek 窗口状态，程序自动读写\r\n" +
+                    "; 删掉这行以下的内容，下次启动会回到默认位置和尺寸\r\n" +
+                    "x=" + r.X + "\r\n" +
+                    "y=" + r.Y + "\r\n" +
+                    "w=" + r.Width + "\r\n" +
+                    "h=" + r.Height + "\r\n" +
+                    "pin=" + (pin ? "1" : "0") + "\r\n";
                 File.WriteAllText(statePath, content, new UTF8Encoding(false));
             }
             catch (Exception) { }
