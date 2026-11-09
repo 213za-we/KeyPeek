@@ -12,8 +12,17 @@
     {
       "id": "vscode.formatDocument",
       "action": "格式化文档",
-      "aliases": ["自动对齐", "对齐", "格式化", "排版", "整理缩进", "format"],
-      "keys": ["Ctrl+Shift+I"],
+      "aliases": [
+        "自动对齐",
+        "对齐",
+        "格式化",
+        "排版",
+        "整理缩进",
+        "format"
+      ],
+      "keys": [
+        "Ctrl+Shift+I"
+      ],
       "group": "代码编辑",
       "note": "整份文件格式化，新版默认键位（旧版是 Ctrl+Shift+F）",
       "hot": true
@@ -21,280 +30,479 @@
     {
       "id": "vscode.formatSelection",
       "action": "格式化选中区域",
-      "aliases": ["只格式化选中的", "局部格式化", "format selection"],
-      "keys": ["Ctrl+K", "Ctrl+F"],
+      "aliases": [
+        "只格式化选中的",
+        "局部格式化",
+        "format selection"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+F"
+      ],
       "group": "代码编辑",
       "note": "两段按键：先 Ctrl+K 再 Ctrl+F"
     },
     {
       "id": "vscode.commentLine",
       "action": "注释 / 取消注释行",
-      "aliases": ["注释", "注释掉", "取消注释", "toggle comment"],
-      "keys": ["Ctrl+/"],
+      "aliases": [
+        "注释",
+        "注释掉",
+        "取消注释",
+        "toggle comment"
+      ],
+      "keys": [
+        "Ctrl+/"
+      ],
       "group": "代码编辑",
       "hot": true
     },
     {
       "id": "vscode.blockComment",
       "action": "块注释",
-      "aliases": ["块注释", "多行注释"],
-      "keys": ["Ctrl+Shift+A"],
+      "aliases": [
+        "块注释",
+        "多行注释"
+      ],
+      "keys": [
+        "Ctrl+Shift+A"
+      ],
       "group": "代码编辑",
       "note": ""
     },
     {
       "id": "vscode.addLineComment",
       "action": "添加行注释",
-      "aliases": ["加注释", "add comment"],
-      "keys": ["Ctrl+K", "Ctrl+C"],
+      "aliases": [
+        "加注释",
+        "add comment"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+C"
+      ],
       "group": "代码编辑",
       "note": "两段按键"
     },
     {
       "id": "vscode.removeLineComment",
       "action": "移除行注释",
-      "aliases": ["去注释", "remove comment"],
-      "keys": ["Ctrl+K", "Ctrl+U"],
+      "aliases": [
+        "去注释",
+        "remove comment"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+U"
+      ],
       "group": "代码编辑",
       "note": "两段按键"
     },
     {
       "id": "vscode.moveLineUp",
       "action": "上移行",
-      "aliases": ["上平移", "上移", "往上挪", "move line up"],
-      "keys": ["Alt+↑"],
+      "aliases": [
+        "上平移",
+        "上移",
+        "往上挪",
+        "move line up"
+      ],
+      "keys": [
+        "Alt+↑"
+      ],
       "group": "基础编辑",
       "hot": true
     },
     {
       "id": "vscode.moveLineDown",
       "action": "下移行",
-      "aliases": ["下平移", "下移", "往下挪", "move line down"],
-      "keys": ["Alt+↓"],
+      "aliases": [
+        "下平移",
+        "下移",
+        "往下挪",
+        "move line down"
+      ],
+      "keys": [
+        "Alt+↓"
+      ],
       "group": "基础编辑",
       "hot": true
     },
     {
       "id": "vscode.copyLineDown",
       "action": "向下复制行",
-      "aliases": ["复制这一行", "重复行", "duplicate line"],
-      "keys": ["Ctrl+Shift+Alt+↓"],
+      "aliases": [
+        "复制这一行",
+        "重复行",
+        "duplicate line"
+      ],
+      "keys": [
+        "Ctrl+Shift+Alt+↓"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.copyLineUp",
       "action": "向上复制行",
-      "aliases": ["往上复制一行"],
-      "keys": ["Ctrl+Shift+Alt+↑"],
+      "aliases": [
+        "往上复制一行"
+      ],
+      "keys": [
+        "Ctrl+Shift+Alt+↑"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.deleteLine",
       "action": "删除行",
-      "aliases": ["删行", "删掉这一行", "delete line"],
-      "keys": ["Ctrl+Shift+K"],
+      "aliases": [
+        "删行",
+        "删掉这一行",
+        "delete line"
+      ],
+      "keys": [
+        "Ctrl+Shift+K"
+      ],
       "group": "基础编辑",
       "hot": true
     },
     {
       "id": "vscode.insertLineBelow",
       "action": "在下方插入行",
-      "aliases": ["下面加一行", "换行"],
-      "keys": ["Ctrl+Enter"],
+      "aliases": [
+        "下面加一行",
+        "换行"
+      ],
+      "keys": [
+        "Ctrl+Enter"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.insertLineAbove",
       "action": "在上方插入行",
-      "aliases": ["上面加一行"],
-      "keys": ["Ctrl+Shift+Enter"],
+      "aliases": [
+        "上面加一行"
+      ],
+      "keys": [
+        "Ctrl+Shift+Enter"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.undo",
       "action": "撤销",
-      "aliases": ["撤回", "回退", "undo"],
-      "keys": ["Ctrl+Z"],
+      "aliases": [
+        "撤回",
+        "回退",
+        "undo"
+      ],
+      "keys": [
+        "Ctrl+Z"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.redo",
       "action": "重做",
-      "aliases": ["恢复", "redo"],
-      "keys": ["Ctrl+Y"],
+      "aliases": [
+        "恢复",
+        "redo"
+      ],
+      "keys": [
+        "Ctrl+Y"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.indent",
       "action": "缩进行",
-      "aliases": ["缩进", "往右缩"],
-      "keys": ["Ctrl+]"],
+      "aliases": [
+        "缩进",
+        "往右缩"
+      ],
+      "keys": [
+        "Ctrl+]"
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.outdent",
       "action": "减少缩进",
-      "aliases": ["反缩进", "往左缩", "outdent"],
-      "keys": ["Ctrl+["],
+      "aliases": [
+        "反缩进",
+        "往左缩",
+        "outdent"
+      ],
+      "keys": [
+        "Ctrl+["
+      ],
       "group": "基础编辑",
       "note": ""
     },
     {
       "id": "vscode.selectLine",
       "action": "选中当前行",
-      "aliases": ["选这一行", "select line"],
-      "keys": ["Ctrl+L"],
+      "aliases": [
+        "选这一行",
+        "select line"
+      ],
+      "keys": [
+        "Ctrl+L"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.addNextMatch",
       "action": "选中下一个匹配（多光标）",
-      "aliases": ["多光标", "选下一个", "批量改", "add selection to next match"],
-      "keys": ["Ctrl+D"],
+      "aliases": [
+        "多光标",
+        "选下一个",
+        "批量改",
+        "add selection to next match"
+      ],
+      "keys": [
+        "Ctrl+D"
+      ],
       "group": "选择与多光标",
       "hot": true
     },
     {
       "id": "vscode.selectAllOccurrences",
       "action": "选中所有出现的同名",
-      "aliases": ["全选同名", "批量改名", "select all occurrences"],
-      "keys": ["Ctrl+Shift+L"],
+      "aliases": [
+        "全选同名",
+        "批量改名",
+        "select all occurrences"
+      ],
+      "keys": [
+        "Ctrl+Shift+L"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.changeAll",
       "action": "选中所有同名（当前词）",
-      "aliases": ["选中所有这个单词", "select all occurrences of word"],
-      "keys": ["Ctrl+F2"],
+      "aliases": [
+        "选中所有这个单词",
+        "select all occurrences of word"
+      ],
+      "keys": [
+        "Ctrl+F2"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.cursorBelow",
       "action": "在下方加光标",
-      "aliases": ["多行同时编辑", "列编辑", "add cursor below"],
-      "keys": ["Shift+Alt+↓"],
+      "aliases": [
+        "多行同时编辑",
+        "列编辑",
+        "add cursor below"
+      ],
+      "keys": [
+        "Shift+Alt+↓"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.cursorAbove",
       "action": "在上方加光标",
-      "aliases": ["往上加光标", "add cursor above"],
-      "keys": ["Shift+Alt+↑"],
+      "aliases": [
+        "往上加光标",
+        "add cursor above"
+      ],
+      "keys": [
+        "Shift+Alt+↑"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.jumpBracket",
       "action": "跳到匹配括号",
-      "aliases": ["跳括号", "匹配括号"],
-      "keys": ["Ctrl+Shift+\\"],
+      "aliases": [
+        "跳括号",
+        "匹配括号"
+      ],
+      "keys": [
+        "Ctrl+Shift+\\"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.smartSelectExpand",
       "action": "向外扩大选择",
-      "aliases": ["扩大选中", "选一层", "expand selection"],
-      "keys": ["Shift+Alt+→"],
+      "aliases": [
+        "扩大选中",
+        "选一层",
+        "expand selection"
+      ],
+      "keys": [
+        "Shift+Alt+→"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.smartSelectShrink",
       "action": "向内缩小选择",
-      "aliases": ["缩小选中", "shrink selection"],
-      "keys": ["Shift+Alt+←"],
+      "aliases": [
+        "缩小选中",
+        "shrink selection"
+      ],
+      "keys": [
+        "Shift+Alt+←"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "vscode.gotoBeginningOfLine",
       "action": "跳到行首",
-      "aliases": ["行首", "回到行头"],
-      "keys": ["Home"],
+      "aliases": [
+        "行首",
+        "回到行头"
+      ],
+      "keys": [
+        "Home"
+      ],
       "group": "光标移动",
       "note": ""
     },
     {
       "id": "vscode.gotoEndOfLine",
       "action": "跳到行尾",
-      "aliases": ["行尾", "到行末"],
-      "keys": ["End"],
+      "aliases": [
+        "行尾",
+        "到行末"
+      ],
+      "keys": [
+        "End"
+      ],
       "group": "光标移动",
       "note": ""
     },
     {
       "id": "vscode.gotoBeginningOfFile",
       "action": "跳到文件开头",
-      "aliases": ["文件开头", "最上面"],
-      "keys": ["Ctrl+Home"],
+      "aliases": [
+        "文件开头",
+        "最上面"
+      ],
+      "keys": [
+        "Ctrl+Home"
+      ],
       "group": "光标移动",
       "note": ""
     },
     {
       "id": "vscode.gotoEndOfFile",
       "action": "跳到文件末尾",
-      "aliases": ["文件末尾", "最下面"],
-      "keys": ["Ctrl+End"],
+      "aliases": [
+        "文件末尾",
+        "最下面"
+      ],
+      "keys": [
+        "Ctrl+End"
+      ],
       "group": "光标移动",
       "note": ""
     },
     {
       "id": "vscode.foldRegion",
       "action": "折叠区域",
-      "aliases": ["折叠代码", "收起这段", "fold"],
-      "keys": ["Ctrl+Shift+["],
+      "aliases": [
+        "折叠代码",
+        "收起这段",
+        "fold"
+      ],
+      "keys": [
+        "Ctrl+Shift+["
+      ],
       "group": "代码折叠",
       "note": ""
     },
     {
       "id": "vscode.unfoldRegion",
       "action": "展开区域",
-      "aliases": ["展开代码", "unfold"],
-      "keys": ["Ctrl+Shift+]"],
+      "aliases": [
+        "展开代码",
+        "unfold"
+      ],
+      "keys": [
+        "Ctrl+Shift+]"
+      ],
       "group": "代码折叠",
       "note": ""
     },
     {
       "id": "vscode.toggleFold",
       "action": "切换折叠",
-      "aliases": ["折叠/展开", "toggle fold"],
-      "keys": ["Ctrl+K", "Ctrl+L"],
+      "aliases": [
+        "折叠/展开",
+        "toggle fold"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+L"
+      ],
       "group": "代码折叠",
       "note": "两段按键"
     },
     {
       "id": "vscode.foldAll",
       "action": "折叠全部",
-      "aliases": ["全部折叠", "收起所有", "fold all"],
-      "keys": ["Ctrl+K", "Ctrl+0"],
+      "aliases": [
+        "全部折叠",
+        "收起所有",
+        "fold all"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+0"
+      ],
       "group": "代码折叠",
       "note": "两段按键"
     },
     {
       "id": "vscode.unfoldAll",
       "action": "展开全部",
-      "aliases": ["全部展开", "unfold all"],
-      "keys": ["Ctrl+K", "Ctrl+J"],
+      "aliases": [
+        "全部展开",
+        "unfold all"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+J"
+      ],
       "group": "代码折叠",
       "note": "两段按键"
     },
     {
       "id": "vscode.showCommands",
       "action": "命令面板",
-      "aliases": ["命令面板", "所有命令", "找命令", "command palette"],
-      "keys": ["Ctrl+Shift+P"],
+      "aliases": [
+        "命令面板",
+        "所有命令",
+        "找命令",
+        "command palette"
+      ],
+      "keys": [
+        "Ctrl+Shift+P"
+      ],
       "group": "导航与搜索",
       "note": "等于 F1，VS Code 的总入口",
       "hot": true
@@ -302,40 +510,72 @@
     {
       "id": "vscode.quickOpen",
       "action": "快速打开文件",
-      "aliases": ["打开文件", "搜文件", "找文件", "quick open"],
-      "keys": ["Ctrl+P"],
+      "aliases": [
+        "打开文件",
+        "搜文件",
+        "找文件",
+        "quick open"
+      ],
+      "keys": [
+        "Ctrl+P"
+      ],
       "group": "导航与搜索",
       "hot": true
     },
     {
       "id": "vscode.gotoLine",
       "action": "转到行",
-      "aliases": ["跳行", "定位行", "第几行", "goto line"],
-      "keys": ["Ctrl+G"],
+      "aliases": [
+        "跳行",
+        "定位行",
+        "第几行",
+        "goto line"
+      ],
+      "keys": [
+        "Ctrl+G"
+      ],
       "group": "导航与搜索",
       "hot": true
     },
     {
       "id": "vscode.gotoSymbol",
       "action": "转到符号（当前文件）",
-      "aliases": ["搜方法", "文件内跳转", "goto symbol"],
-      "keys": ["Ctrl+Shift+O"],
+      "aliases": [
+        "搜方法",
+        "文件内跳转",
+        "goto symbol"
+      ],
+      "keys": [
+        "Ctrl+Shift+O"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.showAllSymbols",
       "action": "全局符号搜索",
-      "aliases": ["搜所有符号", "全项目找方法", "go to symbol in workspace"],
-      "keys": ["Ctrl+T"],
+      "aliases": [
+        "搜所有符号",
+        "全项目找方法",
+        "go to symbol in workspace"
+      ],
+      "keys": [
+        "Ctrl+T"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.gotoDefinition",
       "action": "转到定义",
-      "aliases": ["跳定义", "看源码", "go to definition"],
-      "keys": ["F12"],
+      "aliases": [
+        "跳定义",
+        "看源码",
+        "go to definition"
+      ],
+      "keys": [
+        "F12"
+      ],
       "group": "导航与搜索",
       "note": "Ctrl + 左键点击同效",
       "hot": true
@@ -343,490 +583,951 @@
     {
       "id": "vscode.peekDefinition",
       "action": "速览定义",
-      "aliases": ["瞄一眼定义", "预览定义", "peek definition"],
-      "keys": ["Ctrl+Shift+F10"],
+      "aliases": [
+        "瞄一眼定义",
+        "预览定义",
+        "peek definition"
+      ],
+      "keys": [
+        "Ctrl+Shift+F10"
+      ],
       "group": "导航与搜索",
       "note": "弹小窗看定义，不跳走"
     },
     {
       "id": "vscode.gotoReferences",
       "action": "转到引用",
-      "aliases": ["谁用了", "查引用", "find references"],
-      "keys": ["Shift+F12"],
+      "aliases": [
+        "谁用了",
+        "查引用",
+        "find references"
+      ],
+      "keys": [
+        "Shift+F12"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.showProblems",
       "action": "打开问题面板",
-      "aliases": ["错误列表", "看报错", "problems"],
-      "keys": ["Ctrl+Shift+M"],
+      "aliases": [
+        "错误列表",
+        "看报错",
+        "problems"
+      ],
+      "keys": [
+        "Ctrl+Shift+M"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.nextError",
       "action": "跳到下一个错误",
-      "aliases": ["下一个错误", "next error"],
-      "keys": ["F8"],
+      "aliases": [
+        "下一个错误",
+        "next error"
+      ],
+      "keys": [
+        "F8"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.prevError",
       "action": "跳到上一个错误",
-      "aliases": ["上一个错误", "previous error"],
-      "keys": ["Shift+F8"],
+      "aliases": [
+        "上一个错误",
+        "previous error"
+      ],
+      "keys": [
+        "Shift+F8"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.navigateBack",
       "action": "返回上一个位置",
-      "aliases": ["后退", "回上一处", "go back"],
-      "keys": ["Ctrl+Alt+-"],
+      "aliases": [
+        "后退",
+        "回上一处",
+        "go back"
+      ],
+      "keys": [
+        "Ctrl+Alt+-"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.navigateForward",
       "action": "前进到下一个位置",
-      "aliases": ["往前", "go forward"],
-      "keys": ["Ctrl+Shift+-"],
+      "aliases": [
+        "往前",
+        "go forward"
+      ],
+      "keys": [
+        "Ctrl+Shift+-"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.historyNext",
       "action": "切换编辑器（最近用过）",
-      "aliases": ["切换文件", "切标签", "switch editor"],
-      "keys": ["Ctrl+Tab"],
+      "aliases": [
+        "切换文件",
+        "切标签",
+        "switch editor"
+      ],
+      "keys": [
+        "Ctrl+Tab"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.find",
       "action": "查找",
-      "aliases": ["搜索当前文件", "找文字", "find"],
-      "keys": ["Ctrl+F"],
+      "aliases": [
+        "搜索当前文件",
+        "找文字",
+        "find"
+      ],
+      "keys": [
+        "Ctrl+F"
+      ],
       "group": "导航与搜索",
       "hot": true
     },
     {
       "id": "vscode.replace",
       "action": "替换",
-      "aliases": ["替换文字", "replace"],
-      "keys": ["Ctrl+H"],
+      "aliases": [
+        "替换文字",
+        "replace"
+      ],
+      "keys": [
+        "Ctrl+H"
+      ],
       "group": "导航与搜索",
       "note": "当前文件内替换"
     },
     {
       "id": "vscode.replaceInFiles",
       "action": "在文件中替换（全局替换）",
-      "aliases": ["全局替换", "跨文件替换", "replace in files"],
-      "keys": ["Ctrl+Shift+H"],
+      "aliases": [
+        "全局替换",
+        "跨文件替换",
+        "replace in files"
+      ],
+      "keys": [
+        "Ctrl+Shift+H"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.toggleRegex",
       "action": "查找切换正则",
-      "aliases": ["正则搜索", "用正则找"],
-      "keys": ["Alt+R"],
+      "aliases": [
+        "正则搜索",
+        "用正则找"
+      ],
+      "keys": [
+        "Alt+R"
+      ],
       "group": "导航与搜索",
       "note": ""
     },
     {
       "id": "vscode.triggerSuggest",
       "action": "触发代码补全",
-      "aliases": ["补全", "代码提示", "自动补全", "suggest"],
-      "keys": ["Ctrl+Space"],
+      "aliases": [
+        "补全",
+        "代码提示",
+        "自动补全",
+        "suggest"
+      ],
+      "keys": [
+        "Ctrl+Space"
+      ],
       "group": "代码编辑",
       "hot": true
     },
     {
       "id": "vscode.parameterHints",
       "action": "显示参数提示",
-      "aliases": ["参数信息", "看参数", "parameter hints"],
-      "keys": ["Ctrl+Shift+Space"],
+      "aliases": [
+        "参数信息",
+        "看参数",
+        "parameter hints"
+      ],
+      "keys": [
+        "Ctrl+Shift+Space"
+      ],
       "group": "代码编辑",
       "note": ""
     },
     {
       "id": "vscode.quickFix",
       "action": "快速修复",
-      "aliases": ["快速修复", "灯泡", "自动导入", "quick fix"],
-      "keys": ["Ctrl+."],
+      "aliases": [
+        "快速修复",
+        "灯泡",
+        "自动导入",
+        "quick fix"
+      ],
+      "keys": [
+        "Ctrl+."
+      ],
       "group": "代码编辑",
       "hot": true
     },
     {
       "id": "vscode.rename",
       "action": "重命名符号",
-      "aliases": ["改名", "重命名变量", "rename"],
-      "keys": ["F2"],
+      "aliases": [
+        "改名",
+        "重命名变量",
+        "rename"
+      ],
+      "keys": [
+        "F2"
+      ],
       "group": "代码编辑",
       "hot": true
     },
     {
       "id": "vscode.showHover",
       "action": "显示悬停信息",
-      "aliases": ["看说明", "悬停提示", "hover"],
-      "keys": ["Ctrl+K", "Ctrl+I"],
+      "aliases": [
+        "看说明",
+        "悬停提示",
+        "hover"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+I"
+      ],
       "group": "代码编辑",
       "note": "两段按键"
     },
     {
       "id": "vscode.trimWhitespace",
       "action": "删除行尾空格",
-      "aliases": ["去行尾空格", "清理空白", "trim whitespace"],
-      "keys": ["Ctrl+K", "Ctrl+X"],
+      "aliases": [
+        "去行尾空格",
+        "清理空白",
+        "trim whitespace"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+X"
+      ],
       "group": "代码编辑",
       "note": "两段按键"
     },
     {
       "id": "vscode.changeLanguageMode",
       "action": "切换语言模式",
-      "aliases": ["改语法高亮", "语言模式", "language mode"],
-      "keys": ["Ctrl+K", "M"],
+      "aliases": [
+        "改语法高亮",
+        "语言模式",
+        "language mode"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "M"
+      ],
       "group": "代码编辑",
       "note": "两段按键"
     },
     {
       "id": "vscode.wordWrap",
       "action": "切换自动换行",
-      "aliases": ["自动换行", "软换行", "word wrap"],
-      "keys": ["Alt+Z"],
+      "aliases": [
+        "自动换行",
+        "软换行",
+        "word wrap"
+      ],
+      "keys": [
+        "Alt+Z"
+      ],
       "group": "代码编辑",
       "note": ""
     },
     {
       "id": "vscode.terminal",
       "action": "打开/关闭终端",
-      "aliases": ["终端", "命令行", "terminal", "cmd"],
-      "keys": ["Ctrl+`"],
+      "aliases": [
+        "终端",
+        "命令行",
+        "terminal",
+        "cmd"
+      ],
+      "keys": [
+        "Ctrl+`"
+      ],
       "group": "显示与面板",
       "hot": true
     },
     {
       "id": "vscode.newTerminal",
       "action": "新建命令提示符终端",
-      "aliases": ["新开终端", "external terminal"],
-      "keys": ["Ctrl+Shift+C"],
+      "aliases": [
+        "新开终端",
+        "external terminal"
+      ],
+      "keys": [
+        "Ctrl+Shift+C"
+      ],
       "group": "显示与面板",
       "note": "打开外部窗口的全新终端"
     },
     {
       "id": "vscode.sidebarToggle",
       "action": "显示/隐藏侧边栏",
-      "aliases": ["收起侧边栏", "左边栏开关", "sidebar"],
-      "keys": ["Ctrl+B"],
+      "aliases": [
+        "收起侧边栏",
+        "左边栏开关",
+        "sidebar"
+      ],
+      "keys": [
+        "Ctrl+B"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.explorer",
       "action": "打开资源管理器",
-      "aliases": ["文件树", "项目文件", "explorer"],
-      "keys": ["Ctrl+Shift+E"],
+      "aliases": [
+        "文件树",
+        "项目文件",
+        "explorer"
+      ],
+      "keys": [
+        "Ctrl+Shift+E"
+      ],
       "group": "显示与面板",
       "hot": true
     },
     {
       "id": "vscode.searchView",
       "action": "打开全局搜索面板",
-      "aliases": ["全项目搜索", "搜整个工程", "search panel"],
-      "keys": ["Ctrl+Shift+F"],
+      "aliases": [
+        "全项目搜索",
+        "搜整个工程",
+        "search panel"
+      ],
+      "keys": [
+        "Ctrl+Shift+F"
+      ],
       "group": "显示与面板",
       "hot": true
     },
     {
       "id": "vscode.sourceControl",
       "action": "打开源代码管理",
-      "aliases": ["git面板", "源码管理", "source control"],
-      "keys": ["Ctrl+Shift+G"],
+      "aliases": [
+        "git面板",
+        "源码管理",
+        "source control"
+      ],
+      "keys": [
+        "Ctrl+Shift+G"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.runView",
       "action": "打开运行与调试面板",
-      "aliases": ["调试面板", "run and debug"],
-      "keys": ["Ctrl+Shift+D"],
+      "aliases": [
+        "调试面板",
+        "run and debug"
+      ],
+      "keys": [
+        "Ctrl+Shift+D"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.extensions",
       "action": "打开扩展面板",
-      "aliases": ["插件", "扩展商店", "extensions"],
-      "keys": ["Ctrl+Shift+X"],
+      "aliases": [
+        "插件",
+        "扩展商店",
+        "extensions"
+      ],
+      "keys": [
+        "Ctrl+Shift+X"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.output",
       "action": "打开输出面板",
-      "aliases": ["输出日志", "output"],
-      "keys": ["Ctrl+K", "Ctrl+H"],
+      "aliases": [
+        "输出日志",
+        "output"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+H"
+      ],
       "group": "显示与面板",
       "note": "两段按键"
     },
     {
       "id": "vscode.zenMode",
       "action": "切换专注模式",
-      "aliases": ["禅模式", "专注模式", "zen mode"],
-      "keys": ["Ctrl+K", "Z"],
+      "aliases": [
+        "禅模式",
+        "专注模式",
+        "zen mode"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Z"
+      ],
       "group": "显示与面板",
       "note": "两段按键，只剩编辑器"
     },
     {
       "id": "vscode.fullScreen",
       "action": "切换全屏",
-      "aliases": ["全屏", "full screen"],
-      "keys": ["F11"],
+      "aliases": [
+        "全屏",
+        "full screen"
+      ],
+      "keys": [
+        "F11"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.zoomIn",
       "action": "放大界面",
-      "aliases": ["字体变大", "界面放大", "zoom in"],
-      "keys": ["Ctrl+="],
+      "aliases": [
+        "字体变大",
+        "界面放大",
+        "zoom in"
+      ],
+      "keys": [
+        "Ctrl+="
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.zoomOut",
       "action": "缩小界面",
-      "aliases": ["字体变小", "界面缩小", "zoom out"],
-      "keys": ["Ctrl+-"],
+      "aliases": [
+        "字体变小",
+        "界面缩小",
+        "zoom out"
+      ],
+      "keys": [
+        "Ctrl+-"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.markdownPreview",
       "action": "Markdown 预览",
-      "aliases": ["预览markdown", "md预览", "preview"],
-      "keys": ["Ctrl+Shift+V"],
+      "aliases": [
+        "预览markdown",
+        "md预览",
+        "preview"
+      ],
+      "keys": [
+        "Ctrl+Shift+V"
+      ],
       "group": "显示与面板",
       "note": ""
     },
     {
       "id": "vscode.markdownPreviewSide",
       "action": "Markdown 侧边预览",
-      "aliases": ["分屏预览md", "侧边预览"],
-      "keys": ["Ctrl+K", "V"],
+      "aliases": [
+        "分屏预览md",
+        "侧边预览"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "V"
+      ],
       "group": "显示与面板",
       "note": "两段按键"
     },
     {
       "id": "vscode.newFile",
       "action": "新建文件",
-      "aliases": ["新建", "new file"],
-      "keys": ["Ctrl+N"],
+      "aliases": [
+        "新建",
+        "new file"
+      ],
+      "keys": [
+        "Ctrl+N"
+      ],
       "group": "文件",
       "note": ""
     },
     {
       "id": "vscode.openFile",
       "action": "打开文件",
-      "aliases": ["打开本地文件", "open file"],
-      "keys": ["Ctrl+O"],
+      "aliases": [
+        "打开本地文件",
+        "open file"
+      ],
+      "keys": [
+        "Ctrl+O"
+      ],
       "group": "文件",
       "note": ""
     },
     {
       "id": "vscode.save",
       "action": "保存",
-      "aliases": ["保存", "存盘", "save"],
-      "keys": ["Ctrl+S"],
+      "aliases": [
+        "保存",
+        "存盘",
+        "save"
+      ],
+      "keys": [
+        "Ctrl+S"
+      ],
       "group": "文件",
       "hot": true
     },
     {
       "id": "vscode.saveAs",
       "action": "另存为",
-      "aliases": ["另存", "save as"],
-      "keys": ["Ctrl+Shift+S"],
+      "aliases": [
+        "另存",
+        "save as"
+      ],
+      "keys": [
+        "Ctrl+Shift+S"
+      ],
       "group": "文件",
       "note": ""
     },
     {
       "id": "vscode.closeEditor",
       "action": "关闭当前标签",
-      "aliases": ["关文件", "关标签", "close"],
-      "keys": ["Ctrl+W"],
+      "aliases": [
+        "关文件",
+        "关标签",
+        "close"
+      ],
+      "keys": [
+        "Ctrl+W"
+      ],
       "group": "文件",
       "note": ""
     },
     {
       "id": "vscode.closeAll",
       "action": "关闭全部标签",
-      "aliases": ["全关掉", "close all"],
-      "keys": ["Ctrl+K", "Ctrl+W"],
+      "aliases": [
+        "全关掉",
+        "close all"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+W"
+      ],
       "group": "文件",
       "note": "两段按键"
     },
     {
       "id": "vscode.reopenClosed",
       "action": "重新打开刚关闭的标签",
-      "aliases": ["恢复到刚关的", "reopen"],
-      "keys": ["Ctrl+Shift+T"],
+      "aliases": [
+        "恢复到刚关的",
+        "reopen"
+      ],
+      "keys": [
+        "Ctrl+Shift+T"
+      ],
       "group": "文件",
       "hot": true
     },
     {
       "id": "vscode.copyPath",
       "action": "复制当前文件路径",
-      "aliases": ["复制路径", "copy path"],
-      "keys": ["Ctrl+K", "P"],
+      "aliases": [
+        "复制路径",
+        "copy path"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "P"
+      ],
       "group": "文件",
       "note": "两段按键"
     },
     {
       "id": "vscode.revealInExplorer",
       "action": "在文件管理器里定位当前文件",
-      "aliases": ["打开所在文件夹", "reveal in explorer"],
-      "keys": ["Ctrl+K", "R"],
+      "aliases": [
+        "打开所在文件夹",
+        "reveal in explorer"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "R"
+      ],
       "group": "文件",
       "note": "两段按键"
     },
     {
       "id": "vscode.newWindow",
       "action": "新建窗口",
-      "aliases": ["开新窗口", "new window"],
-      "keys": ["Ctrl+Shift+N"],
+      "aliases": [
+        "开新窗口",
+        "new window"
+      ],
+      "keys": [
+        "Ctrl+Shift+N"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.splitEditor",
       "action": "拆分编辑器",
-      "aliases": ["分屏", "左右分栏", "split editor"],
-      "keys": ["Ctrl+\\"],
+      "aliases": [
+        "分屏",
+        "左右分栏",
+        "split editor"
+      ],
+      "keys": [
+        "Ctrl+\\"
+      ],
       "group": "窗口与标签",
       "hot": true
     },
     {
       "id": "vscode.focusFirstGroup",
       "action": "聚焦第一编辑组",
-      "aliases": ["切到左边分屏", "第一屏"],
-      "keys": ["Ctrl+1"],
+      "aliases": [
+        "切到左边分屏",
+        "第一屏"
+      ],
+      "keys": [
+        "Ctrl+1"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.focusSecondGroup",
       "action": "聚焦第二编辑组",
-      "aliases": ["切到第二屏"],
-      "keys": ["Ctrl+2"],
+      "aliases": [
+        "切到第二屏"
+      ],
+      "keys": [
+        "Ctrl+2"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.moveEditorLeft",
       "action": "把编辑器左移",
-      "aliases": ["标签往左挪", "move editor left"],
-      "keys": ["Ctrl+Shift+PageUp"],
+      "aliases": [
+        "标签往左挪",
+        "move editor left"
+      ],
+      "keys": [
+        "Ctrl+Shift+PageUp"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.moveEditorRight",
       "action": "把编辑器右移",
-      "aliases": ["标签往右挪", "move editor right"],
-      "keys": ["Ctrl+Shift+PageDown"],
+      "aliases": [
+        "标签往右挪",
+        "move editor right"
+      ],
+      "keys": [
+        "Ctrl+Shift+PageDown"
+      ],
       "group": "窗口与标签",
       "note": ""
     },
     {
       "id": "vscode.toggleBreakpoint",
       "action": "切换断点",
-      "aliases": ["加断点", "去断点", "断点", "breakpoint"],
-      "keys": ["F9"],
+      "aliases": [
+        "加断点",
+        "去断点",
+        "断点",
+        "breakpoint"
+      ],
+      "keys": [
+        "F9"
+      ],
       "group": "调试",
       "hot": true
     },
     {
       "id": "vscode.debugStart",
       "action": "启动调试",
-      "aliases": ["调试", "启动调试", "start debug", "F5"],
-      "keys": ["F5"],
+      "aliases": [
+        "调试",
+        "启动调试",
+        "start debug",
+        "F5"
+      ],
+      "keys": [
+        "F5"
+      ],
       "group": "调试",
       "hot": true
     },
     {
       "id": "vscode.debugRun",
       "action": "运行（不调试）",
-      "aliases": ["直接运行", "run without debugging"],
-      "keys": ["Ctrl+F5"],
+      "aliases": [
+        "直接运行",
+        "run without debugging"
+      ],
+      "keys": [
+        "Ctrl+F5"
+      ],
       "group": "调试",
       "note": ""
     },
     {
       "id": "vscode.debugPause",
       "action": "暂停调试",
-      "aliases": ["暂停", "pause"],
-      "keys": ["F6"],
+      "aliases": [
+        "暂停",
+        "pause"
+      ],
+      "keys": [
+        "F6"
+      ],
       "group": "调试",
       "note": ""
     },
     {
       "id": "vscode.debugStepInto",
       "action": "单步跳入",
-      "aliases": ["进方法", "单步进入", "step into"],
-      "keys": ["F11"],
+      "aliases": [
+        "进方法",
+        "单步进入",
+        "step into"
+      ],
+      "keys": [
+        "F11"
+      ],
       "group": "调试",
       "note": ""
     },
     {
       "id": "vscode.debugStepOver",
       "action": "单步跳过",
-      "aliases": ["下一步", "单步", "step over"],
-      "keys": ["F10"],
+      "aliases": [
+        "下一步",
+        "单步",
+        "step over"
+      ],
+      "keys": [
+        "F10"
+      ],
       "group": "调试",
       "note": "执行一行，不进方法"
     },
     {
       "id": "vscode.debugStop",
       "action": "停止调试",
-      "aliases": ["结束调试", "停止", "stop"],
-      "keys": ["Shift+F5"],
+      "aliases": [
+        "结束调试",
+        "停止",
+        "stop"
+      ],
+      "keys": [
+        "Shift+F5"
+      ],
       "group": "调试",
       "note": ""
     },
     {
       "id": "vscode.runBuildTask",
       "action": "运行构建任务",
-      "aliases": ["编译项目", "build task"],
-      "keys": ["Ctrl+Shift+B"],
+      "aliases": [
+        "编译项目",
+        "build task"
+      ],
+      "keys": [
+        "Ctrl+Shift+B"
+      ],
       "group": "调试",
       "note": ""
     },
     {
       "id": "vscode.openSettings",
       "action": "打开设置",
-      "aliases": ["设置", "偏好设置", "settings"],
-      "keys": ["Ctrl+,"],
+      "aliases": [
+        "设置",
+        "偏好设置",
+        "settings"
+      ],
+      "keys": [
+        "Ctrl+,"
+      ],
       "group": "设置",
       "hot": true
     },
     {
       "id": "vscode.openKeybindings",
       "action": "打开快捷键设置",
-      "aliases": ["改键位", "快捷键列表", "keybindings"],
-      "keys": ["Ctrl+K", "Ctrl+S"],
+      "aliases": [
+        "改键位",
+        "快捷键列表",
+        "keybindings"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+S"
+      ],
       "group": "设置",
       "note": "两段按键"
     },
     {
       "id": "vscode.selectTheme",
       "action": "选择主题",
-      "aliases": ["换主题", "配色主题", "theme"],
-      "keys": ["Ctrl+K", "Ctrl+T"],
+      "aliases": [
+        "换主题",
+        "配色主题",
+        "theme"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+T"
+      ],
       "group": "设置",
       "note": "两段按键"
+    },
+    {
+      "id": "vscode.tpl.html5",
+      "action": "HTML5 骨架",
+      "aliases": [
+        "html5",
+        "骨架",
+        "感叹号",
+        "!"
+      ],
+      "keys": [
+        "!"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "在 .html 文件里输入 ! 按 Tab，展开完整 HTML5 文档骨架（Emmet，VS Code 内置）",
+      "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Document</title>\n</head>\n<body>\n  \n</body>\n</html>"
+    },
+    {
+      "id": "vscode.tpl.link",
+      "action": "引入样式表",
+      "aliases": [
+        "link",
+        "样式表",
+        "css引入"
+      ],
+      "keys": [
+        "link"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "展开 <link rel=\"stylesheet\" href=\"\">（Emmet）",
+      "code": "<link rel=\"stylesheet\" href=\"\">"
+    },
+    {
+      "id": "vscode.tpl.script",
+      "action": "引入脚本",
+      "aliases": [
+        "script",
+        "js引入",
+        "脚本标签"
+      ],
+      "keys": [
+        "script"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "展开 <script src=\"\"></script>（Emmet）",
+      "code": "<script src=\"\"></script>"
+    },
+    {
+      "id": "vscode.tpl.classdiv",
+      "action": "带 class 的 div",
+      "aliases": [
+        "class",
+        "类名div",
+        ".class"
+      ],
+      "keys": [
+        ".box"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "输入 .box 按 Tab，展开 <div class=\"box\"></div>（Emmet）",
+      "code": "<div class=\"box\"></div>"
+    },
+    {
+      "id": "vscode.tpl.iddiv",
+      "action": "带 id 的 div",
+      "aliases": [
+        "id",
+        "编号div",
+        "#app"
+      ],
+      "keys": [
+        "#app"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "输入 #app 按 Tab，展开 <div id=\"app\"></div>（Emmet）",
+      "code": "<div id=\"app\"></div>"
+    },
+    {
+      "id": "vscode.tpl.list",
+      "action": "列表连写",
+      "aliases": [
+        "ul li",
+        "列表生成",
+        "重复"
+      ],
+      "keys": [
+        "ul>li*3"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "展开三层 <ul> 内含 3 个 <li>（Emmet 乘法语法）",
+      "code": "<ul>\n  <li></li>\n  <li></li>\n  <li></li>\n</ul>"
+    },
+    {
+      "id": "vscode.tpl.lorem",
+      "action": "占位文本",
+      "aliases": [
+        "lorem",
+        "假文",
+        "占位文字"
+      ],
+      "keys": [
+        "lorem"
+      ],
+      "group": "代码模板·Emmet（HTML/CSS）",
+      "note": "展开一段 lorem ipsum 占位文字（Emmet）"
     }
   ]
 }
