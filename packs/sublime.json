@@ -12,336 +12,567 @@
     {
       "id": "sublime.moveLineUp",
       "action": "上移行",
-      "aliases": ["上平移", "上移", "往上挪", "move line up"],
-      "keys": ["Ctrl+Shift+↑"],
+      "aliases": [
+        "上平移",
+        "上移",
+        "往上挪",
+        "move line up"
+      ],
+      "keys": [
+        "Ctrl+Shift+↑"
+      ],
       "group": "编辑",
       "hot": true
     },
     {
       "id": "sublime.moveLineDown",
       "action": "下移行",
-      "aliases": ["下平移", "下移", "往下挪", "move line down"],
-      "keys": ["Ctrl+Shift+↓"],
+      "aliases": [
+        "下平移",
+        "下移",
+        "往下挪",
+        "move line down"
+      ],
+      "keys": [
+        "Ctrl+Shift+↓"
+      ],
       "group": "编辑",
       "hot": true
     },
     {
       "id": "sublime.duplicateLine",
       "action": "复制行",
-      "aliases": ["复制这一行", "重复行", "duplicate line"],
-      "keys": ["Ctrl+Shift+D"],
+      "aliases": [
+        "复制这一行",
+        "重复行",
+        "duplicate line"
+      ],
+      "keys": [
+        "Ctrl+Shift+D"
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.deleteLine",
       "action": "删除行",
-      "aliases": ["删行", "删掉这一行", "delete line"],
-      "keys": ["Ctrl+Shift+K"],
+      "aliases": [
+        "删行",
+        "删掉这一行",
+        "delete line"
+      ],
+      "keys": [
+        "Ctrl+Shift+K"
+      ],
       "group": "编辑",
       "hot": true
     },
     {
       "id": "sublime.deleteToEol",
       "action": "删除到行尾",
-      "aliases": ["从光标删到行末", "删到行尾"],
-      "keys": ["Ctrl+K", "Ctrl+K"],
+      "aliases": [
+        "从光标删到行末",
+        "删到行尾"
+      ],
+      "keys": [
+        "Ctrl+K"
+      ],
       "group": "编辑",
       "note": "两段按键"
     },
     {
       "id": "sublime.deleteToBol",
       "action": "删除到行首",
-      "aliases": ["从光标删到行头", "删到行首"],
-      "keys": ["Ctrl+K", "Ctrl+Backspace"],
+      "aliases": [
+        "从光标删到行头",
+        "删到行首"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+Backspace"
+      ],
       "group": "编辑",
       "note": "两段按键"
     },
     {
       "id": "sublime.joinLines",
       "action": "合并行",
-      "aliases": ["连成一行", "合并两行", "join lines"],
-      "keys": ["Ctrl+J"],
+      "aliases": [
+        "连成一行",
+        "合并两行",
+        "join lines"
+      ],
+      "keys": [
+        "Ctrl+J"
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.indent",
       "action": "缩进当前行",
-      "aliases": ["缩进", "往右缩"],
-      "keys": ["Ctrl+]"],
+      "aliases": [
+        "缩进",
+        "往右缩"
+      ],
+      "keys": [
+        "Ctrl+]"
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.outdent",
       "action": "取消缩进",
-      "aliases": ["反缩进", "往左缩"],
-      "keys": ["Ctrl+["],
+      "aliases": [
+        "反缩进",
+        "往左缩"
+      ],
+      "keys": [
+        "Ctrl+["
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.commentLine",
       "action": "注释 / 取消注释",
-      "aliases": ["注释", "注释掉", "toggle comment"],
-      "keys": ["Ctrl+/"],
+      "aliases": [
+        "注释",
+        "注释掉",
+        "toggle comment"
+      ],
+      "keys": [
+        "Ctrl+/"
+      ],
       "group": "编辑",
       "hot": true
     },
     {
       "id": "sublime.blockComment",
       "action": "块注释",
-      "aliases": ["块注释", "多行注释"],
-      "keys": ["Ctrl+Shift+/"],
+      "aliases": [
+        "块注释",
+        "多行注释"
+      ],
+      "keys": [
+        "Ctrl+Shift+/"
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.pasteIndent",
       "action": "粘贴并自动缩进",
-      "aliases": ["粘贴带缩进", "粘贴保持格式"],
-      "keys": ["Ctrl+Shift+V"],
+      "aliases": [
+        "粘贴带缩进",
+        "粘贴保持格式"
+      ],
+      "keys": [
+        "Ctrl+Shift+V"
+      ],
       "group": "编辑",
       "note": "从网页复制代码时最好用这个"
     },
     {
       "id": "sublime.softUndo",
       "action": "软撤销",
-      "aliases": ["回到上次改动前", "撤销一小步"],
-      "keys": ["Ctrl+U"],
+      "aliases": [
+        "回到上次改动前",
+        "撤销一小步"
+      ],
+      "keys": [
+        "Ctrl+U"
+      ],
       "group": "编辑",
       "note": "和撤回不同，只回退最近一段改动"
     },
     {
       "id": "sublime.redo",
       "action": "重做（重复上次操作）",
-      "aliases": ["重复上一步", "redo", "撤销的撤销"],
-      "keys": ["Ctrl+Y"],
+      "aliases": [
+        "重复上一步",
+        "redo",
+        "撤销的撤销"
+      ],
+      "keys": [
+        "Ctrl+Y"
+      ],
       "group": "编辑",
       "note": ""
     },
     {
       "id": "sublime.selectLine",
       "action": "选中当前行",
-      "aliases": ["选这一行", "select line"],
-      "keys": ["Ctrl+L"],
+      "aliases": [
+        "选这一行",
+        "select line"
+      ],
+      "keys": [
+        "Ctrl+L"
+      ],
       "group": "选择与多光标",
       "note": "连按会一行行往下扩"
     },
     {
       "id": "sublime.quickAddNext",
       "action": "选中下一个同名（多光标）",
-      "aliases": ["多光标", "选下一个", "批量改", "ctrl d"],
-      "keys": ["Ctrl+D"],
+      "aliases": [
+        "多光标",
+        "选下一个",
+        "批量改",
+        "ctrl d"
+      ],
+      "keys": [
+        "Ctrl+D"
+      ],
       "group": "选择与多光标",
       "hot": true
     },
     {
       "id": "sublime.selectBrackets",
       "action": "选中括号内全部内容",
-      "aliases": ["选中括号里", "选中括号内"],
-      "keys": ["Ctrl+Shift+M"],
+      "aliases": [
+        "选中括号里",
+        "选中括号内"
+      ],
+      "keys": [
+        "Ctrl+Shift+M"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "sublime.gotoBracket",
       "action": "跳到闭合括号",
-      "aliases": ["跳括号", "匹配括号"],
-      "keys": ["Ctrl+M"],
+      "aliases": [
+        "跳括号",
+        "匹配括号"
+      ],
+      "keys": [
+        "Ctrl+M"
+      ],
       "group": "选择与多光标",
       "note": "再按一次跳回开括号"
     },
     {
       "id": "sublime.colSelectUp",
       "action": "向上列选择（多光标）",
-      "aliases": ["列编辑", "向上加光标"],
-      "keys": ["Ctrl+Alt+↑"],
+      "aliases": [
+        "列编辑",
+        "向上加光标"
+      ],
+      "keys": [
+        "Ctrl+Alt+↑"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "sublime.colSelectDown",
       "action": "向下列选择（多光标）",
-      "aliases": ["列编辑", "向下加光标"],
-      "keys": ["Ctrl+Alt+↓"],
+      "aliases": [
+        "列编辑",
+        "向下加光标"
+      ],
+      "keys": [
+        "Ctrl+Alt+↓"
+      ],
       "group": "选择与多光标",
       "note": ""
     },
     {
       "id": "sublime.gotoAnything",
       "action": "快速打开文件（Goto Anything）",
-      "aliases": ["打开文件", "搜文件", "找文件", "goto anything"],
-      "keys": ["Ctrl+P"],
+      "aliases": [
+        "打开文件",
+        "搜文件",
+        "找文件",
+        "goto anything"
+      ],
+      "keys": [
+        "Ctrl+P"
+      ],
       "group": "导航",
       "hot": true
     },
     {
       "id": "sublime.gotoSymbol",
       "action": "转到符号",
-      "aliases": ["跳方法", "文件内符号"],
-      "keys": ["Ctrl+R"],
+      "aliases": [
+        "跳方法",
+        "文件内符号"
+      ],
+      "keys": [
+        "Ctrl+R"
+      ],
       "group": "导航",
       "note": ""
     },
     {
       "id": "sublime.gotoLine",
       "action": "转到行",
-      "aliases": ["跳行", "定位行", "第几行"],
-      "keys": ["Ctrl+G"],
+      "aliases": [
+        "跳行",
+        "定位行",
+        "第几行"
+      ],
+      "keys": [
+        "Ctrl+G"
+      ],
       "group": "导航",
       "hot": true
     },
     {
       "id": "sublime.commandPalette",
       "action": "命令面板",
-      "aliases": ["命令面板", "找命令", "command palette"],
-      "keys": ["Ctrl+Shift+P"],
+      "aliases": [
+        "命令面板",
+        "找命令",
+        "command palette"
+      ],
+      "keys": [
+        "Ctrl+Shift+P"
+      ],
       "group": "导航",
       "hot": true
     },
     {
       "id": "sublime.sidebar",
       "action": "显示/隐藏侧边栏",
-      "aliases": ["侧边栏开关", "文件树开关"],
-      "keys": ["Ctrl+K", "Ctrl+B"],
+      "aliases": [
+        "侧边栏开关",
+        "文件树开关"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+B"
+      ],
       "group": "窗口与布局",
       "note": "两段按键"
     },
     {
       "id": "sublime.closeTab",
       "action": "关闭当前标签",
-      "aliases": ["关文件", "关标签"],
-      "keys": ["Ctrl+W"],
+      "aliases": [
+        "关文件",
+        "关标签"
+      ],
+      "keys": [
+        "Ctrl+W"
+      ],
       "group": "窗口与布局",
       "note": ""
     },
     {
       "id": "sublime.reopenTab",
       "action": "重新打开刚关闭的标签",
-      "aliases": ["恢复刚关的", "reopen"],
-      "keys": ["Ctrl+Shift+T"],
+      "aliases": [
+        "恢复刚关的",
+        "reopen"
+      ],
+      "keys": [
+        "Ctrl+Shift+T"
+      ],
       "group": "窗口与布局",
       "note": ""
     },
     {
       "id": "sublime.prevTab",
       "action": "切换到上一个标签",
-      "aliases": ["上一个文件", "切标签"],
-      "keys": ["Ctrl+Tab"],
+      "aliases": [
+        "上一个文件",
+        "切标签"
+      ],
+      "keys": [
+        "Ctrl+Tab"
+      ],
       "group": "窗口与布局",
       "note": "按住 Ctrl 连按 Tab 循环"
     },
     {
       "id": "sublime.gotoTab",
       "action": "切到指定编号的标签",
-      "aliases": ["按序号切标签", "第几个标签"],
-      "keys": ["Alt+1"],
+      "aliases": [
+        "按序号切标签",
+        "第几个标签"
+      ],
+      "keys": [
+        "Alt+1"
+      ],
       "group": "窗口与布局",
       "note": "Alt+1 到 Alt+9 对应第 1~9 个标签"
     },
     {
       "id": "sublime.split2",
       "action": "分屏为两列",
-      "aliases": ["分屏", "左右分栏"],
-      "keys": ["Alt+Shift+2"],
+      "aliases": [
+        "分屏",
+        "左右分栏"
+      ],
+      "keys": [
+        "Alt+Shift+2"
+      ],
       "group": "窗口与布局",
       "note": "1~4 列、8 两行，其余编号见官方说明"
     },
     {
       "id": "sublime.singleColumn",
       "action": "恢复单列布局",
-      "aliases": ["取消分屏", "回到一列"],
-      "keys": ["Alt+Shift+1"],
+      "aliases": [
+        "取消分屏",
+        "回到一列"
+      ],
+      "keys": [
+        "Alt+Shift+1"
+      ],
       "group": "窗口与布局",
       "note": ""
     },
     {
       "id": "sublime.find",
       "action": "查找",
-      "aliases": ["搜索当前文件", "找文字", "find"],
-      "keys": ["Ctrl+F"],
+      "aliases": [
+        "搜索当前文件",
+        "找文字",
+        "find"
+      ],
+      "keys": [
+        "Ctrl+F"
+      ],
       "group": "查找替换",
       "hot": true
     },
     {
       "id": "sublime.replace",
       "action": "替换",
-      "aliases": ["替换文字", "replace"],
-      "keys": ["Ctrl+H"],
+      "aliases": [
+        "替换文字",
+        "replace"
+      ],
+      "keys": [
+        "Ctrl+H"
+      ],
       "group": "查找替换",
       "note": ""
     },
     {
       "id": "sublime.findInFiles",
       "action": "在文件中查找（全局搜索）",
-      "aliases": ["全局搜索", "全项目查找", "find in files"],
-      "keys": ["Ctrl+Shift+F"],
+      "aliases": [
+        "全局搜索",
+        "全项目查找",
+        "find in files"
+      ],
+      "keys": [
+        "Ctrl+Shift+F"
+      ],
       "group": "查找替换",
       "hot": true
     },
     {
       "id": "sublime.toggleBookmark",
       "action": "切换书签",
-      "aliases": ["加书签", "标记位置", "bookmark"],
-      "keys": ["Ctrl+F2"],
+      "aliases": [
+        "加书签",
+        "标记位置",
+        "bookmark"
+      ],
+      "keys": [
+        "Ctrl+F2"
+      ],
       "group": "书签",
       "note": ""
     },
     {
       "id": "sublime.nextBookmark",
       "action": "跳到下一个书签",
-      "aliases": ["下一个书签"],
-      "keys": ["F2"],
+      "aliases": [
+        "下一个书签"
+      ],
+      "keys": [
+        "F2"
+      ],
       "group": "书签",
       "note": ""
     },
     {
       "id": "sublime.prevBookmark",
       "action": "跳到上一个书签",
-      "aliases": ["上一个书签"],
-      "keys": ["Shift+F2"],
+      "aliases": [
+        "上一个书签"
+      ],
+      "keys": [
+        "Shift+F2"
+      ],
       "group": "书签",
       "note": ""
     },
     {
       "id": "sublime.clearBookmarks",
       "action": "清除全部书签",
-      "aliases": ["清空书签"],
-      "keys": ["Ctrl+Shift+F2"],
+      "aliases": [
+        "清空书签"
+      ],
+      "keys": [
+        "Ctrl+Shift+F2"
+      ],
       "group": "书签",
       "note": ""
     },
     {
       "id": "sublime.toUpper",
       "action": "转换为大写",
-      "aliases": ["转大写", "变大写", "upper case"],
-      "keys": ["Ctrl+K", "Ctrl+U"],
+      "aliases": [
+        "转大写",
+        "变大写",
+        "upper case"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+U"
+      ],
       "group": "文本转换",
       "note": "两段按键"
     },
     {
       "id": "sublime.toLower",
       "action": "转换为小写",
-      "aliases": ["转小写", "变小写", "lower case"],
-      "keys": ["Ctrl+K", "Ctrl+L"],
+      "aliases": [
+        "转小写",
+        "变小写",
+        "lower case"
+      ],
+      "keys": [
+        "Ctrl+K",
+        "Ctrl+L"
+      ],
       "group": "文本转换",
       "note": "两段按键"
     },
     {
       "id": "sublime.closeTag",
       "action": "闭合当前 HTML 标签",
-      "aliases": ["补全闭合标签", "自动闭合"],
-      "keys": ["Alt+."],
+      "aliases": [
+        "补全闭合标签",
+        "自动闭合"
+      ],
+      "keys": [
+        "Alt+."
+      ],
       "group": "编辑",
       "note": "写 HTML 时很常用"
     },
     {
       "id": "sublime.wrapTag",
       "action": "用 HTML 标签包裹选中内容",
-      "aliases": ["包一层标签", "wrap in tag"],
-      "keys": ["Alt+Shift+W"],
+      "aliases": [
+        "包一层标签",
+        "wrap in tag"
+      ],
+      "keys": [
+        "Alt+Shift+W"
+      ],
       "group": "编辑",
       "note": ""
     }
