@@ -671,7 +671,6 @@
         "双击shift"
       ],
       "keys": [
-        "Shift",
         "Shift"
       ],
       "group": "搜索与导航",
@@ -1760,22 +1759,24 @@
         "psvm"
       ],
       "group": "代码模板·Java",
-      "note": "在 Java 文件里输入 psvm 按 Tab，展开 public static void main(String[] args){ }"
+      "note": "在类体里输入 psvm 按 Tab，展开 public static void main(String[] args){ }；缩写 main 完全等价",
+      "code": "public static void main(String[] args){\n  \n}"
     },
     {
       "id": "idea.tpl.sout",
       "action": "打印输出",
       "aliases": [
         "打印",
-        "输出",
+        "控制台输出",
         "println",
-        "控制台输出"
+        "输出"
       ],
       "keys": [
         "sout"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.out.println()，光标停在括号内"
+      "note": "展开 System.out.println(); 光标停在括号内",
+      "code": "System.out.println();"
     },
     {
       "id": "idea.tpl.soutv",
@@ -1783,355 +1784,1202 @@
       "aliases": [
         "打印变量",
         "变量值",
-        "soutv"
+        "带名字打印"
       ],
       "keys": [
         "soutv"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.out.println(\"变量名 = \" + 变量) 形式"
+      "note": "展开 System.out.println(\"变量名 = \" + 变量)，自动带上变量名",
+      "code": "System.out.println(\"$EXPR_COPY$ = \" + $EXPR$);"
     },
     {
       "id": "idea.tpl.soutm",
-      "action": "打印当前方法名",
+      "action": "打印当前方法",
       "aliases": [
-        "方法名",
-        "当前方法",
-        "soutm"
+        "打印方法名",
+        "当前类方法",
+        "定位输出"
       ],
       "keys": [
         "soutm"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.out.println(\"类名.方法名\")"
+      "note": "展开 System.out.println(\"类名.方法名\");，用来标记代码执行到哪个方法",
+      "code": "System.out.println(\"$CLASS_NAME$.$METHOD_NAME$\");"
     },
     {
       "id": "idea.tpl.soutp",
-      "action": "打印方法参数",
+      "action": "打印全部参数",
       "aliases": [
-        "打印参数",
-        "方法参数",
-        "soutp"
+        "打印形参",
+        "打印参数列表",
+        "参数输出"
       ],
       "keys": [
         "soutp"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.out.println(\"参数 = \" + Arrays.deepToString(args))"
+      "note": "展开 System.out.println(方法所有形参);，调试时一次打印入参",
+      "code": "System.out.println($FORMAT$);"
     },
     {
       "id": "idea.tpl.souf",
       "action": "格式化打印",
       "aliases": [
-        "格式化输出",
         "printf",
-        "占位符打印",
-        "souf"
+        "格式化输出",
+        "占位符打印"
       ],
       "keys": [
         "souf"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.out.printf(\"格式串\", 参数)，适合拼字符串"
+      "note": "展开 System.out.printf(\"\"); 光标在引号内，自己填 %s / %d 占位",
+      "code": "System.out.printf(\"\");"
+    },
+    {
+      "id": "idea.tpl.soutc",
+      "action": "打印方法引用",
+      "aliases": [
+        "方法引用",
+        "System.out::println",
+        "Consumer"
+      ],
+      "keys": [
+        "soutc"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 System.out::println（方法引用写法），用在 forEach 等需要 Consumer 的位置",
+      "code": "System.out::println"
     },
     {
       "id": "idea.tpl.serr",
-      "action": "错误输出",
+      "action": "打印错误输出",
       "aliases": [
-        "错误打印",
-        "System.err",
-        "红字输出",
-        "serr"
+        "错误输出",
+        "标准错误",
+        "error打印"
       ],
       "keys": [
         "serr"
       ],
       "group": "代码模板·Java",
-      "note": "展开 System.err.println()"
+      "note": "展开 System.err.println(); 输出到标准错误流",
+      "code": "System.err.println();"
     },
     {
-      "id": "idea.tpl.psf",
-      "action": "公共静态常量",
+      "id": "idea.tpl.serrc",
+      "action": "错误输出方法引用",
       "aliases": [
-        "静态常量",
-        "常量",
-        "public static final",
-        "psf"
+        "serr引用",
+        "System.err::println"
       ],
       "keys": [
-        "psf"
+        "serrc"
       ],
       "group": "代码模板·Java",
-      "note": "展开 public static final"
-    },
-    {
-      "id": "idea.tpl.psfi",
-      "action": "公共静态整型常量",
-      "aliases": [
-        "静态int常量",
-        "psfi"
-      ],
-      "keys": [
-        "psfi"
-      ],
-      "group": "代码模板·Java",
-      "note": "展开 public static final int"
-    },
-    {
-      "id": "idea.tpl.psfs",
-      "action": "公共静态字符串常量",
-      "aliases": [
-        "静态字符串常量",
-        "psfs"
-      ],
-      "keys": [
-        "psfs"
-      ],
-      "group": "代码模板·Java",
-      "note": "展开 public static final String"
-    },
-    {
-      "id": "idea.tpl.prsf",
-      "action": "私有静态常量",
-      "aliases": [
-        "私有常量",
-        "私有静态",
-        "prsf"
-      ],
-      "keys": [
-        "prsf"
-      ],
-      "group": "代码模板·Java",
-      "note": "展开 private static final"
+      "note": "展开 System.err::println（方法引用写法）",
+      "code": "System.err::println"
     },
     {
       "id": "idea.tpl.fori",
-      "action": "for 循环",
+      "action": "正序 for 循环",
       "aliases": [
-        "循环",
         "for循环",
-        "普通循环",
-        "fori"
+        "索引循环",
+        "i循环"
       ],
       "keys": [
         "fori"
       ],
       "group": "代码模板·Java",
-      "note": "展开带下标的 for 循环"
-    },
-    {
-      "id": "idea.tpl.forr",
-      "action": "倒序 for 循环",
-      "aliases": [
-        "倒序循环",
-        "反着循环",
-        "forr"
-      ],
-      "keys": [
-        "forr"
-      ],
-      "group": "代码模板·Java",
-      "note": "展开从末尾往前遍历的 for 循环"
+      "note": "展开 for(int i = 0; i < n; i++) { }，变量名按上下文自动建议",
+      "code": "for(int $INDEX$ = 0; $INDEX$ < $LIMIT$; $INDEX$++) {\n  \n}"
     },
     {
       "id": "idea.tpl.itar",
-      "action": "遍历数组",
+      "action": "遍历数组带下标",
       "aliases": [
         "数组遍历",
-        "遍历数组",
-        "itar"
+        "itar",
+        "带下标遍历"
       ],
       "keys": [
         "itar"
       ],
       "group": "代码模板·Java",
-      "note": "展开按下标遍历数组的 for 循环"
+      "note": "展开 for(int i = 0; i < array.length; i++) { 类型 变量 = array[i]; }",
+      "code": "for(int $INDEX$ = 0; $INDEX$ < $ARRAY$.length; $INDEX$++) {\n  $ELEMENT_TYPE$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}"
+    },
+    {
+      "id": "idea.tpl.ritar",
+      "action": "倒序遍历数组",
+      "aliases": [
+        "倒序数组",
+        "反向遍历",
+        "ritar"
+      ],
+      "keys": [
+        "ritar"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for(int i = array.length - 1; i >= 0; i--) { 类型 变量 = array[i]; }",
+      "code": "for(int $INDEX$ = $ARRAY$.length - 1; $INDEX$ >= 0; $INDEX$--) {\n  $ELEMENT_TYPE$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}"
     },
     {
       "id": "idea.tpl.iter",
-      "action": "增强 for",
+      "action": "增强 for 遍历",
       "aliases": [
-        "增强for",
         "foreach",
-        "遍历集合",
-        "iter"
+        "增强for",
+        "遍历集合"
       ],
       "keys": [
         "iter"
       ],
       "group": "代码模板·Java",
-      "note": "展开 for (元素 : 集合)"
+      "note": "展开 for (元素类型 变量 : 可迭代对象) { }，自动推断元素类型",
+      "code": "for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {\n  \n}"
     },
     {
       "id": "idea.tpl.itco",
-      "action": "遍历 Collection",
+      "action": "迭代器遍历集合",
       "aliases": [
-        "集合遍历",
-        "Collection",
-        "itco"
+        "Iterator",
+        "迭代器",
+        "collection遍历"
       ],
       "keys": [
         "itco"
       ],
       "group": "代码模板·Java",
-      "note": "展开遍历 java.util.Collection 的循环"
-    },
-    {
-      "id": "idea.tpl.iten",
-      "action": "遍历 Enumeration",
-      "aliases": [
-        "枚举遍历",
-        "Enumeration",
-        "iten"
-      ],
-      "keys": [
-        "iten"
-      ],
-      "group": "代码模板·Java",
-      "note": "展开遍历 java.util.Enumeration 的 while 循环"
+      "note": "展开 Collection 的 iterator() 循环，逐个 next() 取出元素",
+      "code": "for($ITER_TYPE$ $ITER$ = $COLLECTION$.iterator(); $ITER$.hasNext(); ) {\n  $ELEMENT_TYPE$ $VAR$ =$CAST$ $ITER$.next();\n  \n}"
     },
     {
       "id": "idea.tpl.itit",
-      "action": "遍历 Iterator",
+      "action": "while 迭代 Iterator",
       "aliases": [
-        "迭代器遍历",
-        "Iterator",
-        "itit"
+        "itit",
+        "hasNext",
+        "迭代器while"
       ],
       "keys": [
         "itit"
       ],
       "group": "代码模板·Java",
-      "note": "展开遍历 java.util.Iterator 的 while 循环"
+      "note": "展开 while(iterator.hasNext()){ 类型 变量 = iterator.next(); }",
+      "code": "while($ITER$.hasNext()){\n  $TYPE$ $VAR$ = $CAST$ $ITER$.next();\n  \n}"
+    },
+    {
+      "id": "idea.tpl.iten",
+      "action": "while 迭代 Enumeration",
+      "aliases": [
+        "iten",
+        "hasMoreElements",
+        "旧式枚举"
+      ],
+      "keys": [
+        "iten"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 while(enumeration.hasMoreElements()){ ... nextElement(); }，老 API 用",
+      "code": "while($ENUM$.hasMoreElements()){\n  $TYPE$ $VAR$ = $CAST$ $ENUM$.nextElement();\n  \n}"
     },
     {
       "id": "idea.tpl.itli",
-      "action": "遍历 List 带下标",
+      "action": "List 按下标遍历",
       "aliases": [
-        "List遍历",
-        "带下标遍历",
-        "itli"
+        "itli",
+        "list遍历",
+        "get循环"
       ],
       "keys": [
         "itli"
       ],
       "group": "代码模板·Java",
-      "note": "展开遍历 java.util.List 并在循环体内拿到下标"
+      "note": "展开 for (int i = 0; i < list.size(); i++) { 类型 变量 = list.get(i); }",
+      "code": "for (int $INDEX$ = 0; $INDEX$ < $LIST$.size(); $INDEX$++) {\n  $ELEMENT_TYPE$ $VAR$ = $CAST$ $LIST$.get($INDEX$);\n  \n}"
+    },
+    {
+      "id": "idea.tpl.itm",
+      "action": "遍历 Map 键值",
+      "aliases": [
+        "Map遍历",
+        "entrySet",
+        "键值对"
+      ],
+      "keys": [
+        "itm"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 for (Map.Entry<K,V> entry : map.entrySet()) { K key = entry.getKey(); V value = entry.getValue(); }",
+      "code": "for (java.util.Map.Entry<$KEY_TYPE$, $VALUE_TYPE$> $ENTRY$: $MAP$.entrySet()) {\n  $KEY_TYPE$ $KEY$ = $ENTRY$.getKey();\n  $VALUE_TYPE$ $VALUE$ = $ENTRY$.getValue();\n  \n}"
+    },
+    {
+      "id": "idea.tpl.ittok",
+      "action": "拆分字符串遍历",
+      "aliases": [
+        "StringTokenizer",
+        "分词",
+        "切分字符串"
+      ],
+      "keys": [
+        "ittok"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 StringTokenizer 循环，逐个 nextToken()",
+      "code": "for (java.util.StringTokenizer $TOKENIZER$ = new java.util.StringTokenizer($STRING$); $TOKENIZER$.hasMoreTokens(); ) {\n    String $VAR$ = $TOKENIZER_COPY$.nextToken();\n    \n}"
     },
     {
       "id": "idea.tpl.ifn",
-      "action": "判空",
+      "action": "判空分支",
       "aliases": [
-        "判空",
-        "如果为空",
-        "null判断",
-        "ifn"
+        "if null",
+        "空判断",
+        "判空"
       ],
       "keys": [
         "ifn"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (变量 == null) { }"
+      "note": "展开 if (变量 == null) { }",
+      "code": "if ($VAR$ == null) {\n\n}"
     },
     {
       "id": "idea.tpl.inn",
-      "action": "判非空",
+      "action": "判非空分支",
       "aliases": [
-        "判非空",
-        "不为空",
-        "inn"
+        "if not null",
+        "非空判断",
+        "不为空"
       ],
       "keys": [
         "inn"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (变量 != null) { }"
+      "note": "展开 if (变量 != null) { }",
+      "code": "if ($VAR$ != null) {\n\n}"
     },
     {
-      "id": "idea.tpl.ife",
-      "action": "if-else",
+      "id": "idea.tpl.else-if",
+      "action": "else if 分支",
       "aliases": [
-        "条件判断",
-        "ifelse",
-        "if else",
-        "ife"
+        "elseif",
+        "否则如果",
+        "追加分支"
       ],
       "keys": [
-        "ife"
+        "else-if"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (条件) { } else { }"
+      "note": "展开 else if(条件){ }，写在已有 if 之后",
+      "code": "else if($CONDITION$){\n\n}"
     },
     {
       "id": "idea.tpl.inst",
-      "action": "instanceof 判断",
+      "action": "instanceof 强转",
       "aliases": [
         "类型判断",
         "instanceof",
-        "inst"
+        "模式匹配前写法"
       ],
       "keys": [
         "inst"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (变量 instanceof 类型) { }，自带强转变量"
+      "note": "展开 if (表达式 instanceof 类型) { 类型 变量 = (类型)表达式; }",
+      "code": "if ($EXPR$ instanceof $TYPE$) {\n  $TYPE$ $VAR$ = ($TYPE$)$EXPR$;\n  \n}"
     },
     {
       "id": "idea.tpl.lazy",
-      "action": "懒加载",
+      "action": "懒加载赋值",
       "aliases": [
-        "懒加载",
-        "延迟初始化",
+        "懒初始化",
+        "空则new",
         "lazy"
       ],
       "keys": [
         "lazy"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (变量 == null) { 变量 = new 类型(); }"
+      "note": "展开 if (变量 == null) { 变量 = new 类型(); }",
+      "code": "if ($VAR$ == null) {\n  $VAR$ = new $TYPE$();\n}"
+    },
+    {
+      "id": "idea.tpl.lst",
+      "action": "取数组最后一个元素",
+      "aliases": [
+        "最后一个元素",
+        "末元素",
+        "last"
+      ],
+      "keys": [
+        "lst"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 arr[arr.length - 1]，表达式位置用",
+      "code": "$ARRAY$[$ARRAY$.length - 1]"
     },
     {
       "id": "idea.tpl.mn",
-      "action": "判空返回",
+      "action": "取较小值",
       "aliases": [
-        "空则返回",
-        "null则返回",
-        "mn"
+        "Math.min",
+        "最小值",
+        "min"
       ],
       "keys": [
         "mn"
       ],
       "group": "代码模板·Java",
-      "note": "展开 if (变量 == null) return;"
+      "note": "展开 x = Math.min(x, 新值);，把变量更新为两者较小值",
+      "code": "$VAR$ = Math.min($VAR$, );"
+    },
+    {
+      "id": "idea.tpl.mx",
+      "action": "取较大值",
+      "aliases": [
+        "Math.max",
+        "最大值",
+        "max"
+      ],
+      "keys": [
+        "mx"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 x = Math.max(x, 新值);，把变量更新为两者较大值",
+      "code": "$VAR$ = Math.max($VAR$, );"
     },
     {
       "id": "idea.tpl.toar",
       "action": "集合转数组",
       "aliases": [
-        "转数组",
         "toArray",
+        "转数组",
         "toar"
       ],
       "keys": [
         "toar"
       ],
       "group": "代码模板·Java",
-      "note": "展开集合的 toArray(new 类型[0]) 写法"
+      "note": "展开 collection.toArray(new 类型[0])",
+      "code": "$COLLECTION$.toArray(new $COMPONENT_TYPE$[0])"
     },
     {
       "id": "idea.tpl.thr",
-      "action": "抛出异常",
+      "action": "抛出异常前缀",
       "aliases": [
+        "throw new",
         "抛异常",
-        "throw",
-        "抛出",
         "thr"
       ],
       "keys": [
         "thr"
       ],
       "group": "代码模板·Java",
-      "note": "展开 throw new 异常(消息)"
+      "note": "只展开 throw new，异常类名自己接着写",
+      "code": "throw new"
+    },
+    {
+      "id": "idea.tpl.psf",
+      "action": "public static final 前缀",
+      "aliases": [
+        "公共静态常量",
+        "psf",
+        "常量修饰"
+      ],
+      "keys": [
+        "psf"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final，用于声明常量",
+      "code": "public static final"
+    },
+    {
+      "id": "idea.tpl.prsf",
+      "action": "private static final 前缀",
+      "aliases": [
+        "私有静态常量",
+        "prsf",
+        "私有常量"
+      ],
+      "keys": [
+        "prsf"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 private static final",
+      "code": "private static final"
+    },
+    {
+      "id": "idea.tpl.psfi",
+      "action": "public static final int 前缀",
+      "aliases": [
+        "psfi",
+        "静态int常量",
+        "整型常量"
+      ],
+      "keys": [
+        "psfi"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final int",
+      "code": "public static final int"
+    },
+    {
+      "id": "idea.tpl.psfs",
+      "action": "public static final String 前缀",
+      "aliases": [
+        "psfs",
+        "静态字符串常量",
+        "String常量"
+      ],
+      "keys": [
+        "psfs"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static final String",
+      "code": "public static final String"
+    },
+    {
+      "id": "idea.tpl.St",
+      "action": "String 声明前缀",
+      "aliases": [
+        "String声明",
+        "St",
+        "字符串声明"
+      ],
+      "keys": [
+        "St"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 String 加一个空格，接着写变量名",
+      "code": "String"
+    },
+    {
+      "id": "idea.tpl.geti",
+      "action": "单例 getInstance 方法",
+      "aliases": [
+        "getInstance",
+        "单例方法",
+        "geti"
+      ],
+      "keys": [
+        "geti"
+      ],
+      "group": "代码模板·Java",
+      "note": "展开 public static 类名 getInstance() { return 实例; }",
+      "code": "public static $CLASS_NAME$ getInstance() {\n  return $VALUE$;\n}"
+    },
+    {
+      "id": "idea.tpl.kt.main",
+      "action": "Kotlin 主函数",
+      "aliases": [
+        "main函数",
+        "kt入口",
+        "psvm等价"
+      ],
+      "keys": [
+        "main"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun main() { }；Kotlin 里 psvm 是同一展开的别名",
+      "code": "fun main($ARGS$) {\n  \n}"
+    },
+    {
+      "id": "idea.tpl.kt.maina",
+      "action": "带参数主函数",
+      "aliases": [
+        "main参数",
+        "args入口",
+        "maina"
+      ],
+      "keys": [
+        "maina"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun main(args: Array<String>) { }",
+      "code": "fun main(args: Array<String>) {\n  \n}"
+    },
+    {
+      "id": "idea.tpl.kt.maino",
+      "action": "JvmStatic 主函数",
+      "aliases": [
+        "maino",
+        "JvmStatic main",
+        "对象内入口"
+      ],
+      "keys": [
+        "maino"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 @JvmStatic fun main(args: Array<String>) { }",
+      "code": "@JvmStatic\nfun main(args: Array<String>) {\n  \n}"
+    },
+    {
+      "id": "idea.tpl.kt.sout",
+      "action": "Kotlin 打印",
+      "aliases": [
+        "println",
+        "kt打印",
+        "输出"
+      ],
+      "keys": [
+        "sout"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(); 光标在括号内",
+      "code": "println()"
+    },
+    {
+      "id": "idea.tpl.kt.serr",
+      "action": "Kotlin 错误输出",
+      "aliases": [
+        "System.err",
+        "kt错误输出",
+        "serr"
+      ],
+      "keys": [
+        "serr"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 System.err.println();",
+      "code": "System.err.println()"
+    },
+    {
+      "id": "idea.tpl.kt.soutv",
+      "action": "Kotlin 打印变量值",
+      "aliases": [
+        "打印变量",
+        "变量值",
+        "字符串模板"
+      ],
+      "keys": [
+        "soutv"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(\"变量名 = $变量\")，字符串模板写法",
+      "code": "println(\"$EXPR_COPY$ = $DOLLAR${$EXPR$}\")"
+    },
+    {
+      "id": "idea.tpl.kt.soutp",
+      "action": "Kotlin 打印全部参数",
+      "aliases": [
+        "打印形参",
+        "参数输出",
+        "soutp"
+      ],
+      "keys": [
+        "soutp"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(函数所有参数);",
+      "code": "println($FORMAT$)"
+    },
+    {
+      "id": "idea.tpl.kt.soutf",
+      "action": "Kotlin 打印当前函数",
+      "aliases": [
+        "打印方法名",
+        "soutf",
+        "定位输出"
+      ],
+      "keys": [
+        "soutf"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 println(\"类名.方法名\");",
+      "code": "println(\"$CLASS$.$METHOD$\")"
+    },
+    {
+      "id": "idea.tpl.kt.iter",
+      "action": "Kotlin 遍历",
+      "aliases": [
+        "for in",
+        "kt循环",
+        "遍历集合"
+      ],
+      "keys": [
+        "iter"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 for (变量 in 集合) { }",
+      "code": "for ($VAR$ in $ITERABLE$) {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.ifn",
+      "action": "Kotlin 判空分支",
+      "aliases": [
+        "判空",
+        "if null",
+        "kt空判断"
+      ],
+      "keys": [
+        "ifn"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 if (变量 == null) { }",
+      "code": "if ($VAR$ == null) {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.inn",
+      "action": "Kotlin 判非空分支",
+      "aliases": [
+        "非空判断",
+        "if not null",
+        "kt非空"
+      ],
+      "keys": [
+        "inn"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 if (变量 != null) { }",
+      "code": "if ($VAR$ != null) {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.void",
+      "action": "无返回值函数",
+      "aliases": [
+        "fun",
+        "定义函数",
+        "kt函数"
+      ],
+      "keys": [
+        "void"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数) { }",
+      "code": "fun $NAME$($PARAMS$) {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.fun0",
+      "action": "无参函数",
+      "aliases": [
+        "fun0",
+        "无参方法",
+        "返回值函数"
+      ],
+      "keys": [
+        "fun0"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称() : 返回类型 { }",
+      "code": "fun $NAME$() : $RETURN$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.fun1",
+      "action": "单参函数",
+      "aliases": [
+        "fun1",
+        "一个参数",
+        "带参方法"
+      ],
+      "keys": [
+        "fun1"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数 : 类型) : 返回类型 { }",
+      "code": "fun $NAME$($PARAM1$ : $PARAM1TYPE$) : $RETURN$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.fun2",
+      "action": "双参函数",
+      "aliases": [
+        "fun2",
+        "两个参数",
+        "多参方法"
+      ],
+      "keys": [
+        "fun2"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 名称(参数1 : 类型, 参数2 : 类型) : 返回类型 { }",
+      "code": "fun $NAME$($PARAM1$ : $PARAM1TYPE$, $PARAM2$ : $PARAM2TYPE$) : $RETURN$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.interface",
+      "action": "Kotlin 接口",
+      "aliases": [
+        "interface",
+        "接口声明",
+        "kt接口"
+      ],
+      "keys": [
+        "interface"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 interface 名称 { }",
+      "code": "interface $NAME$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.singleton",
+      "action": "Kotlin 单例对象",
+      "aliases": [
+        "object单例",
+        "singleton",
+        "kt单例"
+      ],
+      "keys": [
+        "singleton"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object 名称 { }，Kotlin 的天然单例写法",
+      "code": "object $NAME$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.closure",
+      "action": "Lambda 闭包",
+      "aliases": [
+        "lambda",
+        "闭包",
+        "匿名函数"
+      ],
+      "keys": [
+        "closure"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 { 参数 -> 参数 } ",
+      "code": "{$PARAM$ -> $PARAM_COPY$}"
+    },
+    {
+      "id": "idea.tpl.kt.anonymous",
+      "action": "匿名对象",
+      "aliases": [
+        "object匿名",
+        "anonymous",
+        "匿名实现"
+      ],
+      "keys": [
+        "anonymous"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object : 父类型 { }",
+      "code": "object : $SUPERTYPE$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.object",
+      "action": "匿名对象（简写）",
+      "aliases": [
+        "object",
+        "匿名子类",
+        "继承实现"
+      ],
+      "keys": [
+        "object"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 object : 父类型 { }，与 anonymous 展开一致",
+      "code": "object : $SUPERTYPE$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.exfun",
+      "action": "扩展函数",
+      "aliases": [
+        "扩展函数",
+        "exfun",
+        "接收者函数"
+      ],
+      "keys": [
+        "exfun"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 fun 接收者.名称(参数) : 返回类型 { }",
+      "code": "fun $RECEIVER$.$NAME$($PARAMS$) : $RETURN$ {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.exval",
+      "action": "扩展属性（val）",
+      "aliases": [
+        "扩展属性",
+        "exval",
+        "只读扩展"
+      ],
+      "keys": [
+        "exval"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 val 接收者.名称 : 类型 get() { }",
+      "code": "val $RECEIVER$.$NAME$ : $TYPE$\nget() {\n\n}"
+    },
+    {
+      "id": "idea.tpl.kt.exvar",
+      "action": "扩展属性（var）",
+      "aliases": [
+        "可变扩展属性",
+        "exvar",
+        "读写扩展"
+      ],
+      "keys": [
+        "exvar"
+      ],
+      "group": "代码模板·Kotlin",
+      "note": "展开 var 接收者.名称 : 类型 get(){} set(value){ }",
+      "code": "var $RECEIVER$.$NAME$ : $TYPE$\nget() {\n\n}\nset(value) {\n \n}"
+    },
+    {
+      "id": "idea.sql.sel",
+      "action": "sel",
+      "aliases": [
+        "sel"
+      ],
+      "keys": [
+        "sel"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select * from $table$;"
+    },
+    {
+      "id": "idea.sql.selw",
+      "action": "selw",
+      "aliases": [
+        "selw"
+      ],
+      "keys": [
+        "selw"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select * from $table$ $alias$ where $alias$.;"
+    },
+    {
+      "id": "idea.sql.selc",
+      "action": "selc",
+      "aliases": [
+        "selc"
+      ],
+      "keys": [
+        "selc"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select count(*) from $table$ $alias$ where $alias$.;"
+    },
+    {
+      "id": "idea.sql.lim",
+      "action": "lim",
+      "aliases": [
+        "lim"
+      ],
+      "keys": [
+        "lim"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select * from $table$ limit $size$;"
+    },
+    {
+      "id": "idea.sql.top",
+      "action": "top",
+      "aliases": [
+        "top"
+      ],
+      "keys": [
+        "top"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select top $size$ * from $table$;"
+    },
+    {
+      "id": "idea.sql.first",
+      "action": "first",
+      "aliases": [
+        "first"
+      ],
+      "keys": [
+        "first"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select * from $table$ fetch first $size$ rows only;"
+    },
+    {
+      "id": "idea.sql.toprow",
+      "action": "toprow",
+      "aliases": [
+        "toprow"
+      ],
+      "keys": [
+        "toprow"
+      ],
+      "group": "代码模板·SQL",
+      "code": "select * from $table$ where rownum <= $size$;"
+    },
+    {
+      "id": "idea.sql.ins",
+      "action": "ins",
+      "aliases": [
+        "ins"
+      ],
+      "keys": [
+        "ins"
+      ],
+      "group": "代码模板·SQL",
+      "code": "insert into $table$ ($columns$) values ($info$);"
+    },
+    {
+      "id": "idea.sql.upd",
+      "action": "upd",
+      "aliases": [
+        "upd"
+      ],
+      "keys": [
+        "upd"
+      ],
+      "group": "代码模板·SQL",
+      "code": "update $table_name$ set $col$ = $value$ where ;"
+    },
+    {
+      "id": "idea.sql.del",
+      "action": "del",
+      "aliases": [
+        "del"
+      ],
+      "keys": [
+        "del"
+      ],
+      "group": "代码模板·SQL",
+      "code": "delete from $table$ where ;"
+    },
+    {
+      "id": "idea.sql.tab",
+      "action": "tab",
+      "aliases": [
+        "tab"
+      ],
+      "keys": [
+        "tab"
+      ],
+      "group": "代码模板·SQL",
+      "code": "create table $table$ (\n  $col$ $type$ $null$\n);"
+    },
+    {
+      "id": "idea.sql.view",
+      "action": "new view definition",
+      "aliases": [
+        "view",
+        "new view definition"
+      ],
+      "keys": [
+        "view"
+      ],
+      "group": "代码模板·SQL",
+      "note": "new view definition",
+      "code": "create view $view$ as select * from $table$ ;"
+    },
+    {
+      "id": "idea.sql.col",
+      "action": "col",
+      "aliases": [
+        "col"
+      ],
+      "keys": [
+        "col"
+      ],
+      "group": "代码模板·SQL",
+      "code": "$col$ $type$ $null$"
+    },
+    {
+      "id": "idea.sh.fori",
+      "action": "For loop in list",
+      "aliases": [
+        "fori",
+        "For loop in list"
+      ],
+      "keys": [
+        "fori"
+      ],
+      "group": "代码模板·Shell",
+      "note": "For loop in list",
+      "code": "for $INDEX$ in $LOOP_ITEMS$ ; do\n    $SELECTION$\ndone"
+    },
+    {
+      "id": "idea.sh.cmd",
+      "action": "cmd",
+      "aliases": [
+        "cmd"
+      ],
+      "keys": [
+        "cmd"
+      ],
+      "group": "代码模板·Shell",
+      "code": "`$COMMAND$`"
+    },
+    {
+      "id": "idea.sh.cmd-success-check",
+      "action": "cmd success check",
+      "aliases": [
+        "cmd success check"
+      ],
+      "keys": [
+        "cmd success check"
+      ],
+      "group": "代码模板·Shell",
+      "code": "if [[ $? == 0 ]]; then\n    echo \"Succeed\"\nelse\n    echo \"Failed\"\nfi"
+    },
+    {
+      "id": "idea.sh.tar-compress",
+      "action": "tar compress",
+      "aliases": [
+        "tar compress"
+      ],
+      "keys": [
+        "tar compress"
+      ],
+      "group": "代码模板·Shell",
+      "code": "tar -czvf $ARCHIVE$.tar.gz $DIRECTORY$"
+    },
+    {
+      "id": "idea.sh.tar-decompress",
+      "action": "tar decompress",
+      "aliases": [
+        "tar decompress"
+      ],
+      "keys": [
+        "tar decompress"
+      ],
+      "group": "代码模板·Shell",
+      "code": "tar -C $DIRECTORY$ -xzvf $ARCHIVE$.tar.gz"
+    },
+    {
+      "id": "idea.sh.mkdir",
+      "action": "mkdir",
+      "aliases": [
+        "mkdir"
+      ],
+      "keys": [
+        "mkdir"
+      ],
+      "group": "代码模板·Shell",
+      "code": "mkdir \"$DIRECTORY$\""
+    },
+    {
+      "id": "idea.sh.git-branch-create",
+      "action": "git branch create",
+      "aliases": [
+        "git branch create"
+      ],
+      "keys": [
+        "git branch create"
+      ],
+      "group": "代码模板·Shell",
+      "code": "git checkout -b $BRANCH$"
+    },
+    {
+      "id": "idea.sh.git-push",
+      "action": "git push",
+      "aliases": [
+        "git push"
+      ],
+      "keys": [
+        "git push"
+      ],
+      "group": "代码模板·Shell",
+      "code": "git push origin $BRANCH$"
+    },
+    {
+      "id": "idea.sh.git-commit",
+      "action": "git commit",
+      "aliases": [
+        "git commit"
+      ],
+      "keys": [
+        "git commit"
+      ],
+      "group": "代码模板·Shell",
+      "code": "git commit -m \"$MESSAGE$\""
+    },
+    {
+      "id": "idea.sh.curl",
+      "action": "curl",
+      "aliases": [
+        "curl"
+      ],
+      "keys": [
+        "curl"
+      ],
+      "group": "代码模板·Shell",
+      "code": "curl --request $METHOD$ -sL \\\n     --url '$URL$'\\\n     --output '$FILE$'"
+    },
+    {
+      "id": "idea.sh.rm",
+      "action": "rm",
+      "aliases": [
+        "rm"
+      ],
+      "keys": [
+        "rm"
+      ],
+      "group": "代码模板·Shell",
+      "code": "rm $PARAM$ $PATH$"
+    },
+    {
+      "id": "idea.sh.find",
+      "action": "find",
+      "aliases": [
+        "find"
+      ],
+      "keys": [
+        "find"
+      ],
+      "group": "代码模板·Shell",
+      "code": "find $PATH$ -type $PARAM$ -name \"$NAME$\""
+    },
+    {
+      "id": "idea.sh.heredoc",
+      "action": "heredoc",
+      "aliases": [
+        "heredoc"
+      ],
+      "keys": [
+        "heredoc"
+      ],
+      "group": "代码模板·Shell",
+      "code": "<<EOF\n    $TEXT$\nEOF"
+    },
+    {
+      "id": "idea.sh.xargs",
+      "action": "xargs",
+      "aliases": [
+        "xargs"
+      ],
+      "keys": [
+        "xargs"
+      ],
+      "group": "代码模板·Shell",
+      "code": " | xargs $COMMAND$"
+    },
+    {
+      "id": "idea.sh.system-info-linux",
+      "action": "system info linux",
+      "aliases": [
+        "system info linux"
+      ],
+      "keys": [
+        "system info linux"
+      ],
+      "group": "代码模板·Shell",
+      "code": "lsb_release -a"
+    },
+    {
+      "id": "idea.sh.system-info-mac",
+      "action": "system info mac",
+      "aliases": [
+        "system info mac"
+      ],
+      "keys": [
+        "system info mac"
+      ],
+      "group": "代码模板·Shell",
+      "code": "sw_vers"
+    },
+    {
+      "id": "idea.sh.system-kernel-info",
+      "action": "system kernel info",
+      "aliases": [
+        "system kernel info"
+      ],
+      "keys": [
+        "system kernel info"
+      ],
+      "group": "代码模板·Shell",
+      "code": "uname -a"
     }
   ]
 }
