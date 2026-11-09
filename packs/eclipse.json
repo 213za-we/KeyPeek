@@ -1,0 +1,366 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "eclipse",
+  "name": "Eclipse",
+  "color": "#2C2255",
+  "icon": "icons/eclipse.svg",
+  "inherit": null,
+  "os": "win",
+  "keymap": "Windows 默认键位（官方）",
+  "source": "https://eclipseide.org/get-started/documents/eclipse-keybindings.pdf",
+  "shortcuts": [
+    {
+      "id": "eclipse.format",
+      "action": "格式化代码",
+      "aliases": ["自动对齐", "对齐", "格式化", "排版", "整理缩进", "format"],
+      "keys": ["Ctrl+Shift+F"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.organizeImports",
+      "action": "整理导入（自动 import）",
+      "aliases": ["整理导入", "自动导入", "导入包", "organize imports"],
+      "keys": ["Ctrl+Shift+O"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.contentAssist",
+      "action": "内容辅助（代码补全）",
+      "aliases": ["补全", "代码提示", "自动补全", "content assist"],
+      "keys": ["Ctrl+Space"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.quickFix",
+      "action": "快速修复",
+      "aliases": ["快速修复", "报错修复", "quick fix", "ctrl+1"],
+      "keys": ["Ctrl+1"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.deleteLine",
+      "action": "删除行",
+      "aliases": ["删行", "删掉这一行", "delete line"],
+      "keys": ["Ctrl+D"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.moveLineUp",
+      "action": "上移行",
+      "aliases": ["上平移", "上移", "往上挪", "move line up"],
+      "keys": ["Alt+↑"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.moveLineDown",
+      "action": "下移行",
+      "aliases": ["下平移", "下移", "往下挪", "move line down"],
+      "keys": ["Alt+↓"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.toggleComment",
+      "action": "注释 / 取消注释",
+      "aliases": ["注释", "注释掉", "toggle comment"],
+      "keys": ["Ctrl+Shift+C"],
+      "group": "编辑",
+      "note": "官方默认是 Ctrl+Shift+C（不是 Ctrl+/）"
+    },
+    {
+      "id": "eclipse.addBlockComment",
+      "action": "添加块注释",
+      "aliases": ["块注释", "多行注释"],
+      "keys": ["Ctrl+Shift+/"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.removeBlockComment",
+      "action": "移除块注释",
+      "aliases": ["去块注释"],
+      "keys": ["Ctrl+Shift+\\"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.rename",
+      "action": "重命名",
+      "aliases": ["改名", "重命名变量", "rename"],
+      "keys": ["Alt+Shift+R"],
+      "group": "编辑",
+      "hot": true
+    },
+    {
+      "id": "eclipse.refactorMenu",
+      "action": "重构菜单",
+      "aliases": ["重构", "refactor"],
+      "keys": ["Alt+Shift+T"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.advancedEdit",
+      "action": "高级编辑操作",
+      "aliases": ["更多编辑操作", "advanced editing"],
+      "keys": ["Alt+Shift+S"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.blockSelection",
+      "action": "切换列选择模式",
+      "aliases": ["列编辑", "块选择", "column selection"],
+      "keys": ["Alt+Shift+A"],
+      "group": "选择",
+      "note": ""
+    },
+    {
+      "id": "eclipse.expandSelection",
+      "action": "扩大选中到代码块",
+      "aliases": ["扩大选择", "选一层", "expand selection"],
+      "keys": ["Alt+Shift+↑"],
+      "group": "选择",
+      "note": ""
+    },
+    {
+      "id": "eclipse.shrinkSelection",
+      "action": "缩小选择",
+      "aliases": ["缩小选中", "shrink selection"],
+      "keys": ["Alt+Shift+↓"],
+      "group": "选择",
+      "note": ""
+    },
+    {
+      "id": "eclipse.nextStatement",
+      "action": "选到下一个语句",
+      "aliases": ["选下一句", "next statement"],
+      "keys": ["Alt+Shift+→"],
+      "group": "选择",
+      "note": ""
+    },
+    {
+      "id": "eclipse.prevStatement",
+      "action": "选到上一个语句",
+      "aliases": ["选上一句", "previous statement"],
+      "keys": ["Alt+Shift+←"],
+      "group": "选择",
+      "note": ""
+    },
+    {
+      "id": "eclipse.quickAccess",
+      "action": "快速访问（搜命令/视图）",
+      "aliases": ["快速搜索", "找视图", "quick access"],
+      "keys": ["Ctrl+3"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.gotoLine",
+      "action": "转到行",
+      "aliases": ["跳行", "定位行", "第几行", "goto line"],
+      "keys": ["Ctrl+L"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.gotoDeclaration",
+      "action": "转到声明",
+      "aliases": ["跳定义", "看源码", "go to declaration"],
+      "keys": ["F3"],
+      "group": "导航与搜索",
+      "note": "Ctrl + 左键点击同效",
+      "hot": true
+    },
+    {
+      "id": "eclipse.showJavadoc",
+      "action": "查看 Javadoc",
+      "aliases": ["看文档", "查注释", "javadoc"],
+      "keys": ["F2"],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.typeHierarchy",
+      "action": "查看类型层级",
+      "aliases": ["类继承树", "type hierarchy"],
+      "keys": ["F4"],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.openType",
+      "action": "打开类型",
+      "aliases": ["搜类", "找类", "open type"],
+      "keys": ["Ctrl+Shift+T"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.openResource",
+      "action": "打开资源文件",
+      "aliases": ["搜文件", "找文件", "open resource"],
+      "keys": ["Ctrl+Shift+R"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.references",
+      "action": "在工作区查找引用",
+      "aliases": ["谁用了", "查引用", "references"],
+      "keys": ["Ctrl+Shift+G"],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.callHierarchy",
+      "action": "查看调用层级",
+      "aliases": ["谁调用了这个方法", "call hierarchy"],
+      "keys": ["Ctrl+Alt+H"],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.find",
+      "action": "查找",
+      "aliases": ["搜索当前文件", "找文字", "find"],
+      "keys": ["Ctrl+F"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.searchDialog",
+      "action": "搜索（文件/项目/工作区）",
+      "aliases": ["全文搜索", "全局搜索", "search"],
+      "keys": ["Ctrl+H"],
+      "group": "导航与搜索",
+      "hot": true
+    },
+    {
+      "id": "eclipse.nextProblem",
+      "action": "跳到下一个问题/错误",
+      "aliases": ["下一个错误", "next problem"],
+      "keys": ["Ctrl+."],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.prevProblem",
+      "action": "跳到上一个问题/错误",
+      "aliases": ["上一个错误", "previous problem"],
+      "keys": ["Ctrl+,"],
+      "group": "导航与搜索",
+      "note": ""
+    },
+    {
+      "id": "eclipse.zoomIn",
+      "action": "放大编辑器",
+      "aliases": ["字体变大", "zoom in"],
+      "keys": ["Ctrl++"],
+      "group": "显示",
+      "note": ""
+    },
+    {
+      "id": "eclipse.zoomOut",
+      "action": "缩小编辑器",
+      "aliases": ["字体变小", "zoom out"],
+      "keys": ["Ctrl+-"],
+      "group": "显示",
+      "note": ""
+    },
+    {
+      "id": "eclipse.build",
+      "action": "构建全部项目",
+      "aliases": ["编译", "构建", "build"],
+      "keys": ["Ctrl+B"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.run",
+      "action": "运行上次的配置",
+      "aliases": ["运行", "跑起来", "run"],
+      "keys": ["Ctrl+F11"],
+      "group": "运行与调试",
+      "hot": true
+    },
+    {
+      "id": "eclipse.debug",
+      "action": "调试上次的配置",
+      "aliases": ["调试", "debug"],
+      "keys": ["F11"],
+      "group": "运行与调试",
+      "hot": true
+    },
+    {
+      "id": "eclipse.stepInto",
+      "action": "单步跳入",
+      "aliases": ["进方法", "step into"],
+      "keys": ["F5"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.stepOver",
+      "action": "单步跳过",
+      "aliases": ["下一步", "单步", "step over"],
+      "keys": ["F6"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.stepReturn",
+      "action": "跳出当前方法",
+      "aliases": ["返回上层", "step return"],
+      "keys": ["F7"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.resume",
+      "action": "恢复执行（到下一个断点）",
+      "aliases": ["继续执行", "往下跑", "resume"],
+      "keys": ["F8"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.inspect",
+      "action": "查看表达式值",
+      "aliases": ["看变量值", "inspect"],
+      "keys": ["Ctrl+Shift+I"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "eclipse.save",
+      "action": "保存",
+      "aliases": ["保存", "存盘", "save"],
+      "keys": ["Ctrl+S"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.undo",
+      "action": "撤销",
+      "aliases": ["撤回", "回退", "undo"],
+      "keys": ["Ctrl+Z"],
+      "group": "编辑",
+      "note": ""
+    },
+    {
+      "id": "eclipse.redo",
+      "action": "重做",
+      "aliases": ["恢复", "redo"],
+      "keys": ["Ctrl+Y"],
+      "group": "编辑",
+      "note": ""
+    }
+  ]
+}
