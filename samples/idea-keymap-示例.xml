@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keymap version="1" name="我的自定义键位" parent="Windows 10">
+  <action id="Reformat">
+    <keyboard-shortcut first-keystroke="ctrl alt L"/>
+  </action>
+  <action id="OptimizeImports">
+    <keyboard-shortcut first-keystroke="ctrl alt O"/>
+  </action>
+  <action id="RenameElement">
+    <keyboard-shortcut first-keystroke="shift F6"/>
+  </action>
+  <action id="EditorDuplicate">
+    <keyboard-shortcut first-keystroke="ctrl D"/>
+  </action>
+  <action id="MoveStatementUp">
+    <keyboard-shortcut first-keystroke="ctrl shift UP"/>
+  </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="ctrl SLASH"/>
+  </action>
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="ctrl shift F"/>
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="ctrl B"/>
+  </action>
+  <action id="SearchEverywhere">
+    <keyboard-shortcut first-keystroke="shift shift"/>
+  </action>
+  <action id="MyPrivateMacroAction">
+    <keyboard-shortcut first-keystroke="ctrl alt M"/>
+  </action>
+</keymap>
