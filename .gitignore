@@ -3,8 +3,15 @@ userdata/
 stats.json
 windowstate.ini
 *.json.bak
-packs/_已删除/
 
 # 编译产物与 SDK 缓存
 build/_sdk/
 source/*.pdb
+
+# 打包产物
+*.zip
+*.7z
+
+# 取数原始材料（版权归官方，不随仓库分发；用 importers/_src/fetch_cards.py 可重新下载）
+importers/_src/*.pdf
+importers/_src/android_keys.html
