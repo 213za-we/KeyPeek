@@ -1,0 +1,12 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "pycharm",
+  "name": "PyCharm",
+  "color": "#21A179",
+  "icon": "icons/pycharm.svg",
+  "inherit": "idea",
+  "os": "win",
+  "keymap": "Windows 默认键位（继承 IDEA，二者默认一致）",
+  "source": "https://www.jetbrains.com/help/pycharm/reference-keymap-win-default.html",
+  "shortcuts": []
+}
