@@ -52,13 +52,13 @@
     },
     {
       "id": "acrylic",
-      "label": "亚克力",
+      "label": "清透",
       "transparent": true,
       "dark": false,
       "tokens": {
-        "paper": "rgba(243,243,246,.58)",
-        "surface": "rgba(255,255,255,.70)",
-        "card": "rgba(255,255,255,.74)",
+        "paper": "rgba(233,233,239,.92)",
+        "surface": "rgba(255,255,255,.86)",
+        "card": "rgba(255,255,255,.90)",
         "ink": "#1D1D1F",
         "ink-2": "#3C3C3E",
         "muted": "#6E6E73",
