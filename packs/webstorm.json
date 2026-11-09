@@ -1,0 +1,12 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "webstorm",
+  "name": "WebStorm",
+  "color": "#087CFA",
+  "icon": "icons/webstorm.svg",
+  "inherit": "idea",
+  "os": "win",
+  "keymap": "Windows 默认键位（继承 IDEA，二者默认一致）",
+  "source": "https://www.jetbrains.com/help/webstorm/reference-keymap-win-default.html",
+  "shortcuts": []
+}
