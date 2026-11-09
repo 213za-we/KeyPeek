@@ -1,0 +1,718 @@
+[
+ {
+  "keys": [
+   "Ctrl+Shift+A"
+  ],
+  "desc": "Find action…",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Alt+[0-9]"
+  ],
+  "desc": "Open a tool window",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Y"
+  ],
+  "desc": "Synchronize",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+`"
+  ],
+  "desc": "Quick switch scheme…",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+S"
+  ],
+  "desc": "Settings…",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "F4",
+   "Alt+Home"
+  ],
+  "desc": "Jump to source / navigation bar",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "F12"
+  ],
+  "desc": "Jump to last tool window",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Shift+Esc",
+   "Ctrl+Shift+F12"
+  ],
+  "desc": "Hide active / all tool windows",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Alt+Right",
+   "Alt+Left"
+  ],
+  "desc": "Go to next / previous editor tab",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Esc"
+  ],
+  "desc": "Go to editor (from a tool window)",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F4",
+   "Ctrl+F4"
+  ],
+  "desc": "Close active tab / window",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+F1"
+  ],
+  "desc": "Show error description",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "F2",
+   "Shift+F2"
+  ],
+  "desc": "Next / previous highlighted error",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Shift+I"
+  ],
+  "desc": "Run inspection by name…",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+H",
+   "Ctrl+Alt+H"
+  ],
+  "desc": "Type / call hierarchy",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+A"
+  ],
+  "desc": "Find any action inside the IDE",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Alt+Enter"
+  ],
+  "desc": "Show intention actions",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Space"
+  ],
+  "desc": "Basic code completion",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+Space"
+  ],
+  "desc": "Smart code completion",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Space"
+  ],
+  "desc": "Type name completion",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+Enter"
+  ],
+  "desc": "Complete statement",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+I"
+  ],
+  "desc": "Quick definition",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Q",
+   "Shift+F1"
+  ],
+  "desc": "Quick / external documentation",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Alt+Insert"
+  ],
+  "desc": "Generate code",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+O",
+   "Ctrl+I"
+  ],
+  "desc": "Override / implement members",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+T"
+  ],
+  "desc": "Surround with…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+"
+  ],
+  "desc": "Comment with line comment",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+W",
+   "Ctrl+Shift+W"
+  ],
+  "desc": "Extend / shrink selection",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+O"
+  ],
+  "desc": "Optimize imports",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+I"
+  ],
+  "desc": "Auto-indent lines",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+X",
+   "Ctrl+C",
+   "Ctrl+V"
+  ],
+  "desc": "Cut / Сopy / Paste",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+C"
+  ],
+  "desc": "Copy document path",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+V"
+  ],
+  "desc": "Paste from clipboard history",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+D"
+  ],
+  "desc": "Duplicate current line or selection",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+Up",
+   "Ctrl+Shift+Down"
+  ],
+  "desc": "Move line up / down",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Y"
+  ],
+  "desc": "Delete line at caret",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+J",
+   "Ctrl+Enter"
+  ],
+  "desc": "Join / split line",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Shift+Enter"
+  ],
+  "desc": "Start new line",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+U"
+  ],
+  "desc": "Toggle case",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+NumPad+",
+   "Ctrl+NumPad+NumPad-"
+  ],
+  "desc": "Expand / collapse code block",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+NumPad+",
+   "Ctrl+Shift+NumPad+NumPad-"
+  ],
+  "desc": "Expand / collapse all",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+S"
+  ],
+  "desc": "Save all",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Alt+F1"
+  ],
+  "desc": "Select in…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Left",
+   "Ctrl+Alt+Right"
+  ],
+  "desc": "Navigate back / forward",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Alt+Up",
+   "Alt+Down"
+  ],
+  "desc": "Go to previous / next method",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+G"
+  ],
+  "desc": "Go to line / column…",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+]",
+   "Ctrl+["
+  ],
+  "desc": "Go to code block end / start",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Alt+Shift+F"
+  ],
+  "desc": "Add to favorites",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "F11"
+  ],
+  "desc": "Toggle bookmark",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+F11"
+  ],
+  "desc": "Toggle bookmark with mnemonic",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+[0-9]"
+  ],
+  "desc": "Go to numbered bookmark",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Shift+F11"
+  ],
+  "desc": "Show bookmarks",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Double Shift"
+  ],
+  "desc": "Search everywhere",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+F",
+   "Ctrl+R"
+  ],
+  "desc": "Find / replace",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F",
+   "Ctrl+Shift+R"
+  ],
+  "desc": "Find in path / Replace in path",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "F3",
+   "Shift+F3"
+  ],
+  "desc": "Next / previous occurence",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+F3"
+  ],
+  "desc": "Find word at caret",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+N",
+   "Ctrl+Shift+N"
+  ],
+  "desc": "Go to class / file",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+F12"
+  ],
+  "desc": "Go to file member",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Shift+N"
+  ],
+  "desc": "Go to symbol",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F10"
+  ],
+  "desc": "Run context configuration",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Shift+F10",
+   "Shift+F9"
+  ],
+  "desc": "Run / debug current configuration",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "F8",
+   "F7"
+  ],
+  "desc": "Step over / into",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Shift+F7"
+  ],
+  "desc": "Smart step into",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Shift+F8"
+  ],
+  "desc": "Step out",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Alt+F9",
+   "Ctrl+Alt+F9"
+  ],
+  "desc": "Run to cursor / Force run to cursor",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Alt+F10"
+  ],
+  "desc": "Show execution point",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Alt+F8"
+  ],
+  "desc": "Evaluate expression…",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+F2"
+  ],
+  "desc": "Stop",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F2"
+  ],
+  "desc": "Stop background processes…",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "F9"
+  ],
+  "desc": "Resume program",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+F8"
+  ],
+  "desc": "Toggle line breakpoint",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Shift+F8"
+  ],
+  "desc": "Toggle temporary line breakpoint",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F8"
+  ],
+  "desc": "Edit / view breakpoint",
+  "group": "运行与调试"
+ },
+ {
+  "keys": [
+   "Ctrl+B"
+  ],
+  "desc": "Declaration",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+B"
+  ],
+  "desc": "Type declaration (JavaScript only)",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+U"
+  ],
+  "desc": "Super method",
+  "group": "编辑"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+B"
+  ],
+  "desc": "Implementation(s)",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Alt+F7",
+   "Ctrl+F7"
+  ],
+  "desc": "Find usages / Find usages in file",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+F7"
+  ],
+  "desc": "Highlight usages in file",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+F7"
+  ],
+  "desc": "Show usages",
+  "group": "搜索与替换"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Shift+T"
+  ],
+  "desc": "Refactor this…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "F5",
+   "F6"
+  ],
+  "desc": "Copy… / Move…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Alt+Delete"
+  ],
+  "desc": "Safe delete…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Shift+F6"
+  ],
+  "desc": "Rename…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+F6"
+  ],
+  "desc": "Change signature…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+N"
+  ],
+  "desc": "Inline…",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+M"
+  ],
+  "desc": "Extract method",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+V",
+   "Ctrl+Alt+P"
+  ],
+  "desc": "Introduce variable/ parameter",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+F",
+   "Ctrl+Alt+C"
+  ],
+  "desc": "Introduce field / constant",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+L"
+  ],
+  "desc": "Reformat code",
+  "group": "重构"
+ },
+ {
+  "keys": [
+   "Alt+`"
+  ],
+  "desc": "VCS operations popup…",
+  "group": "版本控制"
+ },
+ {
+  "keys": [
+   "Ctrl+K"
+  ],
+  "desc": "Commit",
+  "group": "版本控制"
+ },
+ {
+  "keys": [
+   "Ctrl+T"
+  ],
+  "desc": "Update project",
+  "group": "版本控制"
+ },
+ {
+  "keys": [
+   "Alt+Shift+C"
+  ],
+  "desc": "Recent changes",
+  "group": "导航"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Z"
+  ],
+  "desc": "Revert",
+  "group": "版本控制"
+ },
+ {
+  "keys": [
+   "Ctrl+Shift+K"
+  ],
+  "desc": "Push…",
+  "group": "版本控制"
+ },
+ {
+  "keys": [
+   "Ctrl+Alt+Shift+Down",
+   "Ctrl+Alt+Shift+Up"
+  ],
+  "desc": "Next / previous change",
+  "group": "版本控制"
+ }
+]
