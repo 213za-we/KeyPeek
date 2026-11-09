@@ -1,0 +1,10 @@
+# 运行时生成
+userdata/
+stats.json
+windowstate.ini
+*.json.bak
+packs/_已删除/
+
+# 编译产物与 SDK 缓存
+build/_sdk/
+source/*.pdb
