@@ -1,0 +1,20 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "myeditor",
+  "name": "我的编辑器",
+  "color": "#0E7C66",
+  "icon": null,
+  "inherit": null,
+  "os": "win",
+  "keymap": "自定义",
+  "shortcuts": [
+    {
+      "id": "myeditor.format",
+      "action": "格式化代码",
+      "aliases": ["自动对齐", "对齐", "格式化"],
+      "keys": ["Ctrl+Shift+I"],
+      "group": "编辑",
+      "note": "写一条真实存在的再改成你的"
+    }
+  ]
+}
