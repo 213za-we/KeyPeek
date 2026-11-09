@@ -4,9 +4,4494 @@
   "name": "WebStorm",
   "color": "#087CFA",
   "icon": "icons/webstorm.svg",
-  "inherit": "idea",
+  "inherit": null,
   "os": "win",
-  "keymap": "Windows 默认键位（继承 IDEA，二者默认一致）",
-  "source": "https://www.jetbrains.com/help/webstorm/reference-keymap-win-default.html",
-  "shortcuts": []
+  "keymap": "Windows 默认键位（官方键位卡 2026 版）",
+  "source": "https://resources.jetbrains.com/storage/products/webstorm/docs/WebStorm_ReferenceCard_Windows_Linux.pdf",
+  "shortcuts": [
+    {
+      "id": "ws.key.select-configuration-and-run",
+      "action": "Select configuration and run",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-configuration-and-debug",
+      "action": "Select configuration and debug",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.run",
+      "action": "Run",
+      "aliases": [],
+      "keys": [
+        "Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.debug",
+      "action": "Debug",
+      "aliases": [],
+      "keys": [
+        "Shift+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.run-context-configuration-from-edi",
+      "action": "Run context configuration from editor",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F10"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.rerun-tests",
+      "action": "Rerun tests",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+R"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.run-gulp-grunt-npm-tasks",
+      "action": "Run Gulp/Grunt/npm tasks",
+      "aliases": [],
+      "keys": [
+        "Alt+F11"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find",
+      "action": "Find",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-next",
+      "action": "Find next",
+      "aliases": [],
+      "keys": [
+        "F3"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-previous",
+      "action": "Find previous",
+      "aliases": [],
+      "keys": [
+        "Shift+F3"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-in-path",
+      "action": "Find in path",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.replace",
+      "action": "Replace",
+      "aliases": [],
+      "keys": [
+        "Ctrl+R"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.replace-in-path",
+      "action": "Replace in path",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+R"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.basic-code-completion",
+      "action": "Basic code completion",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Space"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.show-intention-actions-and-quick-f",
+      "action": "Show intention actions and quick-fixes",
+      "aliases": [],
+      "keys": [
+        "Alt+Enter"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.parameter-info-within-method-call-",
+      "action": "Parameter info (within method call arguments)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+P"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.quick-documentation-lookup",
+      "action": "Quick documentation lookup",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Q"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.show-descriptions-of-error-or-warn",
+      "action": "Show descriptions of error or warning at caret",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F1"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.generate-code",
+      "action": "Generate code...",
+      "aliases": [],
+      "keys": [
+        "Alt+Insert"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.surround-with-if-else-try-catch-fo",
+      "action": "Surround with...(if..else, try..catch, for, etc.)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+T"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.insert-live-template",
+      "action": "Insert Live template",
+      "aliases": [],
+      "keys": [
+        "Ctrl+J"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.comment-uncomment-with-line-commen",
+      "action": "Comment/uncomment with line comment",
+      "aliases": [],
+      "keys": [
+        "Ctrl+/"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.comment-uncomment-with-block-comme",
+      "action": "Comment/uncomment with block comment",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+/"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-successively-increasing-cod",
+      "action": "Select successively increasing code blocks",
+      "aliases": [],
+      "keys": [
+        "Ctrl+W"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.decrease-current-selection-to-prev",
+      "action": "Decrease current selection to previous state",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+W"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.reformat-code",
+      "action": "Reformat code",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+L"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.auto-indent-line-s",
+      "action": "Auto-indent line(s)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+I"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.indent-selected-lines",
+      "action": "Indent selected lines",
+      "aliases": [],
+      "keys": [
+        "Tab"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.unindent-selected-lines",
+      "action": "Unindent selected lines",
+      "aliases": [],
+      "keys": [
+        "Shift+Tab"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.paste-from-recent-buffers",
+      "action": "Paste from recent buffers...",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+V"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.duplicate-current-line-or-selected",
+      "action": "Duplicate current line or selected block",
+      "aliases": [],
+      "keys": [
+        "Ctrl+D"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.delete-line-at-caret",
+      "action": "Delete line at caret",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Y"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.move-line-up",
+      "action": "Move line up",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+Up"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.move-line-down",
+      "action": "Move line down",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+Down"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.join-lines",
+      "action": "Join lines",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+J"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.split-lines",
+      "action": "Split lines",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Enter"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.start-new-line",
+      "action": "Start new line",
+      "aliases": [],
+      "keys": [
+        "Shift+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.toggle-case-for-word-at-caret-or-s",
+      "action": "Toggle case for word at caret or selected",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+U"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-till-code-block-end",
+      "action": "Select till code block end",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+]"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-till-code-block-start",
+      "action": "Select till code block start",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+["
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.delete-to-word-end",
+      "action": "Delete to word end",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Delete"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.delete-to-word-start",
+      "action": "Delete to word start",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Backspace"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.expand-code-block",
+      "action": "Expand code block",
+      "aliases": [],
+      "keys": [
+        "Ctrl+NumPad+"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.collapse-code-block",
+      "action": "Collapse code block",
+      "aliases": [],
+      "keys": [
+        "Ctrl+NumPad-"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.close-active-editor-tab",
+      "action": "Close active editor tab",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F4"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-usages",
+      "action": "Find usages",
+      "aliases": [],
+      "keys": [
+        "Alt+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-usages-in-file",
+      "action": "Find usages in file",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.highlight-usages-in-file",
+      "action": "Highlight usages in file",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.show-usages",
+      "action": "Show usages",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+F7"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.step-over",
+      "action": "Step over",
+      "aliases": [],
+      "keys": [
+        "F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.step-into",
+      "action": "Step into",
+      "aliases": [],
+      "keys": [
+        "F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.smart-step-into",
+      "action": "Smart step into",
+      "aliases": [],
+      "keys": [
+        "Shift+F7"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.step-out",
+      "action": "Step out",
+      "aliases": [],
+      "keys": [
+        "Shift+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.run-to-cursor",
+      "action": "Run to cursor",
+      "aliases": [],
+      "keys": [
+        "Alt+F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.evaluate-expression",
+      "action": "Evaluate expression",
+      "aliases": [],
+      "keys": [
+        "Alt+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.resume-program",
+      "action": "Resume program",
+      "aliases": [],
+      "keys": [
+        "F9"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.toggle-breakpoint",
+      "action": "Toggle breakpoint",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F8"
+      ],
+      "group": "运行与调试",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.view-breakpoints",
+      "action": "View breakpoints",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F8"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.copy-move",
+      "action": "Copy / Move",
+      "aliases": [],
+      "keys": [
+        "F5",
+        "F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.safe-delete",
+      "action": "Safe Delete",
+      "aliases": [],
+      "keys": [
+        "Alt+Delete"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.rename",
+      "action": "Rename",
+      "aliases": [],
+      "keys": [
+        "Shift+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.change-function-signature",
+      "action": "Change function signature",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F6"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.inline-variable",
+      "action": "Inline Variable",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+N"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.extract-method",
+      "action": "Extract Method",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+M"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.extract-variable",
+      "action": "Extract Variable",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+V"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.extract-constant",
+      "action": "Extract Constant",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+C"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.extract-parameter",
+      "action": "Extract Parameter",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+P"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-declaration",
+      "action": "Go to declaration",
+      "aliases": [],
+      "keys": [
+        "Ctrl+B , Ctrl+Click"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-class",
+      "action": "Go to class",
+      "aliases": [],
+      "keys": [
+        "Ctrl+N"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-file",
+      "action": "Go to file",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+N"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-symbol",
+      "action": "Go to symbol",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Shift+N"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-next-editor-tab",
+      "action": "Go to next editor tab",
+      "aliases": [],
+      "keys": [
+        "Alt+Right"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-previous-editor-tab",
+      "action": "Go to previous editor tab",
+      "aliases": [],
+      "keys": [
+        "Alt+Left"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-back-to-previous-tool-window",
+      "action": "Go back to previous tool window",
+      "aliases": [],
+      "keys": [
+        "F12"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-editor-from-tool-window",
+      "action": "Go to editor (from tool window)",
+      "aliases": [],
+      "keys": [
+        "Esc"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-line",
+      "action": "Go to line",
+      "aliases": [],
+      "keys": [
+        "Ctrl+G"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.recent-files-popup",
+      "action": "Recent files popup",
+      "aliases": [],
+      "keys": [
+        "Ctrl+E"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.navigate-forward",
+      "action": "Navigate forward",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Right"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.navigate-back",
+      "action": "Navigate back",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+Left"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-current-file-or-symbol-in-a",
+      "action": "Select current file or symbol in any view",
+      "aliases": [],
+      "keys": [
+        "Alt+F1"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-implementation-s",
+      "action": "Go to implementation(s)",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.open-quick-definition-lookup",
+      "action": "Open quick definition lookup",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+I"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-type-declaration",
+      "action": "Go to type declaration",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+B"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-super-method-super-class",
+      "action": "Go to super-method/super-class",
+      "aliases": [],
+      "keys": [
+        "Ctrl+U"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-previous-method",
+      "action": "Go to previous method",
+      "aliases": [],
+      "keys": [
+        "Alt+Up"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.go-to-next-method",
+      "action": "Go to next method",
+      "aliases": [],
+      "keys": [
+        "Alt+Down"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.move-to-code-block-end-start",
+      "action": "Move to code block end/start",
+      "aliases": [],
+      "keys": [
+        "Ctrl+]",
+        "Ctrl+["
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.file-structure-popup",
+      "action": "File structure popup",
+      "aliases": [],
+      "keys": [
+        "Ctrl+F12"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.type-hierarchy",
+      "action": "Type hierarchy",
+      "aliases": [],
+      "keys": [
+        "Ctrl+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.call-hierarchy",
+      "action": "Call hierarchy",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+H"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.next-previous-highlighted-error",
+      "action": "Next/previous highlighted error",
+      "aliases": [],
+      "keys": [
+        "F2",
+        "Shift+F2"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.jump-to-source",
+      "action": "Jump to source",
+      "aliases": [],
+      "keys": [
+        "F4 , Ctrl+Enter"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.jump-to-navigation-bar",
+      "action": "Jump to navigation bar",
+      "aliases": [],
+      "keys": [
+        "Alt+Home"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.toggle-bookmark",
+      "action": "Toggle bookmark",
+      "aliases": [],
+      "keys": [
+        "F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.toggle-bookmark-with-mnemonic",
+      "action": "Toggle bookmark with mnemonic",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F11"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.show-bookmarks",
+      "action": "Show bookmarks",
+      "aliases": [],
+      "keys": [
+        "Shift+F11"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.commit-project-to-vcs",
+      "action": "Commit project to VCS",
+      "aliases": [],
+      "keys": [
+        "Ctrl+K"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.update-project-from-vcs",
+      "action": "Update project from VCS",
+      "aliases": [],
+      "keys": [
+        "Ctrl+T"
+      ],
+      "group": "版本控制",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.view-recent-changes",
+      "action": "View recent changes",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+C"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.search-everywhere",
+      "action": "Search everywhere",
+      "aliases": [],
+      "keys": [
+        "Double Shift"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.find-action",
+      "action": "Find Action",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+A"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.toggle-maximizing-editor",
+      "action": "Toggle maximizing editor",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+F12"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.add-to-favorites",
+      "action": "Add to Favorites",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+F"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.inspect-current-file-with-current-",
+      "action": "Inspect current file with current profile",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+I"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.open-settings-dialog",
+      "action": "Open Settings dialog",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Alt+S"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.switch-between-tabs-and-tool-windo",
+      "action": "Switch between tabs and tool window",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Tab"
+      ],
+      "group": "导航",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.add-or-remove-caret",
+      "action": "Add or remove caret",
+      "aliases": [],
+      "keys": [
+        "Alt+Click"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-all-occurrences",
+      "action": "Select all occurrences",
+      "aliases": [],
+      "keys": [
+        "Shift+Ctrl+Alt+J"
+      ],
+      "group": "重构",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.select-next-occurrence",
+      "action": "Select next occurrence",
+      "aliases": [],
+      "keys": [
+        "Alt+J"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.unselect-occurrence",
+      "action": "Unselect occurrence",
+      "aliases": [],
+      "keys": [
+        "Alt+Shift+J"
+      ],
+      "group": "搜索与替换",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.unselect-all-occurrences-or-carets",
+      "action": "Unselect all occurrences or carets",
+      "aliases": [],
+      "keys": [
+        "Esc"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.expand-all",
+      "action": "Expand all",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+NumPad+"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.collapse-all",
+      "action": "Collapse all",
+      "aliases": [],
+      "keys": [
+        "Ctrl+Shift+NumPad-"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.key.context-info",
+      "action": "Context Info",
+      "aliases": [],
+      "keys": [
+        "Alt+Q"
+      ],
+      "group": "编辑",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.fori",
+      "action": "for 计数循环",
+      "aliases": [
+        "for循环",
+        "索引循环",
+        "fori"
+      ],
+      "keys": [
+        "fori"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for(let i = 0; i < n; i++) { }；var/let/const 由变量 VARKIND 选择",
+      "code": "for($VARKIND$ $INDEX$ = 0; $INDEX$ < $LIMIT$; $INDEX$++) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.forof",
+      "action": "for...of 遍历",
+      "aliases": [
+        "forof",
+        "遍历数组元素",
+        "of循环"
+      ],
+      "keys": [
+        "forof"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for (const 变量 of 可迭代对象) { }",
+      "code": "for ($VARKIND$ $VAR$ of $ARRAY$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.forin",
+      "action": "for...in 遍历键",
+      "aliases": [
+        "forin",
+        "遍历下标",
+        "in循环"
+      ],
+      "keys": [
+        "forin"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for (const 变量 in 对象) { }，拿到的是键/下标",
+      "code": "for ($VARKIND$ $VAR$ in $ARRAY$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.iter",
+      "action": "for...of（常用）",
+      "aliases": [
+        "iter",
+        "foreach",
+        "通用遍历"
+      ],
+      "keys": [
+        "iter"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "与 forof 展开相同：for (const 变量 of 数组) { }",
+      "code": "for ($VARKIND$ $VAR$ of $ARRAY$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.itera",
+      "action": "for await 异步遍历",
+      "aliases": [
+        "itera",
+        "for await",
+        "异步迭代"
+      ],
+      "keys": [
+        "itera"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for await (const 变量 of 对象) { }，用于异步迭代器",
+      "code": "for await ($VARKIND$ $VAR$ of $ARRAY$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.itin",
+      "action": "for...in（常用）",
+      "aliases": [
+        "itin",
+        "键遍历",
+        "in"
+      ],
+      "keys": [
+        "itin"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "与 forin 展开相同：for (const 变量 in 对象) { }",
+      "code": "for ($VARKIND$ $VAR$ in $ARRAY$) {\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.itar",
+      "action": "数组带下标遍历",
+      "aliases": [
+        "itar",
+        "下标遍历",
+        "数组循环"
+      ],
+      "keys": [
+        "itar"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for (let i = 0; i < arr.length; i++) { const 元素 = arr[i]; }",
+      "code": "for ($VARKIND$ $INDEX$ = 0; $INDEX$ < $ARRAY$.length; $INDEX$++) {\n  $VARKIND2$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.ritar",
+      "action": "数组倒序遍历",
+      "aliases": [
+        "倒序",
+        "反向循环",
+        "ritar"
+      ],
+      "keys": [
+        "ritar"
+      ],
+      "group": "代码模板·JS·循环",
+      "note": "展开 for (let i = arr.length - 1; i >= 0; i--) { const 元素 = arr[i]; }",
+      "code": "for ($VARKIND$ $INDEX$ = $ARRAY$.length - 1; $INDEX$ >= 0; $INDEX$--) {\n  $VARKIND2$ $VAR$ = $ARRAY$[$INDEX$];\n  \n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.log",
+      "action": "console.log",
+      "aliases": [
+        "打印",
+        "输出",
+        "log"
+      ],
+      "keys": [
+        "log"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.log(); 光标在括号内",
+      "code": "console.log()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.error",
+      "action": "console.error",
+      "aliases": [
+        "错误输出",
+        "error",
+        "红字打印"
+      ],
+      "keys": [
+        "error"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.error();",
+      "code": "console.error()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.warn",
+      "action": "console.warn",
+      "aliases": [
+        "警告输出",
+        "warn",
+        "黄色警告"
+      ],
+      "keys": [
+        "warn"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.warn();",
+      "code": "console.warn()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.info",
+      "action": "console.info",
+      "aliases": [
+        "信息输出",
+        "info",
+        "提示打印"
+      ],
+      "keys": [
+        "info"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.info();",
+      "code": "console.info()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.trace",
+      "action": "console.trace",
+      "aliases": [
+        "调用栈",
+        "堆栈打印",
+        "trace"
+      ],
+      "keys": [
+        "trace"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.trace(); 打印调用栈",
+      "code": "console.trace()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.assert",
+      "action": "console.assert",
+      "aliases": [
+        "断言打印",
+        "assert",
+        "条件输出"
+      ],
+      "keys": [
+        "assert"
+      ],
+      "group": "代码模板·JS·控制台",
+      "note": "展开 console.assert(); 条件为假时才输出",
+      "code": "console.assert()",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.us",
+      "action": "严格模式声明",
+      "aliases": [
+        "use strict",
+        "严格模式",
+        "us"
+      ],
+      "keys": [
+        "us"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 \"use strict\";",
+      "code": "\"use strict\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.ref",
+      "action": "引用路径注释",
+      "aliases": [
+        "reference",
+        "引用注释",
+        "ref"
+      ],
+      "keys": [
+        "ref"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 ///<reference path=\"路径\"/> ",
+      "code": "///<reference path=\"$PATH$\"/>",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.defn",
+      "action": "AMD define 包装",
+      "aliases": [
+        "define",
+        "AMD模块",
+        "defn"
+      ],
+      "keys": [
+        "defn"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 define([\"依赖\"], function(依赖) { });",
+      "code": "define([\"$MODULE_REF$\"], function($MODULE_VAR$) {\n\n});",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.flow",
+      "action": "Flow 类型检查标记",
+      "aliases": [
+        "flow",
+        "类型检查",
+        "@flow"
+      ],
+      "keys": [
+        "flow"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 // @flow",
+      "code": "// @flow",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.arf",
+      "action": "箭头函数赋值",
+      "aliases": [
+        "箭头函数",
+        "arrow",
+        "arf"
+      ],
+      "keys": [
+        "arf"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 const 名称 = () => { 选中内容 };",
+      "code": "const $NAME$ = () => {\n$SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.importitems",
+      "action": "按名导入",
+      "aliases": [
+        "import {}",
+        "具名导入",
+        "引入成员"
+      ],
+      "keys": [
+        "importitems"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 import {成员} from \"模块\";",
+      "code": "import {$ITEM$} from \"$MODULE$\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.importns",
+      "action": "整体命名空间导入",
+      "aliases": [
+        "import * as",
+        "命名空间导入",
+        "ns导入"
+      ],
+      "keys": [
+        "importns"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 import * as 别名 from \"模块\";",
+      "code": "import * as $ITEM$ from \"$MODULE$\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.importdefault",
+      "action": "默认导入",
+      "aliases": [
+        "import default",
+        "默认引入",
+        "default导入"
+      ],
+      "keys": [
+        "importdefault"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 import 名称 from \"模块\";",
+      "code": "import $ITEM$ from \"$MODULE$\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.exportall",
+      "action": "全部转出",
+      "aliases": [
+        "export * from",
+        "再导出",
+        "exportall"
+      ],
+      "keys": [
+        "exportall"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 export * from \"模块\";",
+      "code": "export * from \"$MODULE$\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.exportfrom",
+      "action": "转出指定成员",
+      "aliases": [
+        "export {} from",
+        "再导出成员",
+        "exportfrom"
+      ],
+      "keys": [
+        "exportfrom"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 export {成员} from \"模块\";",
+      "code": "export {$ITEM$} from \"$MODULE$\";",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.exportitems",
+      "action": "导出成员",
+      "aliases": [
+        "export {}",
+        "具名导出",
+        "导出清单"
+      ],
+      "keys": [
+        "exportitems"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 export {成员};",
+      "code": "export {$ITEM$};",
+      "hot": false
+    },
+    {
+      "id": "webstorm.tpl.moduleexports",
+      "action": "CommonJS 导出",
+      "aliases": [
+        "module.exports",
+        "Node导出",
+        "require导出"
+      ],
+      "keys": [
+        "moduleexports"
+      ],
+      "group": "代码模板·JS·模块与声明",
+      "note": "展开 module.exports = ;",
+      "code": "module.exports =",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vrouter",
+      "action": "Base for Vue Router",
+      "aliases": [
+        "vrouter",
+        "Base for Vue Router"
+      ],
+      "keys": [
+        "vrouter"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue Router",
+      "code": "import Vue from 'vue';\nimport VueRouter from 'vue-router';\n\nVue.use(VueRouter);\n\nexport const router = new VueRouter({\n base: '/',\n mode: 'history',\n routes: [\n  { path: '/path', component: component }\n ]\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vroute-named",
+      "action": "Vue Router route with per route code-splitting",
+      "aliases": [
+        "vroute-named",
+        "Vue Router route with per route code-splitting"
+      ],
+      "keys": [
+        "vroute-named"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router route with per route code-splitting",
+      "code": "{\n path: '$pathName$',\n name: '$routeName$',\n component: () => import('./$pathToComponent$'),\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vaftereach",
+      "action": "Vue Router global guards afterEach",
+      "aliases": [
+        "vaftereach",
+        "Vue Router global guards afterEach"
+      ],
+      "keys": [
+        "vaftereach"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router global guards afterEach",
+      "code": "router.afterEach((to, from) => {\n \n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforeeach",
+      "action": "Vue Router global guards beforeEach",
+      "aliases": [
+        "vbeforeeach",
+        "Vue Router global guards beforeEach"
+      ],
+      "keys": [
+        "vbeforeeach"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router global guards beforeEach",
+      "code": "router.beforeEach((to, from, next) => {\n $next$\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforeenter",
+      "action": "Vue Router per-route guard beforeEnter",
+      "aliases": [
+        "vbeforeenter",
+        "Vue Router per-route guard beforeEnter"
+      ],
+      "keys": [
+        "vbeforeenter"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router per-route guard beforeEnter",
+      "code": "beforeEnter(to, from, next) {\n $next$\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforeresolve",
+      "action": "Vue Router global guards beforeResolve",
+      "aliases": [
+        "vbeforeresolve",
+        "Vue Router global guards beforeResolve"
+      ],
+      "keys": [
+        "vbeforeresolve"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router global guards beforeResolve",
+      "code": "router.beforeResolve((to, from, next) => {\n $next$\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforerouteenter",
+      "action": "Vue Router component guards beforeRouteEnter",
+      "aliases": [
+        "vbeforerouteenter",
+        "Vue Router component guards beforeRouteEnter"
+      ],
+      "keys": [
+        "vbeforerouteenter"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router component guards beforeRouteEnter",
+      "code": "beforeRouteEnter(to, from, next) {\n next(vm => {${1:}});\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforerouteleave",
+      "action": "Vue Router component guards beforeRouteLeave",
+      "aliases": [
+        "vbeforerouteleave",
+        "Vue Router component guards beforeRouteLeave"
+      ],
+      "keys": [
+        "vbeforerouteleave"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router component guards beforeRouteLeave",
+      "code": "beforeRouteLeave(to, from, next) {\n $next$\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforerouteupdate",
+      "action": "Vue Router component guards beforeRouteUpdate",
+      "aliases": [
+        "vbeforerouteupdate",
+        "Vue Router component guards beforeRouteUpdate"
+      ],
+      "keys": [
+        "vbeforerouteupdate"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router component guards beforeRouteUpdate",
+      "code": "beforeRouteUpdate(to, from, next) {\n $next$\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vscrollbehavior",
+      "action": "Vue Router scrollBehavior",
+      "aliases": [
+        "vscrollbehavior",
+        "Vue Router scrollBehavior"
+      ],
+      "keys": [
+        "vscrollbehavior"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Router scrollBehavior",
+      "code": "scrollBehavior(to, from, savedPosition) {\n if(savedPosition) {\n  return savedPosition;\n } else {\n  return { x: 0, y: 0 };\n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vstore-import",
+      "action": "Import vuex store into main.js",
+      "aliases": [
+        "vstore-import",
+        "Import vuex store into main.js"
+      ],
+      "keys": [
+        "vstore-import"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import vuex store into main.js",
+      "code": "import { store } from './store/index';",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vaction",
+      "action": "Vuex action",
+      "aliases": [
+        "vaction",
+        "Vuex action"
+      ],
+      "keys": [
+        "vaction"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vuex action",
+      "code": "actions: {\n $updateValue$({commit}, $payload$) {\n  commit('$updateValue$', $payload$);\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vgetter",
+      "action": "Vuex getter",
+      "aliases": [
+        "vgetter",
+        "Vuex getter"
+      ],
+      "keys": [
+        "vgetter"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vuex getter",
+      "code": "getters: {\n $value$: state => {\n  return state.$value$;\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmodule",
+      "action": "Vuex module",
+      "aliases": [
+        "vmodule",
+        "Vuex module"
+      ],
+      "keys": [
+        "vmodule"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vuex module",
+      "code": "export default {\n state: {\n  value: 'my value'\n },\n getters: {\n  value: state => {\n   return state.value;\n  }\n },\n mutations: {\n  updateValue(state, payload) {\n   state.value = payload;\n  }\n },\n actions: {\n  updateValue({commit}, payload) {\n   commit('updateValue', payload);\n  }\n }\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmutation",
+      "action": "Vuex mutation",
+      "aliases": [
+        "vmutation",
+        "Vuex mutation"
+      ],
+      "keys": [
+        "vmutation"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vuex mutation",
+      "code": "mutations: {\n $updateValue$(state, $payload$) {\n  state.$value$ = $payload$;\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vstore",
+      "action": "Base for Vuex store",
+      "aliases": [
+        "vstore",
+        "Base for Vuex store"
+      ],
+      "keys": [
+        "vstore"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vuex store",
+      "code": "import Vue from 'vue';\nimport Vuex from 'vuex';\n\nVue.use(Vuex);\n\nexport const store = new Vuex.Store({\n state: {\n  $key$: $value$\n }\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vstore2",
+      "action": "Vuex store 2",
+      "aliases": [
+        "vstore2",
+        "Vuex store 2"
+      ],
+      "keys": [
+        "vstore2"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vuex store 2",
+      "code": "export const state = () => ({\n value: 'myvalue'\n})\n\nexport const getters = {\n getterValue: state => {\n  return state.value\n }\n}\n\nexport const mutations = {\n updateValue: (state, payload) => {\n  state.value = payload\n }\n}\n\nexport const actions = {\n updateActionValue({ commit }) {\n  commit('updateValue', payload)\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vplugin",
+      "action": "Import a plugin to main.js or plugins file",
+      "aliases": [
+        "vplugin",
+        "Import a plugin to main.js or plugins file"
+      ],
+      "keys": [
+        "vplugin"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import a plugin to main.js or plugins file",
+      "code": "import Vue from 'vue'\nimport $VueCompositionApi$ from '$VueCompositionApiPackage$'\n\nVue.use($VueCompositionApi$)",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vtest",
+      "action": "Unit test component",
+      "aliases": [
+        "vtest",
+        "Unit test component"
+      ],
+      "keys": [
+        "vtest"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Unit test component",
+      "code": "import Vue from 'vue';\nimport $componentName$ from './components/$componentName$';\n\ndescribe('$componentName$.vue', () => {\n it('$name$', () => {\n  const Constructor = Vue.extend($componentName$);\n  const vm = new Constructor().$mount$();\n  expect(vm.$el$.querySelector('.hello h1').textContent)\n   .to.equal($equal$);\n });\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3useinoptions",
+      "action": "Use Composition API within Options API",
+      "aliases": [
+        "v3useinoptions",
+        "Use Composition API within Options API"
+      ],
+      "keys": [
+        "v3useinoptions"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Use Composition API within Options API",
+      "code": "import { $component$ } from '@/composables/$component$.js'\n\nexport default {\n setup () {\n  const { $name$ } = $component$()\n \n  return {\n   $name$\n  }\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vcommit",
+      "action": "Commit to vuex store in methods for mutation",
+      "aliases": [
+        "vcommit",
+        "Commit to vuex store in methods for mutation"
+      ],
+      "keys": [
+        "vcommit"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Commit to vuex store in methods for mutation",
+      "code": "$mutationName$() {\n this.\\$store$.commit('$mutationName$', $payload$);\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3computed",
+      "action": "Vue Composition api - computed",
+      "aliases": [
+        "v3computed",
+        "Vue Composition api - computed"
+      ],
+      "keys": [
+        "v3computed"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition api - computed",
+      "code": "const $name$ = computed(() => {\n return $return$\n})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3reactive",
+      "action": "Vue Composition api - reactive",
+      "aliases": [
+        "v3reactive",
+        "Vue Composition api - reactive"
+      ],
+      "keys": [
+        "v3reactive"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition api - reactive",
+      "code": "const $name$ = reactive({\n $count$: \n})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3ref",
+      "action": "Vue Ref",
+      "aliases": [
+        "v3ref",
+        "Vue Ref"
+      ],
+      "keys": [
+        "v3ref"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Ref",
+      "code": "const $name$ = ref($initialValue$)",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3watch-array",
+      "action": "Vue Composition api - watch as array",
+      "aliases": [
+        "v3watch-array",
+        "Vue Composition api - watch as array"
+      ],
+      "keys": [
+        "v3watch-array"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition api - watch as array",
+      "code": "watch([$foo$, $bar$], ([new$1$, new$2$], [prev$1$, prev$2$]) => {\n $3$\n})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3watch",
+      "action": "Vue Composition api - watcher single source",
+      "aliases": [
+        "v3watch",
+        "Vue Composition api - watcher single source"
+      ],
+      "keys": [
+        "v3watch"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition api - watcher single source",
+      "code": "watch(() => $foo$, (newValue, oldValue) => {\n $body$\n})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3watcheffect",
+      "action": "Vue Composition api - watchEffect",
+      "aliases": [
+        "v3watcheffect",
+        "Vue Composition api - watchEffect"
+      ],
+      "keys": [
+        "v3watcheffect"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition api - watchEffect",
+      "code": "watchEffect(() => {\n $body$\n})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3reactive-setup",
+      "action": "Vue Composition API Script with Reactive",
+      "aliases": [
+        "v3reactive-setup",
+        "Vue Composition API Script with Reactive"
+      ],
+      "keys": [
+        "v3reactive-setup"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Composition API Script with Reactive",
+      "code": "import { reactive, toRefs } from 'vue'\n\nexport default {\n setup () {\n  const state = reactive({\n   $count$: ,\n  })\n \n  return {\n   ...toRefs(state),\n  }\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vcomputed",
+      "action": "Computed value",
+      "aliases": [
+        "vcomputed",
+        "Computed value"
+      ],
+      "keys": [
+        "vcomputed"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Computed value",
+      "code": "computed: {\n $name$() {\n  return this.$data$ \n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vc-direct",
+      "action": "Vue custom directive",
+      "aliases": [
+        "vc-direct",
+        "Vue custom directive"
+      ],
+      "keys": [
+        "vc-direct"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue custom directive",
+      "code": "Vue.directive('$directiveName$', {\n bind(el, binding, vnode) {\n  el.style.$arg$ = binding.value.$arg$;\n }\n});",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vdata",
+      "action": "Vue Component Data",
+      "aliases": [
+        "vdata",
+        "Vue Component Data"
+      ],
+      "keys": [
+        "vdata"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Component Data",
+      "code": "data() {\n return {\n  $key$: $value$\n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vdispatch",
+      "action": "Dispatch to vuex store in methods for action",
+      "aliases": [
+        "vdispatch",
+        "Dispatch to vuex store in methods for action"
+      ],
+      "keys": [
+        "vdispatch"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Dispatch to vuex store in methods for action",
+      "code": "$actionName$() {\n this.\\$store$.dispatch('$actionName$', $payload$);\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vfilter",
+      "action": "Vue filter",
+      "aliases": [
+        "vfilter",
+        "Vue filter"
+      ],
+      "keys": [
+        "vfilter"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue filter",
+      "code": "filters: {\n $fnName$: function($value$) {\n  return $value$;\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vimport-dynamic",
+      "action": "Import component that should be lazy loaded",
+      "aliases": [
+        "vimport-dynamic",
+        "Import component that should be lazy loaded"
+      ],
+      "keys": [
+        "vimport-dynamic"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import component that should be lazy loaded",
+      "code": "$New$ = () => import('@/components/$New$.vue')",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vimport-export",
+      "action": "Import a component and include it in export default",
+      "aliases": [
+        "vimport-export",
+        "Import a component and include it in export default"
+      ],
+      "keys": [
+        "vimport-export"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import a component and include it in export default",
+      "code": "import $Name$ from '@/components/$Name$.vue';\n\nexport default {\n components: {\n  $Name$\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vimport",
+      "action": "Import one component into another",
+      "aliases": [
+        "vimport",
+        "Import one component into another"
+      ],
+      "keys": [
+        "vimport"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import one component into another",
+      "code": "import $New$ from '@/components/$New$.vue';",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vimport-gsap",
+      "action": "Import GSAP library",
+      "aliases": [
+        "vimport-gsap",
+        "Import GSAP library"
+      ],
+      "keys": [
+        "vimport-gsap"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import GSAP library",
+      "code": "import gsap from 'gsap';",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vimport-lib",
+      "action": "Import a library",
+      "aliases": [
+        "vimport-lib",
+        "Import a library"
+      ],
+      "keys": [
+        "vimport-lib"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import a library",
+      "code": "import { $libName$ } from '$libName$';",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vcomponents",
+      "action": "Import one component into another, within export statement",
+      "aliases": [
+        "vcomponents",
+        "Import one component into another, within export statement"
+      ],
+      "keys": [
+        "vcomponents"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Import one component into another, within export statement",
+      "code": "components: {\n $New$,\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onbeforemount",
+      "action": "Vue onBeforeMount Lifecycle hook",
+      "aliases": [
+        "v3onbeforemount",
+        "Vue onBeforeMount Lifecycle hook"
+      ],
+      "keys": [
+        "v3onbeforemount"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue onBeforeMount Lifecycle hook",
+      "code": "onBeforeMount(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onbeforeunmount",
+      "action": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook",
+      "aliases": [
+        "v3onbeforeunmount",
+        "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
+      ],
+      "keys": [
+        "v3onbeforeunmount"
+      ],
+      "group": "代码模板·Vue",
+      "note": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook",
+      "code": "onBeforeUnmount(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onbeforeupdate",
+      "action": "Vue onBeforeUpdate Lifecycle hook",
+      "aliases": [
+        "v3onbeforeupdate",
+        "Vue onBeforeUpdate Lifecycle hook"
+      ],
+      "keys": [
+        "v3onbeforeupdate"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue onBeforeUpdate Lifecycle hook",
+      "code": "onBeforeUpdate(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onerrorcaptured",
+      "action": "Vue onErrorCaptured Lifecycle hook",
+      "aliases": [
+        "v3onerrorcaptured",
+        "Vue onErrorCaptured Lifecycle hook"
+      ],
+      "keys": [
+        "v3onerrorcaptured"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue onErrorCaptured Lifecycle hook",
+      "code": "onErrorCaptured(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onmounted",
+      "action": "Vue Mounted Lifecycle hook",
+      "aliases": [
+        "v3onmounted",
+        "Vue Mounted Lifecycle hook"
+      ],
+      "keys": [
+        "v3onmounted"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Mounted Lifecycle hook",
+      "code": "onMounted(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onunmounted",
+      "action": "(destroyed) Vue onUnmounted Lifecycle hook",
+      "aliases": [
+        "v3onunmounted",
+        "(destroyed) Vue onUnmounted Lifecycle hook"
+      ],
+      "keys": [
+        "v3onunmounted"
+      ],
+      "group": "代码模板·Vue",
+      "note": "(destroyed) Vue onUnmounted Lifecycle hook",
+      "code": "onUnmounted(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.v3onupdated",
+      "action": "Vue onUpdated Lifecycle hook",
+      "aliases": [
+        "v3onupdated",
+        "Vue onUpdated Lifecycle hook"
+      ],
+      "keys": [
+        "v3onupdated"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue onUpdated Lifecycle hook",
+      "code": "onUpdated(() => {$body$})",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforecreate",
+      "action": "BeforeCreate lifecycle method",
+      "aliases": [
+        "vbeforecreate",
+        "BeforeCreate lifecycle method"
+      ],
+      "keys": [
+        "vbeforecreate"
+      ],
+      "group": "代码模板·Vue",
+      "note": "BeforeCreate lifecycle method",
+      "code": "beforeCreate () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforedestroy",
+      "action": "BeforeDestroy lifecycle method",
+      "aliases": [
+        "vbeforedestroy",
+        "BeforeDestroy lifecycle method"
+      ],
+      "keys": [
+        "vbeforedestroy"
+      ],
+      "group": "代码模板·Vue",
+      "note": "BeforeDestroy lifecycle method",
+      "code": "beforeDestroy () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforemount",
+      "action": "BeforeMount lifecycle method",
+      "aliases": [
+        "vbeforemount",
+        "BeforeMount lifecycle method"
+      ],
+      "keys": [
+        "vbeforemount"
+      ],
+      "group": "代码模板·Vue",
+      "note": "BeforeMount lifecycle method",
+      "code": "beforeMount () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbeforeupdate",
+      "action": "BeforeUpdate lifecycle method",
+      "aliases": [
+        "vbeforeupdate",
+        "BeforeUpdate lifecycle method"
+      ],
+      "keys": [
+        "vbeforeupdate"
+      ],
+      "group": "代码模板·Vue",
+      "note": "BeforeUpdate lifecycle method",
+      "code": "beforeUpdate () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vcreated",
+      "action": "Created lifecycle method",
+      "aliases": [
+        "vcreated",
+        "Created lifecycle method"
+      ],
+      "keys": [
+        "vcreated"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Created lifecycle method",
+      "code": "created () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vdestroyed",
+      "action": "Destroyed lifecycle method",
+      "aliases": [
+        "vdestroyed",
+        "Destroyed lifecycle method"
+      ],
+      "keys": [
+        "vdestroyed"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Destroyed lifecycle method",
+      "code": "destroyed () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmounted",
+      "action": "Mounted lifecycle method",
+      "aliases": [
+        "vmounted",
+        "Mounted lifecycle method"
+      ],
+      "keys": [
+        "vmounted"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Mounted lifecycle method",
+      "code": "mounted () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vupdated",
+      "action": "Updated lifecycle method",
+      "aliases": [
+        "vupdated",
+        "Updated lifecycle method"
+      ],
+      "keys": [
+        "vupdated"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Updated lifecycle method",
+      "code": "updated () {\n ;\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmapactions",
+      "action": "Mapactions inside a vue component",
+      "aliases": [
+        "vmapactions",
+        "Mapactions inside a vue component"
+      ],
+      "keys": [
+        "vmapactions"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Mapactions inside a vue component",
+      "code": "import { mapActions } from 'vuex';\n\nexport default {\n methods: {\n  ...mapActions([\n   $nameOfAction$, //also supports payload `this.nameOfAction(amount)` \n  ])\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmapgetters",
+      "action": "Mapgetters inside a vue component",
+      "aliases": [
+        "vmapgetters",
+        "Mapgetters inside a vue component"
+      ],
+      "keys": [
+        "vmapgetters"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Mapgetters inside a vue component",
+      "code": "import { mapGetters } from 'vuex';\n\nexport default {\n computed: {\n  ...mapGetters([\n   $nameOfGetter$,\n  ])\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmapmutations",
+      "action": "Mapmutations inside a vue component",
+      "aliases": [
+        "vmapmutations",
+        "Mapmutations inside a vue component"
+      ],
+      "keys": [
+        "vmapmutations"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Mapmutations inside a vue component",
+      "code": "import { mapMutations } from 'vuex';\n\nexport default {\n methods: {\n  ...mapMutations([\n   $nameOfMutation$, //also supports payload `this.nameOfMutation(amount)` \n  ])\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmapstate",
+      "action": "Map getters inside a vue component",
+      "aliases": [
+        "vmapstate",
+        "Map getters inside a vue component"
+      ],
+      "keys": [
+        "vmapstate"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Map getters inside a vue component",
+      "code": "import { mapState } from 'vuex';\n\nexport default {\n computed: {\n  ...mapState([\n   $vmapstate$,\n  ])\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmethod",
+      "action": "Vue method",
+      "aliases": [
+        "vmethod",
+        "Vue method"
+      ],
+      "keys": [
+        "vmethod"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue method",
+      "code": "methods: {\n $name$() {\n  \n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmixin",
+      "action": "Vue mixin",
+      "aliases": [
+        "vmixin",
+        "Vue mixin"
+      ],
+      "keys": [
+        "vmixin"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue mixin",
+      "code": "const $mixinName$ = {\n mounted() {\n  console.log('hello from mixin!');\n },\n};",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vprops",
+      "action": "Vue Props with Default",
+      "aliases": [
+        "vprops",
+        "Vue Props with Default"
+      ],
+      "keys": [
+        "vprops"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Props with Default",
+      "code": "props: {\n $propName$: {\n  type: $type$,\n  default: $default$\n },\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vanimhook-js",
+      "action": "Vue transition component js hooks",
+      "aliases": [
+        "vanimhook-js",
+        "Vue transition component js hooks"
+      ],
+      "keys": [
+        "vanimhook-js"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue transition component js hooks",
+      "code": "beforeEnter(el) {\n console.log('beforeEnter');\n},\nenter(el, done) {\n console.log('enter');\n done();\n},\nbeforeLeave(el) {\n console.log('beforeLeave');\n},\nleave(el, done) {\n console.log('leave');\n done();\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmixin-use",
+      "action": "Vue use mixin",
+      "aliases": [
+        "vmixin-use",
+        "Vue use mixin"
+      ],
+      "keys": [
+        "vmixin-use"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue use mixin",
+      "code": "mixins: [$mixinName$],",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vwatcher",
+      "action": "Vue watcher",
+      "aliases": [
+        "vwatcher",
+        "Vue watcher"
+      ],
+      "keys": [
+        "vwatcher"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue watcher",
+      "code": "watch: {\n $data$($newValue$, $oldValue$) {\n  \n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vwatcher-options",
+      "action": "Vue watcher with options",
+      "aliases": [
+        "vwatcher-options",
+        "Vue watcher with options"
+      ],
+      "keys": [
+        "vwatcher-options"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue watcher with options",
+      "code": "watch: {\n $data$: {\n  immediate: $true$,\n  deep: $true$,\n  handler($newValue$, $oldValue$) {\n   \n  }\n }\n},",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vconfig",
+      "action": "Vue.config.js",
+      "aliases": [
+        "vconfig",
+        "Vue.config.js"
+      ],
+      "keys": [
+        "vconfig"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue.config.js",
+      "code": "module.exports = {\n css: {\n  loaderOptions: {\n   $sass$: {\n    data: `$data$`\n   }\n  }\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vclass",
+      "action": "Vue class binding",
+      "aliases": [
+        "vclass",
+        "Vue class binding"
+      ],
+      "keys": [
+        "vclass"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue class binding",
+      "code": "<$div$ :class=\"{ $className$: $data$ }\"></$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vclass-obj",
+      "action": "Vue class binding",
+      "aliases": [
+        "vclass-obj",
+        "Vue class binding"
+      ],
+      "keys": [
+        "vclass-obj"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue class binding",
+      "code": "<$div$ :class=\"[$classNameA$, $classNameB$]\"></$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vel-props",
+      "action": "Vue component element with props",
+      "aliases": [
+        "vel-props",
+        "Vue component element with props"
+      ],
+      "keys": [
+        "vel-props"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue component element with props",
+      "code": "<$component$ :$propName$=\"\"></$component$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vemit-child",
+      "action": "Vue Emit from Child Component",
+      "aliases": [
+        "vemit-child",
+        "Vue Emit from Child Component"
+      ],
+      "keys": [
+        "vemit-child"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Emit from Child Component",
+      "code": "@change=\"$emit$('change', $event$.target.value)\"",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vemit-parent",
+      "action": "Vue Emit to Parent Component",
+      "aliases": [
+        "vemit-parent",
+        "Vue Emit to Parent Component"
+      ],
+      "keys": [
+        "vemit-parent"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue Emit to Parent Component",
+      "code": "@change=\"$foo$ = $event$\"",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vsrc",
+      "action": "Vue image source binding",
+      "aliases": [
+        "vsrc",
+        "Vue image source binding"
+      ],
+      "keys": [
+        "vsrc"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue image source binding",
+      "code": "<img :src=\"'/path/to/images/' + $fileName$\" alt=\"$altText$\"/>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vclass-obj-mult",
+      "action": "Vue multiple conditional class bindings",
+      "aliases": [
+        "vclass-obj-mult",
+        "Vue multiple conditional class bindings"
+      ],
+      "keys": [
+        "vclass-obj-mult"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue multiple conditional class bindings",
+      "code": "<$div$ :class=\"[$classNameA$, {$classNameB$ : $condition$}]\"></$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vroutename",
+      "action": "Named routing link",
+      "aliases": [
+        "vroutename",
+        "Named routing link"
+      ],
+      "keys": [
+        "vroutename"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Named routing link",
+      "code": "<router-link :to=\"{name: '$name$'}\">$LinkTitle$</router-link>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vroutenameparam",
+      "action": "Named routing link w/ params",
+      "aliases": [
+        "vroutenameparam",
+        "Named routing link w/ params"
+      ],
+      "keys": [
+        "vroutenameparam"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Named routing link w/ params",
+      "code": "<router-link :to=\"{name: '$name$', params:{$id$: '$value$'} }\">$LinkTitle$</router-link>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vslot-named",
+      "action": "Named slot",
+      "aliases": [
+        "vslot-named",
+        "Named slot"
+      ],
+      "keys": [
+        "vslot-named"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Named slot",
+      "code": "<template v-slot:$name$>$defaultcontent$</template>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vnuxtl",
+      "action": "Nuxt routing link",
+      "aliases": [
+        "vnuxtl",
+        "Nuxt routing link"
+      ],
+      "keys": [
+        "vnuxtl"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Nuxt routing link",
+      "code": "<nuxt-link to=\"/$page$\">$page$</nuxt-link>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vroutepath",
+      "action": "Path routing link",
+      "aliases": [
+        "vroutepath",
+        "Path routing link"
+      ],
+      "keys": [
+        "vroutepath"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Path routing link",
+      "code": "<router-link to=\"$path$\">$LinkTitle$</router-link>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vstyle",
+      "action": "Vue inline style binding",
+      "aliases": [
+        "vstyle",
+        "Vue inline style binding"
+      ],
+      "keys": [
+        "vstyle"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue inline style binding",
+      "code": "<$div$ :style=\"{ fontSize: $data$ + 'px' }\"></$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vstyle-obj",
+      "action": "Vue inline style binding, objects",
+      "aliases": [
+        "vstyle-obj",
+        "Vue inline style binding, objects"
+      ],
+      "keys": [
+        "vstyle-obj"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue inline style binding, objects",
+      "code": "<$div$ :style=\"[$styleObjectA$, $styleObjectB$]\"></$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vanim",
+      "action": "Vue transition component with JavaScript hooks",
+      "aliases": [
+        "vanim",
+        "Vue transition component with JavaScript hooks"
+      ],
+      "keys": [
+        "vanim"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue transition component with JavaScript hooks",
+      "code": "<transition\n mode=\"out-in\"\n @before-enter=\"beforeEnter\"\n @enter=\"enter\"\n\n @before-leave=\"beforeLeave\"\n @leave=\"leave\"\n :css=\"false\">\n\n</transition>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vfor",
+      "action": "Vue v-for statement",
+      "aliases": [
+        "vfor",
+        "Vue v-for statement"
+      ],
+      "keys": [
+        "vfor"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue v-for statement",
+      "code": "<$div$ v-for=\"$item$ in $item$s\" :key=\"$item$.id\">\n {{ $item$ }}\n</$div$>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmodel",
+      "action": "Vue v-model directive",
+      "aliases": [
+        "vmodel",
+        "Vue v-model directive"
+      ],
+      "keys": [
+        "vmodel"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue v-model directive",
+      "code": "<input v-model=\"$data$\" type=\"text\" />",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vmodel-num",
+      "action": "Vue v-model directive number input",
+      "aliases": [
+        "vmodel-num",
+        "Vue v-model directive number input"
+      ],
+      "keys": [
+        "vmodel-num"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue v-model directive number input",
+      "code": "<input v-model.number=\"$numData$\" type=\"number\" step=\"1\" />",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.von",
+      "action": "Vue v-on click handler with arguments",
+      "aliases": [
+        "von",
+        "Vue v-on click handler with arguments"
+      ],
+      "keys": [
+        "von"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Vue v-on click handler with arguments",
+      "code": "@click=\"$handler$($arg$, $event$)\"",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase",
+      "action": "Base for Vue File with SCSS",
+      "aliases": [
+        "vbase",
+        "Base for Vue File with SCSS"
+      ],
+      "keys": [
+        "vbase"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with SCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style lang=\"scss\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-3",
+      "action": "Base for Vue File Composition API with SCSS",
+      "aliases": [
+        "vbase-3",
+        "Base for Vue File Composition API with SCSS"
+      ],
+      "keys": [
+        "vbase-3"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File Composition API with SCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\nexport default {\n setup () {\n  \n\n  return {}\n }\n}\n</script>\n\n<style lang=\"scss\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-3-reactive",
+      "action": "Base for Vue File Composition API with SCSS",
+      "aliases": [
+        "vbase-3-reactive",
+        "Base for Vue File Composition API with SCSS"
+      ],
+      "keys": [
+        "vbase-3-reactive"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File Composition API with SCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\nimport { reactive, toRefs } from 'vue'\n\nexport default {\n setup () {\n  const state = reactive({\n   $count$: ,\n  })\n \n  return {\n   ...toRefs(state),\n  }\n }\n}\n</script>\n\n<style lang=\"scss\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-3-ts",
+      "action": "Base for Vue File Composition API - Typescript",
+      "aliases": [
+        "vbase-3-ts",
+        "Base for Vue File Composition API - Typescript"
+      ],
+      "keys": [
+        "vbase-3-ts"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File Composition API - Typescript",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue'\n\nexport default defineComponent({\n setup () {\n  \n\n  return {}\n }\n})\n</script>\n\n<style scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-3-setup",
+      "action": "Base for Vue File Setup Composition API with SCSS",
+      "aliases": [
+        "vbase-3-setup",
+        "Base for Vue File Setup Composition API with SCSS"
+      ],
+      "keys": [
+        "vbase-3-setup"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File Setup Composition API with SCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script setup>\n\n</script>\n\n<style lang=\"scss\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-3-ts-setup",
+      "action": "Base for Vue File Setup Composition API - Typescript",
+      "aliases": [
+        "vbase-3-ts-setup",
+        "Base for Vue File Setup Composition API - Typescript"
+      ],
+      "keys": [
+        "vbase-3-ts-setup"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File Setup Composition API - Typescript",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script setup lang=\"ts\">\n\n</script>\n\n<style scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-ts-class",
+      "action": "Base for Vue File with Class based Typescript format",
+      "aliases": [
+        "vbase-ts-class",
+        "Base for Vue File with Class based Typescript format"
+      ],
+      "keys": [
+        "vbase-ts-class"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with Class based Typescript format",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script lang=\"ts\">\n import { Component, Vue } from 'vue-property-decorator';\n\n @Component\n export default class  extends Vue {\n  \n }\n</script>\n\n<style scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-css",
+      "action": "Base for Vue File with CSS",
+      "aliases": [
+        "vbase-css",
+        "Base for Vue File with CSS"
+      ],
+      "keys": [
+        "vbase-css"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with CSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-less",
+      "action": "Base for Vue File with PostCSS",
+      "aliases": [
+        "vbase-less",
+        "Base for Vue File with PostCSS"
+      ],
+      "keys": [
+        "vbase-less"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with PostCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style lang=\"less\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-ns",
+      "action": "Base for Vue File with no styles",
+      "aliases": [
+        "vbase-ns",
+        "Base for Vue File with no styles"
+      ],
+      "keys": [
+        "vbase-ns"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with no styles",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-sass",
+      "action": "Base for Vue File with PostCSS",
+      "aliases": [
+        "vbase-sass",
+        "Base for Vue File with PostCSS"
+      ],
+      "keys": [
+        "vbase-sass"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with PostCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style lang=\"sass\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-styl",
+      "action": "Base for Vue File with Stylus",
+      "aliases": [
+        "vbase-styl",
+        "Base for Vue File with Stylus"
+      ],
+      "keys": [
+        "vbase-styl"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with Stylus",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style lang=\"stylus\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-ts",
+      "action": "Base for Vue File with Typescript",
+      "aliases": [
+        "vbase-ts",
+        "Base for Vue File with Typescript"
+      ],
+      "keys": [
+        "vbase-ts"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with Typescript",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script lang=\"ts\">\n import Vue from 'vue'\n\n export default Vue.extend({\n  \n })\n</script>\n\n<style scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.vue.vbase-pcss",
+      "action": "Base for Vue File with PostCSS",
+      "aliases": [
+        "vbase-pcss",
+        "Base for Vue File with PostCSS"
+      ],
+      "keys": [
+        "vbase-pcss"
+      ],
+      "group": "代码模板·Vue",
+      "note": "Base for Vue File with PostCSS",
+      "code": "<template>\n <div>\n\n </div>\n</template>\n\n<script>\n export default {\n  \n }\n</script>\n\n<style lang=\"postcss\" scoped>\n\n</style>",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.signal",
+      "action": "readonly name = signal()",
+      "aliases": [
+        "signal",
+        "readonly name = signal()"
+      ],
+      "keys": [
+        "signal"
+      ],
+      "group": "代码模板·Angular",
+      "note": "readonly name = signal()",
+      "code": "readonly $name$ = signal()",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.computed",
+      "action": "name = computed(() => {});",
+      "aliases": [
+        "computed",
+        "name = computed(() => {});"
+      ],
+      "keys": [
+        "computed"
+      ],
+      "group": "代码模板·Angular",
+      "note": "name = computed(() => {});",
+      "code": "$name$ = computed(() => {});",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.effect",
+      "action": "effect(() => {});",
+      "aliases": [
+        "effect",
+        "effect(() => {});"
+      ],
+      "keys": [
+        "effect"
+      ],
+      "group": "代码模板·Angular",
+      "note": "effect(() => {});",
+      "code": "effect(() => {});",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-class",
+      "action": "a-class",
+      "aliases": [
+        "a-class"
+      ],
+      "keys": [
+        "a-class"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[class]=\"$expression$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngclass",
+      "action": "a-ngClass",
+      "aliases": [
+        "a-ngClass"
+      ],
+      "keys": [
+        "a-ngClass"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[ngClass]=\"{$cssClass$: $expression$}\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngfor",
+      "action": "a-ngFor",
+      "aliases": [
+        "a-ngFor"
+      ],
+      "keys": [
+        "a-ngFor"
+      ],
+      "group": "代码模板·Angular",
+      "code": "*ngFor=\"let $item$ of $list$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngfor-trackby",
+      "action": "a-ngFor-trackBy",
+      "aliases": [
+        "a-ngFor-trackBy"
+      ],
+      "keys": [
+        "a-ngFor-trackBy"
+      ],
+      "group": "代码模板·Angular",
+      "code": "*ngFor=\"let $item$ of $list$; trackBy:$item$.id\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngforasync",
+      "action": "a-ngForAsync",
+      "aliases": [
+        "a-ngForAsync"
+      ],
+      "keys": [
+        "a-ngForAsync"
+      ],
+      "group": "代码模板·Angular",
+      "code": "*ngFor=\"let $item$ of $stream$ | async as $list$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-formcontrolname",
+      "action": "a-formControlName",
+      "aliases": [
+        "a-formControlName"
+      ],
+      "keys": [
+        "a-formControlName"
+      ],
+      "group": "代码模板·Angular",
+      "code": "formControlName=\"$control$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-formgroup",
+      "action": "a-formGroup",
+      "aliases": [
+        "a-formGroup"
+      ],
+      "keys": [
+        "a-formGroup"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[formGroup]=\"$form$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-formgroupname",
+      "action": "a-formGroupName",
+      "aliases": [
+        "a-formGroupName"
+      ],
+      "keys": [
+        "a-formGroupName"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[formGroupName]=\"$name$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngif",
+      "action": "a-ngIf",
+      "aliases": [
+        "a-ngIf"
+      ],
+      "keys": [
+        "a-ngIf"
+      ],
+      "group": "代码模板·Angular",
+      "code": "*ngIf=\"$expression$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngifelse",
+      "action": "a-ngIfElse",
+      "aliases": [
+        "a-ngIfElse"
+      ],
+      "keys": [
+        "a-ngIfElse"
+      ],
+      "group": "代码模板·Angular",
+      "code": "*ngIf=\"$expression$;else $templateName$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngmodel",
+      "action": "a-ngModel",
+      "aliases": [
+        "a-ngModel"
+      ],
+      "keys": [
+        "a-ngModel"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[(ngModel)]=\"$binding$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-routerlink",
+      "action": "a-routerLink",
+      "aliases": [
+        "a-routerLink"
+      ],
+      "keys": [
+        "a-routerLink"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[routerLink]=\"['/$routePath$']\" routerLinkActive=\"$router_link-active$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-routerlink-param",
+      "action": "a-routerLink-param",
+      "aliases": [
+        "a-routerLink-param"
+      ],
+      "keys": [
+        "a-routerLink-param"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[routerLink]=\"['$routePath$', $routeParameterValue$]\"\nrouterLinkActive=\"$router_link-active$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-select",
+      "action": "a-select",
+      "aliases": [
+        "a-select"
+      ],
+      "keys": [
+        "a-select"
+      ],
+      "group": "代码模板·Angular",
+      "code": "<select [(ngModel)]=\"$model$\">\n <option *ngFor=\"let $item$ of $list$\" [value]=\"$item$\">{{$item$}}</option>\n</select>",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngstyle",
+      "action": "a-ngStyle",
+      "aliases": [
+        "a-ngStyle"
+      ],
+      "keys": [
+        "a-ngStyle"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[ngStyle]=\"{$style$: $expression$}\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngswitch",
+      "action": "a-ngSwitch",
+      "aliases": [
+        "a-ngSwitch"
+      ],
+      "keys": [
+        "a-ngSwitch"
+      ],
+      "group": "代码模板·Angular",
+      "code": "<div [ngSwitch]=\"$conditionExpression$\">\n <div *ngSwitchCase=\"$expression$\">$output$</div>\n <div *ngSwitchDefault>$output2$</div>\n</div>",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-preja",
+      "action": "a-preja",
+      "aliases": [
+        "a-preja"
+      ],
+      "keys": [
+        "a-preja"
+      ],
+      "group": "代码模板·Angular",
+      "code": "<pre>{{$model$ | async | json}}</pre>",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-prej",
+      "action": "a-prej",
+      "aliases": [
+        "a-prej"
+      ],
+      "keys": [
+        "a-prej"
+      ],
+      "group": "代码模板·Angular",
+      "code": "<pre>{{$model$ | json}}</pre>",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-style",
+      "action": "a-style",
+      "aliases": [
+        "a-style"
+      ],
+      "keys": [
+        "a-style"
+      ],
+      "group": "代码模板·Angular",
+      "code": "[style.$property$]=\"$expression$\"",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-path-404",
+      "action": "a-route-path-404",
+      "aliases": [
+        "a-route-path-404"
+      ],
+      "keys": [
+        "a-route-path-404"
+      ],
+      "group": "代码模板·Angular",
+      "code": "{ path: '**', component: $PathNotFoundComponent$ }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-guard-can-activate",
+      "action": "a-guard-can-activate",
+      "aliases": [
+        "a-guard-can-activate"
+      ],
+      "keys": [
+        "a-guard-can-activate"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';\n\n@Injectable({providedIn: $2$})\nexport class $Name$Guard implements CanActivate {\n constructor() { }\n\n canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {\n  return true;\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-guard-can-activate-child",
+      "action": "a-guard-can-activate-child",
+      "aliases": [
+        "a-guard-can-activate-child"
+      ],
+      "keys": [
+        "a-guard-can-activate-child"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';\n\n@Injectable({providedIn: $2$})\nexport class $Name$Guard implements CanActivateChild {\n constructor() { }\n\n canActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {\n  return true;\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-guard-can-deactivate",
+      "action": "a-guard-can-deactivate",
+      "aliases": [
+        "a-guard-can-deactivate"
+      ],
+      "keys": [
+        "a-guard-can-deactivate"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';\nimport { Observable } from 'rxjs';\n\nimport { $ComponentName$Component } from './$filename$.component';\n\n// Consider using this interface for all CanDeactivate guards,\n// and have your components implement this interface, too.\n//\n//   e.g. export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {\n//\n// export interface CanComponentDeactivate {\n// canDeactivate: () => any;\n// }\n\n@Injectable({providedIn: $4$})\nexport class $Name$Guard implements CanDeactivate<$ComponentName$Component> {\n canDeactivate(\n  component: $ComponentName$Component,\n  currentRoute: ActivatedRouteSnapshot, \n  currentState: RouterStateSnapshot\n ): Observable<boolean>|Promise<boolean>|boolean {\n  return false;\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-guard-can-load",
+      "action": "a-guard-can-load",
+      "aliases": [
+        "a-guard-can-load"
+      ],
+      "keys": [
+        "a-guard-can-load"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport { CanLoad, Route } from '@angular/router';\n\n@Injectable({providedIn: $2$})\nexport class $Name$Guard implements CanLoad {\n constructor() { }\n\n canLoad(route: Route) {\n  return true;\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-component",
+      "action": "Angular component",
+      "aliases": [
+        "a-component",
+        "Angular component"
+      ],
+      "keys": [
+        "a-component"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Angular component",
+      "code": "import { Component } from '@angular/core';\n\n@Component({\n selector: '$selector_name$',\n templateUrl: '$name$.component.html'\n})\nexport class $Name$Component {\n\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-component-inline",
+      "action": "Angular component with an inline template",
+      "aliases": [
+        "a-component-inline",
+        "Angular component with an inline template"
+      ],
+      "keys": [
+        "a-component-inline"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Angular component with an inline template",
+      "code": "import { Component } from '@angular/core';\n\n@Component({\n selector: '$selector_name$',\n template: ``\n})\nexport class $Name$Component {\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-preload-strategy",
+      "action": "a-preload-strategy",
+      "aliases": [
+        "a-preload-strategy"
+      ],
+      "keys": [
+        "a-preload-strategy"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { PreloadingStrategy, Route } from '@angular/router';\nimport { Observable, of } from 'rxjs';\n\nexport class PreloadSelectedModulesList implements PreloadingStrategy {\n preload(route: Route, load: Function): Observable<any> {\n  return route.data && route.data['$preload$'] ? load() : of(null);\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-path-default",
+      "action": "a-route-path-default",
+      "aliases": [
+        "a-route-path-default"
+      ],
+      "keys": [
+        "a-route-path-default"
+      ],
+      "group": "代码模板·Angular",
+      "code": "{ path: '', pathMatch: 'full', redirectTo: '$path$' }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-directive",
+      "action": "a-directive",
+      "aliases": [
+        "a-directive"
+      ],
+      "keys": [
+        "a-directive"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Directive } from '@angular/core';\n\n@Directive({ selector: '[$selector_name$]' })\nexport class $Name$Directive {\n constructor() { }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-path-eager",
+      "action": "a-route-path-eager",
+      "aliases": [
+        "a-route-path-eager"
+      ],
+      "keys": [
+        "a-route-path-eager"
+      ],
+      "group": "代码模板·Angular",
+      "code": "{ path: '$path$', component: $Name$Component },",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-service-httpclient",
+      "action": "a-service-httpclient",
+      "aliases": [
+        "a-service-httpclient"
+      ],
+      "keys": [
+        "a-service-httpclient"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport { HttpClient } from '@angular/common/http';\n\n@Injectable({providedIn: $2$})\nexport class $ServiceName$Service {\n constructor(private httpClient: HttpClient) { }\n \n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-http-interceptor",
+      "action": "Empty Angular HttpInterceptor for HttpClient",
+      "aliases": [
+        "a-http-interceptor",
+        "Empty Angular HttpInterceptor for HttpClient"
+      ],
+      "keys": [
+        "a-http-interceptor"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Empty Angular HttpInterceptor for HttpClient",
+      "code": "import { Injectable } from '@angular/core';\nimport { HttpInterceptor, HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';\nimport { Observable } from 'rxjs';\n\n@Injectable({providedIn: $1$})\nexport class HeaderInterceptor implements HttpInterceptor {\n intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {\n  return next.handle(req);\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-http-interceptor-headers",
+      "action": "Angular HttpInterceptor for headers HttpClient",
+      "aliases": [
+        "a-http-interceptor-headers",
+        "Angular HttpInterceptor for headers HttpClient"
+      ],
+      "keys": [
+        "a-http-interceptor-headers"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Angular HttpInterceptor for headers HttpClient",
+      "code": "import { Injectable } from '@angular/core';\nimport { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';\nimport { Observable } from 'rxjs';\n\n@Injectable({providedIn: $1$})\nexport class HeaderInterceptor implements HttpInterceptor {\n constructor() {}\n\n intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {\n  const headers = req.headers\n   .set('Content-Type', 'application/json');\n  const authReq = req.clone({ headers });\n  return next.handle(authReq);\n }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-http-interceptor-logging",
+      "action": "a-http-interceptor-logging",
+      "aliases": [
+        "a-http-interceptor-logging"
+      ],
+      "keys": [
+        "a-http-interceptor-logging"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';\nimport { Observable, tap } from 'rxjs';\n\n@Injectable({providedIn: $1$})\nexport class LogInterceptor implements HttpInterceptor {\n constructor() {}\n\n intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {\n  const started = Date.now();\n  return next.handle(req).pipe(\n   tap(event => {\n    if (event instanceof HttpResponse) {\n     const elapsed = Date.now() - started;\n     console.log(`Request for \\${req.urlWithParams} took \\$elapsed$ ms.`);\n    }\n   })\n  );\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-path-lazy",
+      "action": "a-route-path-lazy",
+      "aliases": [
+        "a-route-path-lazy"
+      ],
+      "keys": [
+        "a-route-path-lazy"
+      ],
+      "group": "代码模板·Angular",
+      "code": "{ path: '$path$', loadChildren: '$lazy_path$#$lazy_module$' },",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-module",
+      "action": "a-module",
+      "aliases": [
+        "a-module"
+      ],
+      "keys": [
+        "a-module"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { NgModule } from '@angular/core';\n\nimport { $Name$Component } from './$name$.component';\n\n@NgModule({\n imports: [],\n exports: [],\n declarations: [$Name$Component],\n providers: [],\n})\nexport class $Name$Module { }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ctor-skip-self",
+      "action": "a-ctor-skip-self",
+      "aliases": [
+        "a-ctor-skip-self"
+      ],
+      "keys": [
+        "a-ctor-skip-self"
+      ],
+      "group": "代码模板·Angular",
+      "code": "constructor( @Optional() @SkipSelf() parentModule: $ModuleName$ ) {\n if (parentModule) {\n  const msg = `$ModuleName$ has already been loaded. \n   Import $ModuleName$ once, only, in the root AppModule.`;\n  throw new Error(msg);\n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-module-with-routing",
+      "action": "a-module-with-routing",
+      "aliases": [
+        "a-module-with-routing"
+      ],
+      "keys": [
+        "a-module-with-routing"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\n\nconst routes: Routes = []\n\n@NgModule({\n imports: [RouterModule.$forChild$(routes)],\n exports: [],\n declarations: [],\n})\nexport class $Name$Module { }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-pipe",
+      "action": "a-pipe",
+      "aliases": [
+        "a-pipe"
+      ],
+      "keys": [
+        "a-pipe"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Pipe, PipeTransform } from '@angular/core';\n\n@Pipe({\n name: '$selector_name$'\n})\n\nexport class $Name$Pipe implements PipeTransform {\n transform(value: any, ...args: any[]): any {\n  \n }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-injectable-providedin",
+      "action": "a-injectable-providedin",
+      "aliases": [
+        "a-injectable-providedin"
+      ],
+      "keys": [
+        "a-injectable-providedin"
+      ],
+      "group": "代码模板·Angular",
+      "code": "@Injectable({providedIn: $1$})",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-component-root",
+      "action": "a-component-root",
+      "aliases": [
+        "a-component-root"
+      ],
+      "keys": [
+        "a-component-root"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Component } from '@angular/core';\n\n@Component({\n selector: '$prefix_app$',\n template: `\n  <router-outlet></router-outlet>\n  `\n})\nexport class $App$Component { }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-module-root",
+      "action": "a-module-root",
+      "aliases": [
+        "a-module-root"
+      ],
+      "keys": [
+        "a-module-root"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { NgModule } from '@angular/core';\nimport { BrowserModule  } from '@angular/platform-browser';\nimport { HttpModule } from '@angular/http';\n\nimport { $App$Component } from './$app$.component';\n\n@NgModule({\n imports: [\n  BrowserModule,\n  HttpModule,\n ],\n declarations: [$App$Component],\n bootstrap: [$App$Component],\n})\nexport class $App$Module { }",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-path-with-children",
+      "action": "a-route-path-with-children",
+      "aliases": [
+        "a-route-path-with-children"
+      ],
+      "keys": [
+        "a-route-path-with-children"
+      ],
+      "group": "代码模板·Angular",
+      "code": "{\n path: '$path$', \n component: $Component$,\n children: [\n  { path: '$childpath$', component: $ChildComponent$ }\n ]\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-router-events",
+      "action": "a-router-events",
+      "aliases": [
+        "a-router-events"
+      ],
+      "keys": [
+        "a-router-events"
+      ],
+      "group": "代码模板·Angular",
+      "code": "checkEvents() {\n this.router.events.subscribe(event => {\n  switch (true) {\n   case event instanceof $eventName$:\n    \n    break;\n\n   default:\n    break;\n  }\n });\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-service",
+      "action": "a-service",
+      "aliases": [
+        "a-service"
+      ],
+      "keys": [
+        "a-service"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\n\n@Injectable()\nexport class $Name$Service {\n\n constructor() { }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-httpclient-get",
+      "action": "a-httpclient-get",
+      "aliases": [
+        "a-httpclient-get"
+      ],
+      "keys": [
+        "a-httpclient-get"
+      ],
+      "group": "代码模板·Angular",
+      "code": "return this.httpClient.get('$url$');",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngrx-data-entity-collection-data-service",
+      "action": "a-ngrx-data-entity-collection-data-service",
+      "aliases": [
+        "a-ngrx-data-entity-collection-data-service"
+      ],
+      "keys": [
+        "a-ngrx-data-entity-collection-data-service"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { Injectable } from '@angular/core';\nimport {\n  EntityCollectionServiceBase,\n  EntityCollectionServiceElementsFactory\n} from 'ngrx-data';\nimport { $Model$ } from '$2$';\n\n@Injectable({ providedIn: 'root' })\nexport class $Model$Service extends EntityCollectionServiceBase<$Model$> {\n  constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {\n    super('$Model$', serviceElementsFactory);\n  }\n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngrx-data-entity-metadata",
+      "action": "a-ngrx-data-entity-metadata",
+      "aliases": [
+        "a-ngrx-data-entity-metadata"
+      ],
+      "keys": [
+        "a-ngrx-data-entity-metadata"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { EntityMetadataMap } from 'ngrx-data';\n\nconst entityMetadata: EntityMetadataMap = {\n  $Model1$: {},\n};\n\nexport const entityConfig = {\n  entityMetadata\n};",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-ngrx-data-store-module",
+      "action": "a-ngrx-data-store-module",
+      "aliases": [
+        "a-ngrx-data-store-module"
+      ],
+      "keys": [
+        "a-ngrx-data-store-module"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { NgModule } from '@angular/core';\nimport { EffectsModule } from '@ngrx/effects';\nimport { StoreModule } from '@ngrx/store';\nimport { StoreDevtoolsModule } from '@ngrx/store-devtools';\nimport { NgrxDataModule } from 'ngrx-data';\nimport { environment } from '../../environments/environment';\nimport { entityConfig } from './entity-metadata';\n\n@NgModule({\n  imports: [\n    StoreModule.forRoot({}),\n    EffectsModule.forRoot([]),\n    environment.production ? [] : StoreDevtoolsModule.instrument(),\n    NgrxDataModule.forRoot(entityConfig)\n  ]\n})\nexport class AppStoreModule {}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-output-event",
+      "action": "a-output-event",
+      "aliases": [
+        "a-output-event"
+      ],
+      "keys": [
+        "a-output-event"
+      ],
+      "group": "代码模板·Angular",
+      "code": "@Output() $eventName$ = new EventEmitter<$eventType$>();",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-route-params-subscribe",
+      "action": "a-route-params-subscribe",
+      "aliases": [
+        "a-route-params-subscribe"
+      ],
+      "keys": [
+        "a-route-params-subscribe"
+      ],
+      "group": "代码模板·Angular",
+      "code": "this.route.params\n .pipe(map(params => params['id']), tap(id => (this.id = +id)))\n .subscribe(id => $1$());",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-rxjs-import",
+      "action": "a-rxjs-import",
+      "aliases": [
+        "a-rxjs-import"
+      ],
+      "keys": [
+        "a-rxjs-import"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { $Observable$ } from 'rxjs';",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-rxjs-operator-import",
+      "action": "a-rxjs-operator-import",
+      "aliases": [
+        "a-rxjs-operator-import"
+      ],
+      "keys": [
+        "a-rxjs-operator-import"
+      ],
+      "group": "代码模板·Angular",
+      "code": "import { $map$ } from 'rxjs/operators';",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.a-subscribe",
+      "action": "a-subscribe",
+      "aliases": [
+        "a-subscribe"
+      ],
+      "keys": [
+        "a-subscribe"
+      ],
+      "group": "代码模板·Angular",
+      "code": "this.$service$.$function$\n .subscribe($arg$ => this.$property$ = $arg$);",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.if",
+      "action": "Surround with @if block",
+      "aliases": [
+        "@if",
+        "Surround with @if block"
+      ],
+      "keys": [
+        "@if"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @if block",
+      "code": "@if ($condition$) {\n  $SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.if-else",
+      "action": "Surround with @if and @else block",
+      "aliases": [
+        "@if + @else",
+        "Surround with @if and @else block"
+      ],
+      "keys": [
+        "@if + @else"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @if and @else block",
+      "code": "@if ($condition$) {\n  $SELECTION$\n} @else {\n  $else$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.else-if",
+      "action": "Surround with @else if block",
+      "aliases": [
+        "@else if",
+        "Surround with @else if block"
+      ],
+      "keys": [
+        "@else if"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @else if block",
+      "code": "@else if ($condition$) {\n  $SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.else",
+      "action": "Surround with @else block",
+      "aliases": [
+        "@else",
+        "Surround with @else block"
+      ],
+      "keys": [
+        "@else"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @else block",
+      "code": "@else {\n  $SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.for",
+      "action": "Surround with @for block",
+      "aliases": [
+        "@for",
+        "Surround with @for block"
+      ],
+      "keys": [
+        "@for"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @for block",
+      "code": "@for ($item$ of $items$; track $item$.id) {\n  $SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.defer",
+      "action": "Surround with @defer block",
+      "aliases": [
+        "@defer",
+        "Surround with @defer block"
+      ],
+      "keys": [
+        "@defer"
+      ],
+      "group": "代码模板·Angular",
+      "note": "Surround with @defer block",
+      "code": "@defer {\n  $SELECTION$\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.ng.switch",
+      "action": "surround with @switch",
+      "aliases": [
+        "@switch",
+        "surround with @switch"
+      ],
+      "keys": [
+        "@switch"
+      ],
+      "group": "代码模板·Angular",
+      "note": "surround with @switch",
+      "code": "@switch ($variable$) {\n    @case($case$){\n       $SELECTION$\n     }\n}",
+      "hot": false
+    },
+    {
+      "id": "ws.react.con",
+      "action": "con",
+      "aliases": [
+        "con"
+      ],
+      "keys": [
+        "con"
+      ],
+      "group": "代码模板·React",
+      "code": "constructor(props) {\n super(props);\n \n}",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.props",
+      "action": "props",
+      "aliases": [
+        "props"
+      ],
+      "keys": [
+        "props"
+      ],
+      "group": "代码模板·React",
+      "code": "this.props.",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.state",
+      "action": "state",
+      "aliases": [
+        "state"
+      ],
+      "keys": [
+        "state"
+      ],
+      "group": "代码模板·React",
+      "code": "this.state.",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.fsc",
+      "action": "fsc",
+      "aliases": [
+        "fsc"
+      ],
+      "keys": [
+        "fsc"
+      ],
+      "group": "代码模板·React",
+      "code": "// @flow \nimport * as React from 'react';\ntype Props = {\n \n};\nexport const $TM_FILENAME_BASE$ = (props: Props) => {\n return (\n  <div>\n   \n  </div>\n );\n};",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.fsf",
+      "action": "fsf",
+      "aliases": [
+        "fsf"
+      ],
+      "keys": [
+        "fsf"
+      ],
+      "group": "代码模板·React",
+      "code": "// @flow\nimport * as React from 'react';\ntype Props = {\n \n};\nexport function $TM_FILENAME_BASE$(props: Props) {\n return (\n  <div>\n   \n  </div>\n );\n};",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rcc",
+      "action": "rcc",
+      "aliases": [
+        "rcc"
+      ],
+      "keys": [
+        "rcc"
+      ],
+      "group": "代码模板·React",
+      "code": "import React, { Component } from 'react';\n\nclass $TM_FILENAME_BASE$ extends Component {\n render() {\n  return (\n   <div>\n    \n   </div>\n  );\n }\n}\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rccp",
+      "action": "rccp",
+      "aliases": [
+        "rccp"
+      ],
+      "keys": [
+        "rccp"
+      ],
+      "group": "代码模板·React",
+      "code": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass $TM_FILENAME_BASE$ extends Component {\n render() {\n  return (\n   <div>\n    \n   </div>\n  );\n }\n}\n\n$TM_FILENAME_BASE$.propTypes = {\n\n};\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rcfc",
+      "action": "rcfc",
+      "aliases": [
+        "rcfc"
+      ],
+      "keys": [
+        "rcfc"
+      ],
+      "group": "代码模板·React",
+      "code": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nclass $TM_FILENAME_BASE$ extends Component {\n constructor(props) {\n  super(props);\n\n }\n\n componentWillMount() {\n\n }\n\n componentDidMount() {\n\n }\n\n componentWillReceiveProps(nextProps) {\n\n }\n\n shouldComponentUpdate(nextProps, nextState) {\n\n }\n\n componentWillUpdate(nextProps, nextState) {\n\n }\n\n componentDidUpdate(prevProps, prevState) {\n\n }\n\n componentWillUnmount() {\n\n }\n\n render() {\n  return (\n   <div>\n\n   </div>\n  );\n }\n}\n\n$TM_FILENAME_BASE$.propTypes = {\n\n};\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rsc",
+      "action": "rsc",
+      "aliases": [
+        "rsc"
+      ],
+      "keys": [
+        "rsc"
+      ],
+      "group": "代码模板·React",
+      "code": "import React from 'react';\n\nconst $TM_FILENAME_BASE$ = () => {\n return (\n  <div>\n   \n  </div>\n );\n};\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rsf",
+      "action": "rsf",
+      "aliases": [
+        "rsf"
+      ],
+      "keys": [
+        "rsf"
+      ],
+      "group": "代码模板·React",
+      "code": "import React from 'react';\n\nfunction $TM_FILENAME_BASE$(props) {\n return (\n  $1$\n );}\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rsfp",
+      "action": "rsfp",
+      "aliases": [
+        "rsfp"
+      ],
+      "keys": [
+        "rsfp"
+      ],
+      "group": "代码模板·React",
+      "code": "import React from 'react';\nimport PropTypes from 'prop-types';\n\n$TM_FILENAME_BASE$.propTypes = {\n \n};\n\nfunction $TM_FILENAME_BASE$(props) {\n return (\n  $1$\n );\n}\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rsi",
+      "action": "rsi",
+      "aliases": [
+        "rsi"
+      ],
+      "keys": [
+        "rsi"
+      ],
+      "group": "代码模板·React",
+      "code": "import React from 'react';\n\nconst $TM_FILENAME_BASE$ = (props) => (\n \n);\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.react.rscp",
+      "action": "rscp",
+      "aliases": [
+        "rscp"
+      ],
+      "keys": [
+        "rscp"
+      ],
+      "group": "代码模板·React",
+      "code": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst $TM_FILENAME_BASE$ = props => {\n return (\n  <div>\n   \n  </div>\n );\n};\n\n$TM_FILENAME_BASE$.propTypes = {\n \n};\n\nexport default $TM_FILENAME_BASE$;",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usestate",
+      "action": "const [state, setState] = useState()",
+      "aliases": [
+        "useState",
+        "const [state, setState] = useState()"
+      ],
+      "keys": [
+        "useState"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const [state, setState] = useState()",
+      "code": "const [$state$, set$State$] = useState()",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usecallback",
+      "action": "const name = useCallback(() => {}, [])",
+      "aliases": [
+        "useCallback",
+        "const name = useCallback(() => {}, [])"
+      ],
+      "keys": [
+        "useCallback"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const name = useCallback(() => {}, [])",
+      "code": "const $cachedFn$ = useCallback(() => {\n\t\n}, []);",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usecontext",
+      "action": "const value = useContext(context)",
+      "aliases": [
+        "useContext",
+        "const value = useContext(context)"
+      ],
+      "keys": [
+        "useContext"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const value = useContext(context)",
+      "code": "const $value$ = useContext($Context$)",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.useeffect",
+      "action": "useEffect(() => {}, [])",
+      "aliases": [
+        "useEffect",
+        "useEffect(() => {}, [])"
+      ],
+      "keys": [
+        "useEffect"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "useEffect(() => {}, [])",
+      "code": "useEffect(() => {\n\t\n}, []);",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.uselayouteffect",
+      "action": "useLayoutEffect(() => {}, [])",
+      "aliases": [
+        "useLayoutEffect",
+        "useLayoutEffect(() => {}, [])"
+      ],
+      "keys": [
+        "useLayoutEffect"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "useLayoutEffect(() => {}, [])",
+      "code": "useLayoutEffect(() => {\n\t\n}, []);",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usememo",
+      "action": "const cachedValue = useMemo(() => {}, [])",
+      "aliases": [
+        "useMemo",
+        "const cachedValue = useMemo(() => {}, [])"
+      ],
+      "keys": [
+        "useMemo"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const cachedValue = useMemo(() => {}, [])",
+      "code": "const $cachedValue$ = useMemo(() => {\n\t\n}, []);",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usereducer",
+      "action": "const [state, dispatch] = useReducer(params)",
+      "aliases": [
+        "useReducer",
+        "const [state, dispatch] = useReducer(params)"
+      ],
+      "keys": [
+        "useReducer"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const [state, dispatch] = useReducer(params)",
+      "code": "const [$state$, $dispatch$] = useReducer($PARAMS$)",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.useref",
+      "action": "const ref = useRef(initialValue)",
+      "aliases": [
+        "useRef",
+        "const ref = useRef(initialValue)"
+      ],
+      "keys": [
+        "useRef"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const ref = useRef(initialValue)",
+      "code": "const $ref$ = useRef();",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.lazyimport",
+      "action": "const Component = lazy(() => import('path'))",
+      "aliases": [
+        "lazyImport",
+        "const Component = lazy(() => import('path'))"
+      ],
+      "keys": [
+        "lazyImport"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const Component = lazy(() => import('path'))",
+      "code": "const $name$ = lazy(() => import('$Path$'))",
+      "hot": false
+    },
+    {
+      "id": "ws.hooks.usetransition",
+      "action": "const [isPending, startTransition] = useTransition()",
+      "aliases": [
+        "useTransition",
+        "const [isPending, startTransition] = useTransition()"
+      ],
+      "keys": [
+        "useTransition"
+      ],
+      "group": "代码模板·React Hooks",
+      "note": "const [isPending, startTransition] = useTransition()",
+      "code": "const [$isPending$, $startTransition$] = useTransition()",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.descr",
+      "action": "descr",
+      "aliases": [
+        "descr"
+      ],
+      "keys": [
+        "descr"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "describe('$NAME$', () => {\n  \n});",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.bfe",
+      "action": "bfe",
+      "aliases": [
+        "bfe"
+      ],
+      "keys": [
+        "bfe"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "beforeEach(() => {\n  \n});",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.it",
+      "action": "it",
+      "aliases": [
+        "it"
+      ],
+      "keys": [
+        "it"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "it('should $NAME$', () => {\n  \n});",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.afe",
+      "action": "afe",
+      "aliases": [
+        "afe"
+      ],
+      "keys": [
+        "afe"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "afterEach(() => {\n  \n});",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.af",
+      "action": "af",
+      "aliases": [
+        "af"
+      ],
+      "keys": [
+        "af"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "after(() => {\n  \n});",
+      "note": "",
+      "hot": false
+    },
+    {
+      "id": "ws.jstest.bf",
+      "action": "bf",
+      "aliases": [
+        "bf"
+      ],
+      "keys": [
+        "bf"
+      ],
+      "group": "代码模板·JS 测试",
+      "code": "before(() => {\n  \n});",
+      "note": "",
+      "hot": false
+    }
+  ]
 }
