@@ -1,4 +1,33 @@
 {
+  "_说明": [
+    "这是一个可以直接复制的空模板：另存为「平台标识.json」放进 packs 目录，改掉 platform / name / shortcuts 就能用。",
+    "文件名以下划线开头的不会被界面加载，所以这份示例可以一直留着当参考。",
+    "下面 _字段说明 和各条 _注 只是给人看的注释键，正式使用时可以整段删掉，不影响读取。",
+    "界面上「全部 / 快捷键 / 代码模板」三段筛选是按 group 自动分的：以「代码模板·」开头的算模板，其余都算快捷键。"
+  ],
+  "_字段说明": {
+    "schema": "固定填 shortcut-pack/1，不要改",
+    "platform": "平台唯一标识，必须和文件名一致（不含 .json），建议全小写，如 vscode / idea",
+    "name": "界面上显示的平台名，如「Visual Studio Code」",
+    "color": "平台图标底色，#RRGGBB",
+    "icon": "可填 packs/icons/ 里的文件名（如 idea.svg）；填 null 就用平台名首字母当图标",
+    "inherit": "只在「本包一条数据都没有」时生效：会把对方平台的全部条目当作自己的数据显示；本包一旦有 entries，这个字段就不起作用，不会混着显示两套数据。不继承填 null",
+    "os": "win 或 mac，仅作标记",
+    "keymap": "键位方案名，如「默认」「VSCode 方案」，仅作展示",
+    "source": "可填该平台官方键位文档的网址；写了首页对应平台卡片上才会出现「文档」入口，没有把握就填 null",
+    "shortcuts": "条目数组，每条的字段见 _注 条目字段",
+    "hidden": "要屏蔽的条目 id 数组（只对继承来的数据显示时有用）。支持精确 id，也支持前缀通配，如 [\"idea.tpl.*\"] 屏蔽所有 IDEA 模板",
+    "_注 条目字段": {
+      "id": "全库唯一，建议「平台前缀.英文名」，如 vscode.format",
+      "action": "中文动作名，是搜索的主字段，写用户会搜的说法",
+      "aliases": "别名数组，同义词 / 缩写 / 英文名都放进来，搜「对齐」或「gshd」都能命中",
+      "keys": "键位数组。段内用 + 连接，如 [\"Ctrl+Shift+I\"]；一个动作有多套键位就写多个元素，如 [\"Ctrl+P\",\"Cmd+P\"]",
+      "group": "分组名，界面按它归类；代码模板类统一用「代码模板·语言」开头，界面会自动去掉这个前缀",
+      "note": "一句话说明，支持多行（换行用 \\n）",
+      "code": "可选。模板的真实展开文本，多行用 \\n，详情里会用等宽块显示；没有把握就别写，留空即可",
+      "hot": "可选。true 表示热门，列表里会排在分组最前面"
+    }
+  },
   "schema": "shortcut-pack/1",
   "platform": "myeditor",
   "name": "我的编辑器",
@@ -9,12 +38,34 @@
   "keymap": "自定义",
   "shortcuts": [
     {
+      "_注": "最普通的快捷键：一条动作配一套键位",
       "id": "myeditor.format",
       "action": "格式化代码",
-      "aliases": ["自动对齐", "对齐", "格式化"],
+      "aliases": ["自动对齐", "对齐", "格式化", "format"],
       "keys": ["Ctrl+Shift+I"],
       "group": "编辑",
-      "note": "写一条真实存在的再改成你的"
+      "note": "整理缩进和空格，保存前跑一次",
+      "hot": true
+    },
+    {
+      "_注": "一个动作多套键位：keys 里写多个元素即可",
+      "id": "myeditor.gotoLine",
+      "action": "跳到指定行",
+      "aliases": ["跳行", "行号跳转", "goto line"],
+      "keys": ["Ctrl+G", "Ctrl+L"],
+      "group": "导航",
+      "note": "弹出输入框，输行号回车"
+    },
+    {
+      "_注": "代码模板：group 用「代码模板·语言」，keys 填缩写本身，code 填真实展开（没把握就不写这个键）",
+      "id": "myeditor.tpl.psvm",
+      "action": "生成 main 方法",
+      "aliases": ["psvm", "main"],
+      "keys": ["psvm"],
+      "group": "代码模板·Java",
+      "note": "输入 psvm 后按 Tab 展开成 main 方法",
+      "code": "public static void main(String[] args) {\n    \n}"
     }
-  ]
+  ],
+  "hidden": []
 }
