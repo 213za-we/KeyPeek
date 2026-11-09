@@ -1,0 +1,12 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "androidstudio",
+  "name": "Android Studio",
+  "color": "#3DDC84",
+  "icon": "",
+  "inherit": "idea",
+  "os": "win",
+  "keymap": "Windows 默认键位（继承 IDEA，个别键位略有差异）",
+  "source": "https://developer.android.com/studio/intro/keyboard-shortcuts",
+  "shortcuts": []
+}
