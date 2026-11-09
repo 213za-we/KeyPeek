@@ -1,0 +1,1015 @@
+{
+  "schema": "shortcut-pack/1",
+  "platform": "idea",
+  "name": "IntelliJ IDEA",
+  "color": "#FE2857",
+  "icon": "icons/idea.svg",
+  "inherit": null,
+  "os": "win",
+  "keymap": "Windows 默认键位（官方）",
+  "source": "https://www.jetbrains.com/zh-cn/help/idea/reference-keymap-win-default.html",
+  "shortcuts": [
+    {
+      "id": "idea.format",
+      "action": "格式化代码",
+      "aliases": ["自动对齐", "对齐", "排版", "格式化", "整理缩进", "reformat"],
+      "keys": ["Ctrl+Alt+L"],
+      "group": "代码辅助",
+      "note": "整个文件或选中区域按代码风格重新缩进、换行",
+      "hot": true
+    },
+    {
+      "id": "idea.moveStatementUp",
+      "action": "上移语句",
+      "aliases": ["上平移", "上移", "上挪", "把这段往上挪"],
+      "keys": ["Ctrl+Shift+↑"],
+      "group": "代码辅助",
+      "note": "把当前语句整体往上挪一行，带语法校验",
+      "hot": true
+    },
+    {
+      "id": "idea.moveStatementDown",
+      "action": "下移语句",
+      "aliases": ["下平移", "下移", "往下挪"],
+      "keys": ["Ctrl+Shift+↓"],
+      "group": "代码辅助",
+      "note": "把当前语句整体往下挪一行"
+    },
+    {
+      "id": "idea.moveLineUp",
+      "action": "上移行",
+      "aliases": ["上移整行", "挪行上去", "move line up"],
+      "keys": ["Alt+Shift+↑"],
+      "group": "代码辅助",
+      "note": "整行上移，不校验语法"
+    },
+    {
+      "id": "idea.moveLineDown",
+      "action": "下移行",
+      "aliases": ["下移整行", "挪行下去", "move line down"],
+      "keys": ["Alt+Shift+↓"],
+      "group": "代码辅助",
+      "note": "整行下移，不校验语法"
+    },
+    {
+      "id": "idea.commentLine",
+      "action": "行注释 / 取消注释",
+      "aliases": ["注释", "注释掉", "取消注释", "加注释", "toggle comment"],
+      "keys": ["Ctrl+/"],
+      "group": "代码辅助",
+      "note": "对当前行或选中行加/去 // 注释",
+      "hot": true
+    },
+    {
+      "id": "idea.commentBlock",
+      "action": "块注释",
+      "aliases": ["块注释", "段落注释", "多行注释"],
+      "keys": ["Ctrl+Shift+/"],
+      "group": "代码辅助",
+      "note": "给选中区域加 /* */ 注释"
+    },
+    {
+      "id": "idea.intention",
+      "action": "意图操作 / 快速修复",
+      "aliases": ["快速修复", "灯泡", "报错修复", "自动import", "导入包", "quick fix"],
+      "keys": ["Alt+Enter"],
+      "group": "代码辅助",
+      "note": "最常用的一个键：导入包、修复警告、转换写法",
+      "hot": true
+    },
+    {
+      "id": "idea.basicComplete",
+      "action": "基本代码补全",
+      "aliases": ["补全", "提示", "自动补全", "代码提示", "autocomplete"],
+      "keys": ["Ctrl+Space"],
+      "group": "代码辅助",
+      "note": "按一下给基础建议，连按两次给更多候选"
+    },
+    {
+      "id": "idea.typeComplete",
+      "action": "类型匹配补全",
+      "aliases": ["类型补全", "智能补全", "只补同类型"],
+      "keys": ["Ctrl+Shift+Space"],
+      "group": "代码辅助",
+      "note": "只提示类型匹配的候选项"
+    },
+    {
+      "id": "idea.secondComplete",
+      "action": "第二次基本补全",
+      "aliases": ["第二补全", "强制补全"],
+      "keys": ["Ctrl+Alt+Space"],
+      "group": "代码辅助",
+      "note": "忽略上下文限制再给一遍候选"
+    },
+    {
+      "id": "idea.completeStatement",
+      "action": "补全当前语句",
+      "aliases": ["补全语句", "自动补分号", "补括号", "complete statement"],
+      "keys": ["Ctrl+Shift+Enter"],
+      "group": "代码辅助",
+      "note": "自动补括号、分号，把语句补完整"
+    },
+    {
+      "id": "idea.paramInfo",
+      "action": "参数信息",
+      "aliases": ["参数提示", "看参数", "方法参数", "parameter info"],
+      "keys": ["Ctrl+P"],
+      "group": "代码辅助",
+      "note": "调方法时显示参数名和类型"
+    },
+    {
+      "id": "idea.quickDoc",
+      "action": "快速文档",
+      "aliases": ["看文档", "查文档", "注释说明", "quick doc"],
+      "keys": ["Ctrl+Q"],
+      "group": "代码辅助",
+      "note": "弹窗看当前方法的文档注释"
+    },
+    {
+      "id": "idea.surround",
+      "action": "用…包围",
+      "aliases": ["包围", "包一层", "try catch", "surround"],
+      "keys": ["Ctrl+Alt+T"],
+      "group": "代码辅助",
+      "note": "给选中代码套 if/try/for 等"
+    },
+    {
+      "id": "idea.generate",
+      "action": "生成代码",
+      "aliases": ["生成", "getter setter", "构造函数", "生成构造", "generate"],
+      "keys": ["Alt+Insert"],
+      "group": "代码辅助",
+      "note": "生成 getter/setter/构造/toString",
+      "hot": true
+    },
+    {
+      "id": "idea.extendSelection",
+      "action": "扩展选择",
+      "aliases": ["扩大选择", "选中范围扩大", "选一层", "extend selection"],
+      "keys": ["Ctrl+W"],
+      "group": "选择",
+      "note": "从光标处一层层向外扩大选中范围"
+    },
+    {
+      "id": "idea.shrinkSelection",
+      "action": "缩小选择",
+      "aliases": ["缩小选中", "选小一点", "shrink"],
+      "keys": ["Ctrl+Shift+W"],
+      "group": "选择",
+      "note": "扩展选择的反向操作"
+    },
+    {
+      "id": "idea.selectAllMatches",
+      "action": "选中所有匹配",
+      "aliases": ["全选同名词", "批量改名", "所有出现", "select all occurrences"],
+      "keys": ["Ctrl+Alt+Shift+J"],
+      "group": "选择",
+      "note": "把文件里同名的都选上，可一起改"
+    },
+    {
+      "id": "idea.addNextMatch",
+      "action": "选中下一个匹配（多光标）",
+      "aliases": ["多光标", "加一个光标", "选下一个", "add selection"],
+      "keys": ["Alt+J"],
+      "group": "选择",
+      "note": "每按一次多选一处同名，常见于批量编辑",
+      "hot": true
+    },
+    {
+      "id": "idea.unselectMatch",
+      "action": "取消上一个匹配选择",
+      "aliases": ["去掉多选", "撤回一个光标"],
+      "keys": ["Alt+Shift+J"],
+      "group": "选择",
+      "note": "多选选多了往回退一处"
+    },
+    {
+      "id": "idea.cursorEveryLine",
+      "action": "每行加光标",
+      "aliases": ["列编辑", "多行同时编辑", "每行一个光标"],
+      "keys": ["Alt+Shift+G"],
+      "group": "选择",
+      "note": "选中多行后在每行末尾加一个光标"
+    },
+    {
+      "id": "idea.matchBrace",
+      "action": "跳到匹配的大括号",
+      "aliases": ["跳到括号", "匹配括号", "找括号"],
+      "keys": ["Ctrl+Shift+M"],
+      "group": "选择",
+      "note": "在成对括号之间来回跳"
+    },
+    {
+      "id": "idea.undo",
+      "action": "撤销",
+      "aliases": ["撤回", "回退", "undo", "撤销上一步"],
+      "keys": ["Ctrl+Z"],
+      "group": "基础编辑",
+      "note": "标准撤销",
+      "hot": true
+    },
+    {
+      "id": "idea.redo",
+      "action": "重做",
+      "aliases": ["恢复", "撤销的撤销", "redo"],
+      "keys": ["Ctrl+Shift+Z"],
+      "group": "基础编辑",
+      "note": "把刚才撤销的再做回来"
+    },
+    {
+      "id": "idea.saveAll",
+      "action": "保存全部",
+      "aliases": ["保存", "存盘", "save"],
+      "keys": ["Ctrl+S"],
+      "group": "基础编辑",
+      "note": "IDEA 会自动保存，这个键手动全存",
+      "hot": true
+    },
+    {
+      "id": "idea.duplicateLine",
+      "action": "复制行",
+      "aliases": ["复制这一行", "重复行", "duplicate line"],
+      "keys": ["Ctrl+D"],
+      "group": "基础编辑",
+      "note": "把当前行或选中内容复制一份到下面",
+      "hot": true
+    },
+    {
+      "id": "idea.deleteLine",
+      "action": "删除行",
+      "aliases": ["删掉这一行", "删行", "delete line"],
+      "keys": ["Ctrl+Y"],
+      "group": "基础编辑",
+      "note": "整行删除，不用先选中"
+    },
+    {
+      "id": "idea.joinLines",
+      "action": "合并行",
+      "aliases": ["连成一行", "合并两行", "join lines"],
+      "keys": ["Ctrl+Shift+J"],
+      "group": "基础编辑",
+      "note": "把下一行接到当前行末尾"
+    },
+    {
+      "id": "idea.pasteHistory",
+      "action": "从剪贴板历史粘贴",
+      "aliases": ["历史粘贴", "剪贴板历史", "paste history"],
+      "keys": ["Ctrl+Shift+V"],
+      "group": "基础编辑",
+      "note": "翻出之前复制过的一堆内容挑一个"
+    },
+    {
+      "id": "idea.pastePlain",
+      "action": "粘贴为纯文本",
+      "aliases": ["纯文本粘贴", "去掉格式粘贴", "paste plain"],
+      "keys": ["Ctrl+Alt+Shift+V"],
+      "group": "基础编辑",
+      "note": "从网页复制代码时去掉样式"
+    },
+    {
+      "id": "idea.copyPath",
+      "action": "复制文件路径",
+      "aliases": ["复制路径", "拷贝路径", "copy path"],
+      "keys": ["Ctrl+Shift+C"],
+      "group": "基础编辑",
+      "note": "复制当前文件的完整路径"
+    },
+    {
+      "id": "idea.copyReference",
+      "action": "复制引用",
+      "aliases": ["复制类名引用", "复制全限定名"],
+      "keys": ["Ctrl+Alt+Shift+C"],
+      "group": "基础编辑",
+      "note": "复制 类名.方法 这种引用写法"
+    },
+    {
+      "id": "idea.autoIndent",
+      "action": "自动缩进行",
+      "aliases": ["自动缩进", "对齐缩进", "reindent"],
+      "keys": ["Ctrl+Alt+I"],
+      "group": "基础编辑",
+      "note": "选中行按层级重新缩进"
+    },
+    {
+      "id": "idea.indent",
+      "action": "缩进选区",
+      "aliases": ["缩进", "往右缩", "indent"],
+      "keys": ["Tab"],
+      "group": "基础编辑",
+      "note": "选中多行一起往右缩进"
+    },
+    {
+      "id": "idea.outdent",
+      "action": "取消缩进",
+      "aliases": ["反缩进", "往左缩", "outdent"],
+      "keys": ["Shift+Tab"],
+      "group": "基础编辑",
+      "note": "选中多行一起往左退一格"
+    },
+    {
+      "id": "idea.newLineAfter",
+      "action": "在下方新建行",
+      "aliases": ["下面加一行", "换行不打断"],
+      "keys": ["Shift+Enter"],
+      "group": "基础编辑",
+      "note": "光标留在原行，下面开新行"
+    },
+    {
+      "id": "idea.newLineBefore",
+      "action": "在上方新建行",
+      "aliases": ["上面加一行"],
+      "keys": ["Ctrl+Alt+Enter"],
+      "group": "基础编辑",
+      "note": "在当前行上面开新行"
+    },
+    {
+      "id": "idea.toggleCase",
+      "action": "切换大小写",
+      "aliases": ["大小写转换", "改大小写", "toggle case"],
+      "keys": ["Ctrl+Shift+U"],
+      "group": "基础编辑",
+      "note": "选中文字在大小写之间切换"
+    },
+    {
+      "id": "idea.cut",
+      "action": "剪切",
+      "aliases": ["剪切", "cut"],
+      "keys": ["Ctrl+X"],
+      "group": "基础编辑",
+      "note": ""
+    },
+    {
+      "id": "idea.copy",
+      "action": "复制",
+      "aliases": ["复制", "拷贝", "copy"],
+      "keys": ["Ctrl+C"],
+      "group": "基础编辑",
+      "note": ""
+    },
+    {
+      "id": "idea.paste",
+      "action": "粘贴",
+      "aliases": ["粘贴", "paste"],
+      "keys": ["Ctrl+V"],
+      "group": "基础编辑",
+      "note": ""
+    },
+    {
+      "id": "idea.selectAll",
+      "action": "全选",
+      "aliases": ["全部选中", "select all"],
+      "keys": ["Ctrl+A"],
+      "group": "基础编辑",
+      "note": ""
+    },
+    {
+      "id": "idea.fontBigger",
+      "action": "放大编辑器字体",
+      "aliases": ["字体变大", "放大字体", "zoom in"],
+      "keys": ["Alt+Shift+."],
+      "group": "基础编辑",
+      "note": "对所有编辑器生效"
+    },
+    {
+      "id": "idea.fontSmaller",
+      "action": "缩小编辑器字体",
+      "aliases": ["字体变小", "缩小字体", "zoom out"],
+      "keys": ["Alt+Shift+,"],
+      "group": "基础编辑",
+      "note": "对所有编辑器生效"
+    },
+    {
+      "id": "idea.searchEverywhere",
+      "action": "全局搜索（双击 Shift）",
+      "aliases": ["全局搜索", "搜所有", "找东西", "search everywhere", "双击shift"],
+      "keys": ["Shift", "Shift"],
+      "group": "搜索与导航",
+      "note": "连按两次 Shift，类、文件、符号、动作都能搜",
+      "hot": true
+    },
+    {
+      "id": "idea.findAction",
+      "action": "查找操作",
+      "aliases": ["找命令", "搜设置项", "命令面板", "find action"],
+      "keys": ["Ctrl+Shift+A"],
+      "group": "搜索与导航",
+      "note": "搜菜单里的任何功能名",
+      "hot": true
+    },
+    {
+      "id": "idea.recentFiles",
+      "action": "最近打开的文件",
+      "aliases": ["最近文件", "刚才的文件", "recent files"],
+      "keys": ["Ctrl+E"],
+      "group": "搜索与导航",
+      "hot": true
+    },
+    {
+      "id": "idea.gotoFile",
+      "action": "转到文件",
+      "aliases": ["打开文件", "搜文件", "找类文件", "goto file"],
+      "keys": ["Ctrl+Shift+N"],
+      "group": "搜索与导航",
+      "note": "按文件名或驼峰缩写打开"
+    },
+    {
+      "id": "idea.gotoSymbol",
+      "action": "转到符号",
+      "aliases": ["搜方法", "找方法", "跳方法", "goto symbol"],
+      "keys": ["Ctrl+Alt+Shift+N"],
+      "group": "搜索与导航",
+      "note": "按类名、方法名、字段名跳转"
+    },
+    {
+      "id": "idea.gotoLine",
+      "action": "转到行",
+      "aliases": ["跳行", "定位行", "第几行", "goto line"],
+      "keys": ["Ctrl+G"],
+      "group": "搜索与导航",
+      "hot": true
+    },
+    {
+      "id": "idea.gotoDeclaration",
+      "action": "转到声明",
+      "aliases": ["跳定义", "看源码", "查定义", "go to declaration", "ctrl点击"],
+      "keys": ["Ctrl+B"],
+      "group": "搜索与导航",
+      "note": "等于 Ctrl + 鼠标左键点击",
+      "hot": true
+    },
+    {
+      "id": "idea.gotoImplementation",
+      "action": "转到实现",
+      "aliases": ["看实现", "找实现类", "go to implementation"],
+      "keys": ["Ctrl+Alt+B"],
+      "group": "搜索与导航",
+      "note": "接口跳到实现类"
+    },
+    {
+      "id": "idea.gotoTypeDecl",
+      "action": "转到类型声明",
+      "aliases": ["跳到类型", "看类型定义"],
+      "keys": ["Ctrl+Shift+B"],
+      "group": "搜索与导航",
+      "note": "跳到变量的类型定义"
+    },
+    {
+      "id": "idea.gotoSuper",
+      "action": "转到父类方法",
+      "aliases": ["看父类", "跳到super", "go to super"],
+      "keys": ["Ctrl+U"],
+      "group": "搜索与导航",
+      "note": "跳到父类同名方法"
+    },
+    {
+      "id": "idea.findUsages",
+      "action": "查找用法",
+      "aliases": ["在哪用了", "引用查找", "谁调用", "find usages"],
+      "keys": ["Alt+F7"],
+      "group": "搜索与导航",
+      "note": "列出所有调用、引用位置",
+      "hot": true
+    },
+    {
+      "id": "idea.highlightUsages",
+      "action": "高亮用法",
+      "aliases": ["标出引用", "看看谁在用"],
+      "keys": ["Ctrl+Shift+F7"],
+      "group": "搜索与导航",
+      "note": "当前文件里标出所有引用"
+    },
+    {
+      "id": "idea.nextOccurrence",
+      "action": "下一个出现位置",
+      "aliases": ["下一处", "找下一个"],
+      "keys": ["Ctrl+Alt+↓"],
+      "group": "搜索与导航",
+      "note": "跳到下一个同名符号"
+    },
+    {
+      "id": "idea.prevOccurrence",
+      "action": "上一个出现位置",
+      "aliases": ["上一处", "找上一个"],
+      "keys": ["Ctrl+Alt+↑"],
+      "group": "搜索与导航",
+      "note": "回到上一个同名符号"
+    },
+    {
+      "id": "idea.recentChanges",
+      "action": "最近更改",
+      "aliases": ["最近修改的文件", "刚才改的"],
+      "keys": ["Alt+Shift+C"],
+      "group": "搜索与导航",
+      "note": "列出最近编辑过的文件"
+    },
+    {
+      "id": "idea.lastEdit",
+      "action": "回到上次编辑位置",
+      "aliases": ["上次改的地方", "回到刚才"],
+      "keys": ["Ctrl+Shift+Backspace"],
+      "group": "搜索与导航",
+      "note": "跳回最后一次改动的位置"
+    },
+    {
+      "id": "idea.back",
+      "action": "后退",
+      "aliases": ["返回", "回上一处", "go back"],
+      "keys": ["Ctrl+Alt+←"],
+      "group": "搜索与导航",
+      "note": "跳转历史的返回"
+    },
+    {
+      "id": "idea.forward",
+      "action": "前进",
+      "aliases": ["往前", "go forward"],
+      "keys": ["Ctrl+Alt+→"],
+      "group": "搜索与导航",
+      "note": "跳转历史的前进"
+    },
+    {
+      "id": "idea.prevTab",
+      "action": "上一个标签页",
+      "aliases": ["上一个文件", "前一个页签"],
+      "keys": ["Alt+←"],
+      "group": "窗口与面板",
+      "note": "按打开顺序切页面"
+    },
+    {
+      "id": "idea.nextTab",
+      "action": "下一个标签页",
+      "aliases": ["下一个文件", "后一个页签"],
+      "keys": ["Alt+→"],
+      "group": "窗口与面板",
+      "note": ""
+    },
+    {
+      "id": "idea.switcher",
+      "action": "切换器",
+      "aliases": ["切窗口", "switcher", "Ctrl+Tab"],
+      "keys": ["Ctrl+Tab"],
+      "group": "窗口与面板",
+      "note": "按住 Ctrl 再按 Tab 循环切换"
+    },
+    {
+      "id": "idea.selectIn",
+      "action": "在…中选择",
+      "aliases": ["定位到目录", "在项目里定位", "select in"],
+      "keys": ["Alt+F1"],
+      "group": "窗口与面板",
+      "note": "把当前文件定位到项目树/其他视图"
+    },
+    {
+      "id": "idea.fileStructure",
+      "action": "文件结构",
+      "aliases": ["看类结构", "大纲", "file structure"],
+      "keys": ["Ctrl+F12"],
+      "group": "窗口与面板",
+      "note": "列出当前文件的类、方法、字段"
+    },
+    {
+      "id": "idea.toggleBookmark",
+      "action": "切换书签",
+      "aliases": ["加书签", "标记位置", "bookmark"],
+      "keys": ["F11"],
+      "group": "窗口与面板",
+      "note": "给当前行加/去一个无名书签"
+    },
+    {
+      "id": "idea.toggleMnemonicBookmark",
+      "action": "切换助记书签",
+      "aliases": ["数字书签", "带号书签"],
+      "keys": ["Ctrl+F11"],
+      "group": "窗口与面板",
+      "note": "再按数字键就能记住位置"
+    },
+    {
+      "id": "idea.showBookmarks",
+      "action": "显示所有书签",
+      "aliases": ["书签列表", "看标记"],
+      "keys": ["Shift+F11"],
+      "group": "窗口与面板",
+      "note": ""
+    },
+    {
+      "id": "idea.projectWindow",
+      "action": "打开项目面板",
+      "aliases": ["项目树", "左边文件树", "project view"],
+      "keys": ["Alt+1"],
+      "group": "窗口与面板",
+      "note": "没有就打开，有就隐藏",
+      "hot": true
+    },
+    {
+      "id": "idea.structureWindow",
+      "action": "打开结构面板",
+      "aliases": ["结构视图", "大纲面板"],
+      "keys": ["Alt+7"],
+      "group": "窗口与面板",
+      "note": ""
+    },
+    {
+      "id": "idea.terminal",
+      "action": "打开终端",
+      "aliases": ["终端", "命令行", "terminal", "cmd"],
+      "keys": ["Alt+F12"],
+      "group": "窗口与面板",
+      "hot": true
+    },
+    {
+      "id": "idea.settings",
+      "action": "打开设置",
+      "aliases": ["设置", "偏好设置", "配置", "settings"],
+      "keys": ["Ctrl+Alt+S"],
+      "group": "窗口与面板",
+      "hot": true
+    },
+    {
+      "id": "idea.hideAllToolWindows",
+      "action": "隐藏所有工具窗口",
+      "aliases": ["全屏写代码", "收起所有面板"],
+      "keys": ["Ctrl+Shift+F12"],
+      "group": "窗口与面板",
+      "note": ""
+    },
+    {
+      "id": "idea.find",
+      "action": "查找",
+      "aliases": ["搜索当前文件", "找文字", "find"],
+      "keys": ["Ctrl+F"],
+      "group": "搜索与导航",
+      "note": "只在当前文件里找",
+      "hot": true
+    },
+    {
+      "id": "idea.findNext",
+      "action": "查找下一个",
+      "aliases": ["下一个匹配", "find next"],
+      "keys": ["F3"],
+      "group": "搜索与导航",
+      "note": ""
+    },
+    {
+      "id": "idea.findPrev",
+      "action": "查找上一个",
+      "aliases": ["上一个匹配", "find previous"],
+      "keys": ["Shift+F3"],
+      "group": "搜索与导航",
+      "note": ""
+    },
+    {
+      "id": "idea.replace",
+      "action": "替换",
+      "aliases": ["替换文字", "改文字", "replace"],
+      "keys": ["Ctrl+R"],
+      "group": "搜索与导航",
+      "note": "当前文件内替换"
+    },
+    {
+      "id": "idea.findInFiles",
+      "action": "在文件中查找（全局搜索）",
+      "aliases": ["全局查找", "搜整个项目", "全项目搜索", "find in path"],
+      "keys": ["Ctrl+Shift+F"],
+      "group": "搜索与导航",
+      "hot": true
+    },
+    {
+      "id": "idea.replaceInFiles",
+      "action": "在文件中替换",
+      "aliases": ["全局替换", "整个项目替换"],
+      "keys": ["Ctrl+Shift+R"],
+      "group": "搜索与导航",
+      "note": "跨文件批量替换，慎用"
+    },
+    {
+      "id": "idea.nextError",
+      "action": "下一个错误/警告",
+      "aliases": ["下一个错误", "跳到报错", "next error"],
+      "keys": ["F2"],
+      "group": "搜索与导航",
+      "note": ""
+    },
+    {
+      "id": "idea.prevError",
+      "action": "上一个错误/警告",
+      "aliases": ["上一个错误", "previous error"],
+      "keys": ["Shift+F2"],
+      "group": "搜索与导航",
+      "note": ""
+    },
+    {
+      "id": "idea.errorDescription",
+      "action": "查看错误描述",
+      "aliases": ["错误说明", "报错详情"],
+      "keys": ["Ctrl+F1"],
+      "group": "搜索与导航",
+      "note": ""
+    },
+    {
+      "id": "idea.rename",
+      "action": "重命名",
+      "aliases": ["改名", "重命名变量", "rename"],
+      "keys": ["Shift+F6"],
+      "group": "重构",
+      "note": "全项目同步改，比手动替换安全",
+      "hot": true
+    },
+    {
+      "id": "idea.refactorMenu",
+      "action": "重构菜单",
+      "aliases": ["重构", "refactor this"],
+      "keys": ["Ctrl+Alt+Shift+T"],
+      "group": "重构",
+      "note": "列出所有能做的重构"
+    },
+    {
+      "id": "idea.changeSignature",
+      "action": "更改方法签名",
+      "aliases": ["改参数", "加参数", "change signature"],
+      "keys": ["Ctrl+F6"],
+      "group": "重构",
+      "note": "改参数列表，调用处一起改"
+    },
+    {
+      "id": "idea.inline",
+      "action": "内联",
+      "aliases": ["内联变量", "直接展开写进去", "inline"],
+      "keys": ["Ctrl+Alt+N"],
+      "group": "重构",
+      "note": "把变量或方法就地展开"
+    },
+    {
+      "id": "idea.moveElement",
+      "action": "移动",
+      "aliases": ["移动文件", "移动类", "move"],
+      "keys": ["F6"],
+      "group": "重构",
+      "note": "移动类或文件并更新引用"
+    },
+    {
+      "id": "idea.extractMethod",
+      "action": "提取方法",
+      "aliases": ["抽方法", "提方法", "extract method"],
+      "keys": ["Ctrl+Alt+M"],
+      "group": "重构",
+      "note": "把选中的代码抽成一个新方法",
+      "hot": true
+    },
+    {
+      "id": "idea.extractVariable",
+      "action": "提取变量",
+      "aliases": ["抽变量", "提变量", "extract variable"],
+      "keys": ["Ctrl+Alt+V"],
+      "group": "重构",
+      "note": "把表达式抽成一个变量"
+    },
+    {
+      "id": "idea.extractField",
+      "action": "提取字段",
+      "aliases": ["抽字段", "提成员变量", "extract field"],
+      "keys": ["Ctrl+Alt+F"],
+      "group": "重构",
+      "note": ""
+    },
+    {
+      "id": "idea.extractParam",
+      "action": "提取参数",
+      "aliases": ["抽参数", "提参数", "extract parameter"],
+      "keys": ["Ctrl+Alt+P"],
+      "group": "重构",
+      "note": ""
+    },
+    {
+      "id": "idea.safeDelete",
+      "action": "安全删除",
+      "aliases": ["删干净", "删除并清理引用", "safe delete"],
+      "keys": ["Alt+Delete"],
+      "group": "重构",
+      "note": "删之前检查还有没有地方用"
+    },
+    {
+      "id": "idea.run",
+      "action": "运行程序",
+      "aliases": ["运行", "跑起来", "启动", "run"],
+      "keys": ["Shift+F10"],
+      "group": "运行与调试",
+      "hot": true
+    },
+    {
+      "id": "idea.debug",
+      "action": "调试程序",
+      "aliases": ["调试", "debug", "断点调试"],
+      "keys": ["Shift+F9"],
+      "group": "运行与调试",
+      "hot": true
+    },
+    {
+      "id": "idea.stop",
+      "action": "停止运行",
+      "aliases": ["停止", "终止", "stop"],
+      "keys": ["Ctrl+F2"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "idea.resume",
+      "action": "恢复程序（继续执行）",
+      "aliases": ["继续执行", "往下跑", "resume"],
+      "keys": ["F9"],
+      "group": "运行与调试",
+      "note": "调试时从断点继续"
+    },
+    {
+      "id": "idea.stepOver",
+      "action": "单步跳过",
+      "aliases": ["下一步", "单步", "step over"],
+      "keys": ["F8"],
+      "group": "运行与调试",
+      "note": "执行一行，不进方法"
+    },
+    {
+      "id": "idea.stepInto",
+      "action": "单步跳入",
+      "aliases": ["进方法", "深入一步", "step into"],
+      "keys": ["F7"],
+      "group": "运行与调试",
+      "note": "进入当前行调用的方法"
+    },
+    {
+      "id": "idea.smartStepInto",
+      "action": "智能步入",
+      "aliases": ["智能进入", "只进自己的方法"],
+      "keys": ["Shift+F7"],
+      "group": "运行与调试",
+      "note": "跳过框架/库的内部方法"
+    },
+    {
+      "id": "idea.stepOut",
+      "action": "跳出方法",
+      "aliases": ["退出方法", "step out"],
+      "keys": ["Shift+F8"],
+      "group": "运行与调试",
+      "note": "执行完当前方法并返回调用处"
+    },
+    {
+      "id": "idea.runToCursor",
+      "action": "运行到光标处",
+      "aliases": ["跑到这行", "运行到光标", "run to cursor"],
+      "keys": ["Alt+F9"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "idea.evaluateExpression",
+      "action": "求值表达式",
+      "aliases": ["看变量值", "表达式求值", "evaluate"],
+      "keys": ["Alt+F8"],
+      "group": "运行与调试",
+      "note": "调试时看某个表达式的值"
+    },
+    {
+      "id": "idea.toggleBreakpoint",
+      "action": "切换断点",
+      "aliases": ["加断点", "去断点", "断点", "breakpoint"],
+      "keys": ["Ctrl+F8"],
+      "group": "运行与调试",
+      "hot": true
+    },
+    {
+      "id": "idea.viewBreakpoints",
+      "action": "查看所有断点",
+      "aliases": ["断点列表", "管理断点"],
+      "keys": ["Ctrl+Shift+F8"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "idea.build",
+      "action": "构建项目",
+      "aliases": ["编译", "构建", "build"],
+      "keys": ["Ctrl+F9"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "idea.rebuild",
+      "action": "重新构建",
+      "aliases": ["清空重编译", "rebuild"],
+      "keys": ["Ctrl+Shift+F9"],
+      "group": "运行与调试",
+      "note": "先清理再全量编译"
+    },
+    {
+      "id": "idea.commit",
+      "action": "提交代码",
+      "aliases": ["提交", "commit"],
+      "keys": ["Ctrl+K"],
+      "group": "版本控制",
+      "hot": true
+    },
+    {
+      "id": "idea.updateProject",
+      "action": "更新项目（拉取）",
+      "aliases": ["拉代码", "更新", "pull", "update"],
+      "keys": ["Ctrl+T"],
+      "group": "版本控制",
+      "note": "从远端同步最新代码",
+      "hot": true
+    },
+    {
+      "id": "idea.push",
+      "action": "推送代码",
+      "aliases": ["推送", "push"],
+      "keys": ["Ctrl+Shift+K"],
+      "group": "版本控制",
+      "note": ""
+    },
+    {
+      "id": "idea.rollback",
+      "action": "回滚更改",
+      "aliases": ["撤销本地修改", "回滚", "rollback"],
+      "keys": ["Ctrl+Alt+Z"],
+      "group": "版本控制",
+      "note": ""
+    },
+    {
+      "id": "idea.vcsPopup",
+      "action": "VCS 快捷操作",
+      "aliases": ["git菜单", "版本控制菜单", "vcs"],
+      "keys": ["Alt+`"],
+      "group": "版本控制",
+      "note": "弹出 git 常用操作菜单"
+    },
+    {
+      "id": "idea.commitWindow",
+      "action": "打开提交面板",
+      "aliases": ["提交窗口", "commit面板"],
+      "keys": ["Alt+0"],
+      "group": "版本控制",
+      "note": ""
+    },
+    {
+      "id": "idea.vcsWindow",
+      "action": "打开版本控制面板",
+      "aliases": ["git面板", "版本控制窗口"],
+      "keys": ["Alt+9"],
+      "group": "版本控制",
+      "note": ""
+    },
+    {
+      "id": "idea.foldSelection",
+      "action": "折叠选中区域",
+      "aliases": ["折叠代码", "收起这段", "fold"],
+      "keys": ["Ctrl+."],
+      "group": "代码折叠",
+      "note": "把选中的大括号区域折起来"
+    },
+    {
+      "id": "idea.foldAll",
+      "action": "折叠全部",
+      "aliases": ["全部折叠", "收起所有方法", "fold all"],
+      "keys": ["Ctrl+Shift+NumPad-"],
+      "group": "代码折叠",
+      "note": "需要小键盘"
+    },
+    {
+      "id": "idea.unfoldAll",
+      "action": "展开全部",
+      "aliases": ["全部展开", "展开所有", "unfold all"],
+      "keys": ["Ctrl+Shift+NumPad+"],
+      "group": "代码折叠",
+      "note": "需要小键盘"
+    },
+    {
+      "id": "idea.inspectCode",
+      "action": "按名称运行代码检查",
+      "aliases": ["代码检查", "静态检查", "inspect"],
+      "keys": ["Ctrl+Alt+Shift+I"],
+      "group": "代码分析",
+      "note": ""
+    },
+    {
+      "id": "idea.problemsWindow",
+      "action": "打开问题面板",
+      "aliases": ["问题列表", "警告窗口"],
+      "keys": ["Alt+6"],
+      "group": "代码分析",
+      "note": ""
+    },
+    {
+      "id": "idea.debugWindow",
+      "action": "打开调试面板",
+      "aliases": ["调试窗口", "变量窗口"],
+      "keys": ["Alt+5"],
+      "group": "运行与调试",
+      "note": ""
+    },
+    {
+      "id": "idea.runWindow",
+      "action": "打开运行面板",
+      "aliases": ["运行窗口", "控制台输出"],
+      "keys": ["Alt+4"],
+      "group": "运行与调试",
+      "note": ""
+    }
+  ]
+}
